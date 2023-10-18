@@ -1,6 +1,7 @@
 #pragma once
 #ifndef GAMEPLAY_H
 #define GAMEPLAY_H
+
 #include <SFML/Graphics.hpp>
 #include <SFML/Audio.hpp>
 
@@ -10,6 +11,8 @@ class Gameplay
 
     public:
         Gameplay();
+
+        void compararKeyWord();
 
 };
 

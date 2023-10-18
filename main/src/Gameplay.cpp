@@ -4,3 +4,8 @@ Gameplay::Gameplay()
 {
     //ctor
 }
+
+void compararKeyWord()
+{
+
+}

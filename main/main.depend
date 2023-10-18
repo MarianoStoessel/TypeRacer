@@ -841,8 +841,9 @@
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Window/GlResource.hpp>
 
-1697664655 source:f:\proyectos github\typeracer\main\main.cpp
+1697666453 source:f:\proyectos github\typeracer\main\main.cpp
 	"Libraries.h"
+	"Gameplay.h"
 
 1697664604 f:\proyectos github\typeracer\main\libraries.h
 	<SFML/Graphics.hpp>
@@ -954,4 +955,32 @@
 1697663564 f:\proyectos github\typeracer\main\sfml\include\sfml\audio\soundfilewriter.hpp
 	<SFML/Audio/Export.hpp>
 	<string>
+
+1697665759 source:f:\proyectos github\typeracer\main\src\gameplay.cpp
+	"Gameplay.h"
+
+1697666437 f:\proyectos github\typeracer\main\include\gameplay.h
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+
+1697667487 source:f:\proyectos github\typeracer\main\src\leo.cpp
+	"Leo.h"
+
+1697667638 f:\proyectos github\typeracer\main\include\leo.h
+
+1697666698 source:f:\proyectos github\typeracer\main\src\gusavirus.cpp
+	"Gusavirus.h"
+
+1697668790 f:\proyectos github\typeracer\main\include\gusavirus.h
+
+1697668146 source:f:\proyectos github\typeracer\main\src\keyword.cpp
+	"Keyword.h"
+	<cstring>
+
+1697668085 f:\proyectos github\typeracer\main\include\keyword.h
+
+1697666783 source:f:\proyectos github\typeracer\main\src\anonymous.cpp
+	"Anonymous.h"
+
+1697668592 f:\proyectos github\typeracer\main\include\anonymous.h
 

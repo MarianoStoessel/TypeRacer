@@ -46,8 +46,18 @@
 			<Add directory="SFML/lib" />
 		</Linker>
 		<Unit filename="Clases/Menu/Menu.cpp" />
+		<Unit filename="include/Anonymous.h" />
+		<Unit filename="include/Gameplay.h" />
+		<Unit filename="include/Gusavirus.h" />
+		<Unit filename="include/Keyword.h" />
+		<Unit filename="include/Leo.h" />
 		<Unit filename="include/Menu.h" />
 		<Unit filename="mani.cpp" />
+		<Unit filename="src/Anonymous.cpp" />
+		<Unit filename="src/Gameplay.cpp" />
+		<Unit filename="src/Gusavirus.cpp" />
+		<Unit filename="src/Keyword.cpp" />
+		<Unit filename="src/Leo.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

@@ -5,13 +5,18 @@
 class Keyword
 {
     private:
-        char _palabra[10]; //memoria dinamica, num 10 auxiliar
+        char *_p;
+        int _tam;
 
     public:
-        Keyword();
+        Keyword(const char *ini = "NULL");
 
-        const char *getPalabra();
-        void setPalabra(const char *p);
+        const char *getP();
+        int getTam();
+
+        void setP(const char *p);
+
+        virtual ~Keyword();
 };
 
 #endif // KEYWORD_H

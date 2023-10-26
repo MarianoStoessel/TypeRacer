@@ -5,6 +5,8 @@
 #include <SFML/Graphics.hpp>
 #include <SFML/Audio.hpp>
 
+#include "Keyword.h"
+
 class Gameplay
 {
     private:
@@ -12,7 +14,7 @@ class Gameplay
     public:
         Gameplay();
 
-        void compararKeyWord();
+        void compararKeyWord(Keyword kw);
 
 };
 

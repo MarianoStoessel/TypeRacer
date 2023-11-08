@@ -842,9 +842,8 @@
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Window/GlResource.hpp>
 
-1698192108 source:f:\proyectos github\typeracer\main\mani.cpp
-	<SFML/Graphics.hpp>
-	"Menu.h"
+1698279142 source:f:\proyectos github\typeracer\main\mani.cpp
+	"librariesMain.h"
 
 1697663564 f:\proyectos github\typeracer\main\sfml\include\sfml\graphics.hpp
 	<SFML/Window.hpp>
@@ -1268,36 +1267,41 @@
 	<SFML/Graphics.hpp>
 	<iostream>
 
-1698192108 source:f:\proyectos github\typeracer\main\clases\menu\menu.cpp
+1698194864 source:f:\proyectos github\typeracer\main\clases\menu\menu.cpp
 	"Menu.h"
 
-1698193584 source:f:\proyectos github\typeracer\main\src\anonymous.cpp
+1698194275 source:f:\proyectos github\typeracer\main\src\anonymous.cpp
 	"Anonymous.h"
 
-1698193453 f:\proyectos github\typeracer\main\include\anonymous.h
+1698194275 f:\proyectos github\typeracer\main\include\anonymous.h
 
-1698193601 source:f:\proyectos github\typeracer\main\src\gameplay.cpp
+1698278462 source:f:\proyectos github\typeracer\main\src\gameplay.cpp
 	"Gameplay.h"
+	<iostream>
+	<conio.h>
 
-1698193491 f:\proyectos github\typeracer\main\include\gameplay.h
+1698278882 f:\proyectos github\typeracer\main\include\gameplay.h
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
+	"Keyword.h"
 
-1698193301 source:f:\proyectos github\typeracer\main\src\gusavirus.cpp
+1698194275 source:f:\proyectos github\typeracer\main\src\gusavirus.cpp
 	"Gusavirus.h"
 
-1698193513 f:\proyectos github\typeracer\main\include\gusavirus.h
+1698194275 f:\proyectos github\typeracer\main\include\gusavirus.h
 
-1698193624 source:f:\proyectos github\typeracer\main\src\keyword.cpp
+1698279110 source:f:\proyectos github\typeracer\main\src\keyword.cpp
 	"Keyword.h"
+	<iostream>
 	<cstring>
+	<conio.h>
 
-1698193533 f:\proyectos github\typeracer\main\include\keyword.h
+1698276636 f:\proyectos github\typeracer\main\include\keyword.h
 
-1698193639 source:f:\proyectos github\typeracer\main\src\leo.cpp
+1698194275 source:f:\proyectos github\typeracer\main\src\leo.cpp
 	"Leo.h"
 
-1698193553 f:\proyectos github\typeracer\main\include\leo.h
+1698194275 f:\proyectos github\typeracer\main\include\leo.h
 
 1697663564 f:\proyectos github\typeracer\main\sfml\include\sfml\audio.hpp
 	<SFML/System.hpp>
@@ -1541,4 +1545,18 @@
 	"Leo.h"
 
 1698194231 d:\uni 2023\laboratorio ii\tp integrador\main\include\leo.h
+
+1698278104 f:\proyectos github\typeracer\main\librariesmain.h
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<iostream>
+	<ctime>
+	<stdlib.h>
+	<conio.h>
+	"Gameplay.h"
+	"Menu.h"
+	"Keyword.h"
+	"Leo.h"
+	"Gusavirus.h"
+	"Anonymous.h"
 

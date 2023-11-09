@@ -6,6 +6,7 @@ Leo::Leo() //ctor
     _texture.loadFromFile("Imagenes/SpriteLeo.png"); //30, 330 tamanio
     _sprite.setTexture(_texture);
     _sprite.setTextureRect({10, 10, 144, 120});
+    _sprite.setPosition(30, 330);
     LeoState _state = LeoState::Idle;
 }
 void Leo::cmd()

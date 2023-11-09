@@ -37,6 +37,13 @@ int main(){
     sf::RenderWindow window(sf::VideoMode(1500, 900), "LEO PRUEBA");
     window.setFramerateLimit(60);
 
+    //set fondo
+    RectangleShape fondo;
+    fondo.setSize(Vector2f(1500,900));
+    Texture menutextura;
+    menutextura.loadFromFile("Imagenes/Escenario.jpg");
+    fondo.setTexture(&menutextura);
+
     Leo Pj;
 
     //Game Loop (update del juego
@@ -61,6 +68,7 @@ int main(){
         window.clear();
 
         //Draw
+        window.draw(fondo);
         window.draw(Pj);
 
         //Display - Flip

@@ -1,16 +1,27 @@
 #pragma once
 #ifndef LEO_H
 #define LEO_H
+#include <SFML/Graphics.hpp>
 
-class Leo
+enum class LeoState{Idle = 0, Move};
+
+class Leo: public sf::Drawable
 {
     private:
-        int _vida; // Leo tiene 1 0 3 vidas?
+        sf::Sprite _sprite;
+        sf::Texture _texture;
+
+        float _frame;
+        LeoState _state;
 
     public:
         Leo();
-        int getVida();
-        void setVida(int v);
+        void setState(LeoState s);
+
+        void cmd();
+        void update();
+        void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
+
 };
 
 #endif // LEO_H

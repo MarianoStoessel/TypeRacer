@@ -1270,7 +1270,7 @@
 1699549447 source:f:\proyectos github\typeracer\main\clases\menu\menu.cpp
 	"Menu.h"
 
-1699565197 source:f:\proyectos github\typeracer\main\src\anonymous.cpp
+1699567642 source:f:\proyectos github\typeracer\main\src\anonymous.cpp
 	"Anonymous.h"
 
 1699563708 f:\proyectos github\typeracer\main\include\anonymous.h
@@ -1302,7 +1302,7 @@
 1699563460 source:f:\proyectos github\typeracer\main\src\leo.cpp
 	"Leo.h"
 
-1699563657 f:\proyectos github\typeracer\main\include\leo.h
+1699570968 f:\proyectos github\typeracer\main\include\leo.h
 	<SFML/Graphics.hpp>
 
 1697663564 f:\proyectos github\typeracer\main\sfml\include\sfml\audio.hpp

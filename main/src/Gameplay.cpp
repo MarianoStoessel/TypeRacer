@@ -2,17 +2,17 @@
 #include <iostream>
 #include <conio.h>
 
-Gameplay::Gameplay()
+Gameplay::Gameplay() //ctor
 {
-    //ctor
+    _exito = false;
+
 }
 
 void Gameplay::compararKeyWord(Keyword kw)
 {
     //forma de aplicar la mecanica
-    bool exito = 0;
 
-	while(!exito){
+	while(!_exito){
 
 	    bool verifica = true;
         char caracter;
@@ -35,7 +35,7 @@ void Gameplay::compararKeyWord(Keyword kw)
             std::cout << std::endl;
         }
         else {
-            exito = 1;
+            _exito = 1;
             std::cout<< "EXCELENTE \n\n";
         }
 	}

@@ -842,7 +842,7 @@
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Window/GlResource.hpp>
 
-1699562251 source:f:\proyectos github\typeracer\main\mani.cpp
+1699563799 source:f:\proyectos github\typeracer\main\mani.cpp
 	"librariesMain.h"
 
 1697663564 f:\proyectos github\typeracer\main\sfml\include\sfml\graphics.hpp
@@ -1270,10 +1270,11 @@
 1699549447 source:f:\proyectos github\typeracer\main\clases\menu\menu.cpp
 	"Menu.h"
 
-1698194275 source:f:\proyectos github\typeracer\main\src\anonymous.cpp
+1699565197 source:f:\proyectos github\typeracer\main\src\anonymous.cpp
 	"Anonymous.h"
 
-1698194275 f:\proyectos github\typeracer\main\include\anonymous.h
+1699563708 f:\proyectos github\typeracer\main\include\anonymous.h
+	<SFML/Graphics.hpp>
 
 1699549658 source:f:\proyectos github\typeracer\main\src\gameplay.cpp
 	"Gameplay.h"
@@ -1298,10 +1299,10 @@
 
 1699465942 f:\proyectos github\typeracer\main\include\keyword.h
 
-1699561868 source:f:\proyectos github\typeracer\main\src\leo.cpp
+1699563460 source:f:\proyectos github\typeracer\main\src\leo.cpp
 	"Leo.h"
 
-1699561868 f:\proyectos github\typeracer\main\include\leo.h
+1699563657 f:\proyectos github\typeracer\main\include\leo.h
 	<SFML/Graphics.hpp>
 
 1697663564 f:\proyectos github\typeracer\main\sfml\include\sfml\audio.hpp

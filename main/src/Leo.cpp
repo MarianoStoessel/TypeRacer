@@ -3,13 +3,13 @@
 Leo::Leo() //ctor
 {
     _frame = 0;
-    _texture.loadFromFile("Imagenes/SpriteLeo.png"); //30, 330 tamanio
+    _texture.loadFromFile("Imagenes/SpriteLeo.png");
     _sprite.setTexture(_texture);
     _sprite.setTextureRect({10, 10, 144, 120});
     _sprite.setPosition(30, 330);
     LeoState _state = LeoState::Idle;
 }
-void Leo::cmd()
+void Leo::cmd() //caja de estados - de aca pasa al update
 {
     _state = LeoState::Idle;
 
@@ -118,7 +118,7 @@ void Leo::cmd()
         _state = LeoState::Move;
     }
 }
-void Leo::update()
+void Leo::update() //comprueba estado y ejecuta el movimiento si es asi
 {
     switch(_state)
     {

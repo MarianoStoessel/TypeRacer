@@ -45,6 +45,7 @@ int main(){
     fondo.setTexture(&menutextura);
 
     Leo Pj;
+    Anonymous Eny;
 
     //Game Loop (update del juego
 
@@ -61,15 +62,18 @@ int main(){
 
         //CMD - Joy
         Pj.cmd();
+        Eny.cmd();
 
         //Update - Actualiza los estados del juego
         Pj.update();
+        Eny.update();
 
         window.clear();
 
         //Draw
         window.draw(fondo);
         window.draw(Pj);
+        window.draw(Eny);
 
         //Display - Flip
         window.display();

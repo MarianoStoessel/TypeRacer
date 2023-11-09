@@ -16,7 +16,6 @@ class Leo: public sf::Drawable
 
     public:
         Leo();
-        void setState(LeoState s);
 
         void cmd();
         void update();

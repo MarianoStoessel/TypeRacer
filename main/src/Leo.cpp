@@ -2,7 +2,6 @@
 
 Leo::Leo() //ctor
 {
-    _vida = 3;
     _frame = 0;
     _texture.loadFromFile("Imagenes/SpriteLeo.png");
     _sprite.setTexture(_texture);

@@ -8,8 +8,6 @@ enum class LeoState{Idle = 0, Move};
 class Leo: public sf::Drawable
 {
     private:
-        int _vida;
-
         sf::Sprite _sprite;
         sf::Texture _texture;
 

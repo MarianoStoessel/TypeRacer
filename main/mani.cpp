@@ -10,8 +10,8 @@ int main()
 */
 
 /// MAIN DE PRUEBAS - MECANICA PRINCIPAL DEL JUEGO
-/*
-int main()
+
+/*int main()
 {
     Keyword aux("hola mundo");
     Gameplay prueba;
@@ -28,58 +28,34 @@ int main()
 
     system("pause");
     return 0;
-}
-*/
-
-/// MAIN PRUEBAS - LEO SPRITE
-int main(){
-    //Inicializacion programa
-    sf::RenderWindow window(sf::VideoMode(1500, 900), "LEO PRUEBA");
+}*/
+/*
+int main()
+{
+    sf::RenderWindow window(sf::VideoMode(1500,900),"Prueba gusavirus");
     window.setFramerateLimit(60);
-
-    //set fondo
     RectangleShape fondo;
     fondo.setSize(Vector2f(1500,900));
     Texture menutextura;
-    menutextura.loadFromFile("Imagenes/Escenario.jpg");
+    menutextura.loadFromFile("Imagenes/Pantalla_Escenario.jpg");
     fondo.setTexture(&menutextura);
+    Gusavirus reg;
 
-    Leo Pj;
-    Anonymous Eny;
 
-    //Game Loop (update del juego
-
-    while(window.isOpen())
-    {
-        //ReadInput - Actualizar los estados de los perisfericos de entrada
-        //Leer la cola de mensajes
+    while(window.isOpen()){
         sf::Event event;
         while(window.pollEvent(event))
         {
-            if(event.type == sf::Event::Closed)
+            if(event.type == Event::Closed)
+            {
                 window.close();
+            }
         }
-
-        //CMD - Joy
-        Pj.cmd();
-        Eny.cmd();
-
-        //Update - Actualiza los estados del juego
-        Pj.update();
-        Eny.update();
-
         window.clear();
 
-        //Draw
         window.draw(fondo);
-        window.draw(Pj);
-        window.draw(Eny);
-
-        //Display - Flip
+        window.draw(reg);
+         reg.update();
         window.display();
     }
-
-    //Liberacion programa
-
-    return 0;
-}
+}*/

@@ -59,3 +59,57 @@ int main()
         window.display();
     }
 }*/
+int main(){
+    //Inicializacion programa
+    sf::RenderWindow window(sf::VideoMode(1500, 900), "LEO PRUEBA");
+    window.setFramerateLimit(60);
+
+    //set fondo
+    RectangleShape fondo;
+    fondo.setSize(Vector2f(1500,900));
+    Texture menutextura;
+    menutextura.loadFromFile("Imagenes/Escenario.jpg");
+    fondo.setTexture(&menutextura);
+
+    Leo Pj;
+    Anonymous Eny;
+    Gusavirus Gus;
+
+    //Game Loop (update del juego
+
+    while(window.isOpen())
+    {
+        //ReadInput - Actualizar los estados de los perisfericos de entrada
+        //Leer la cola de mensajes
+        sf::Event event;
+        while(window.pollEvent(event))
+        {
+            if(event.type == sf::Event::Closed)
+                window.close();
+        }
+
+        //CMD - Joy
+        Pj.cmd();
+        Eny.cmd();
+
+        //Update - Actualiza los estados del juego
+        Pj.update();
+        Eny.update();
+        Gus.update();
+
+        window.clear();
+
+        //Draw
+        window.draw(fondo);
+        window.draw(Pj);
+        window.draw(Eny);
+        window.draw(Gus);
+
+        //Display - Flip
+        window.display();
+    }
+
+    //Liberacion programa
+
+    return 0;
+}

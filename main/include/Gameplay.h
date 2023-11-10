@@ -10,6 +10,7 @@
 class Gameplay
 {
     private:
+        bool _exito;
 
     public:
         Gameplay();

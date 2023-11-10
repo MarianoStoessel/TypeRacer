@@ -420,9 +420,8 @@
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Window/GlResource.hpp>
 
-1698191447 source:d:\uni 2023\laboratorio ii\tp integrador\main\mani.cpp
-	<SFML/Graphics.hpp>
-	"Menu.h"
+1699566731 source:d:\uni 2023\laboratorio ii\tp integrador\main\mani.cpp
+	"librariesMain.h"
 
 1688071491 d:\uni 2023\laboratorio ii\tp integrador\main\sfml\include\sfml\graphics.hpp
 	<SFML/Window.hpp>
@@ -1419,12 +1418,15 @@
 
 1698194231 d:\uni 2023\laboratorio ii\tp integrador\main\include\anonymous.h
 
-1698194231 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\gameplay.cpp
+1699480287 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\gameplay.cpp
 	"Gameplay.h"
+	<iostream>
+	<conio.h>
 
-1698194231 d:\uni 2023\laboratorio ii\tp integrador\main\include\gameplay.h
+1699480287 d:\uni 2023\laboratorio ii\tp integrador\main\include\gameplay.h
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
+	"Keyword.h"
 
 1688071491 d:\uni 2023\laboratorio ii\tp integrador\main\sfml\include\sfml\audio.hpp
 	<SFML/System.hpp>
@@ -1530,16 +1532,19 @@
 	<SFML/Audio/Export.hpp>
 	<string>
 
-1698194231 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\gusavirus.cpp
+1699570798 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\gusavirus.cpp
 	"Gusavirus.h"
 
-1698194231 d:\uni 2023\laboratorio ii\tp integrador\main\include\gusavirus.h
+1699570403 d:\uni 2023\laboratorio ii\tp integrador\main\include\gusavirus.h
+	<SFML/Graphics.hpp>
 
-1698194231 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\keyword.cpp
+1699480287 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\keyword.cpp
 	"Keyword.h"
+	<iostream>
 	<cstring>
+	<conio.h>
 
-1698194231 d:\uni 2023\laboratorio ii\tp integrador\main\include\keyword.h
+1699480287 d:\uni 2023\laboratorio ii\tp integrador\main\include\keyword.h
 
 1698194231 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\leo.cpp
 	"Leo.h"
@@ -1547,6 +1552,20 @@
 1698194231 d:\uni 2023\laboratorio ii\tp integrador\main\include\leo.h
 
 1698278104 f:\proyectos github\typeracer\main\librariesmain.h
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<iostream>
+	<ctime>
+	<stdlib.h>
+	<conio.h>
+	"Gameplay.h"
+	"Menu.h"
+	"Keyword.h"
+	"Leo.h"
+	"Gusavirus.h"
+	"Anonymous.h"
+
+1699480287 d:\uni 2023\laboratorio ii\tp integrador\main\librariesmain.h
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
 	<iostream>

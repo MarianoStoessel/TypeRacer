@@ -11,7 +11,7 @@ int main()
 
 /// MAIN DE PRUEBAS - MECANICA PRINCIPAL DEL JUEGO
 
-int main()
+/*int main()
 {
     Keyword aux("hola mundo");
     Gameplay prueba;
@@ -28,4 +28,34 @@ int main()
 
     system("pause");
     return 0;
-}
+}*/
+/*
+int main()
+{
+    sf::RenderWindow window(sf::VideoMode(1500,900),"Prueba gusavirus");
+    window.setFramerateLimit(60);
+    RectangleShape fondo;
+    fondo.setSize(Vector2f(1500,900));
+    Texture menutextura;
+    menutextura.loadFromFile("Imagenes/Pantalla_Escenario.jpg");
+    fondo.setTexture(&menutextura);
+    Gusavirus reg;
+
+
+    while(window.isOpen()){
+        sf::Event event;
+        while(window.pollEvent(event))
+        {
+            if(event.type == Event::Closed)
+            {
+                window.close();
+            }
+        }
+        window.clear();
+
+        window.draw(fondo);
+        window.draw(reg);
+         reg.update();
+        window.display();
+    }
+}*/

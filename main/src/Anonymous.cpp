@@ -13,10 +13,12 @@ void Anonymous::cmd()
 {
     _state = AnonymousState::Idle;
 
-    if(sf::Keyboard::isKeyPressed(sf::Keyboard::A))
+    AnonymousState::Move;
+
+    /*if(sf::Keyboard::isKeyPressed(sf::Keyboard::A))
     {
         _state = AnonymousState::Move;
-    }
+    }*/
 }
 void Anonymous::update()
 {

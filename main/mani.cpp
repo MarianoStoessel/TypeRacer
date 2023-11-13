@@ -60,6 +60,7 @@ int main()
     }
 }*/
 int main(){
+    srand(time(0));
     //Inicializacion programa
     sf::RenderWindow window(sf::VideoMode(1500, 900), "LEO PRUEBA");
     window.setFramerateLimit(60);

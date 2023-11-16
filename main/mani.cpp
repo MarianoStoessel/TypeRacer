@@ -1,13 +1,14 @@
 #include "librariesMain.h"
 
 /// MAIN PRINCIPAL
-/*
+
 int main()
 {
-    Aplicacion();
+    srand((unsigned)time(0));
+    Aplicacion(sf::Vector2u(1500,900));
     return 0;
 }
-*/
+
 
 /// MAIN DE PRUEBAS - MECANICA PRINCIPAL DEL JUEGO
 
@@ -58,7 +59,7 @@ int main()
          reg.update();
         window.display();
     }
-}*/
+}*//*
 int main(){
     srand(time(0));
     //Inicializacion programa
@@ -114,3 +115,4 @@ int main(){
 
     return 0;
 }
+*/

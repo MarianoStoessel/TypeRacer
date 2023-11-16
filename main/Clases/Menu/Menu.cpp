@@ -62,15 +62,15 @@ void Menu::update()
     _menu[_menuSelected].setFillColor(sf::Color::White); //Inicio
     switch(_state)
     {
-       Event event;
     case MenuState::Up:
         if(_clock.getElapsedTime().asMilliseconds() > 20)
         {
-            if(event.type == Event::Closed)
+            _menuSelected--;
+            if(_menuSelected < 0)
             {
                 _menuSelected = 3;
             }
-            if(event.type == Event::KeyReleased)
+            _state = MenuState::Idle;
         }
         _clock.restart();
         break;

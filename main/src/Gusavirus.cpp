@@ -2,7 +2,6 @@
 
 Gusavirus::Gusavirus()
 {
-    SeeligeColor();
     _frame=0;
     y=615;
     x=1200;

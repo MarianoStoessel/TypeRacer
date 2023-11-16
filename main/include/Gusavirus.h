@@ -2,6 +2,7 @@
 #ifndef GUSAVIRUS_H
 #define GUSAVIRUS_H
 #include <SFML/Graphics.hpp>
+#include "Keyword.h"
 class Gusavirus: public sf::Drawable  // en progreso
 {
     private:
@@ -12,10 +13,11 @@ class Gusavirus: public sf::Drawable  // en progreso
         int x;
         int y;
         float _frame;
-        char palabra[30];
+        Keyword palabra(int *x,int *y);
     public:
         //agregar sets y gets
         Gusavirus();
+        //void mostrarpalabra(){palabra.Mostrar();}
         void update();
         void motion();
         void draw(sf::RenderTarget& target, sf::RenderStates states)const override;

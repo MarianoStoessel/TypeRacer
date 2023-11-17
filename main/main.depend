@@ -1285,11 +1285,12 @@
 	<SFML/Audio.hpp>
 	"Keyword.h"
 
-1700180339 source:f:\proyectos github\typeracer\main\src\gusavirus.cpp
+1700180874 source:f:\proyectos github\typeracer\main\src\gusavirus.cpp
 	"Gusavirus.h"
 
-1700180339 f:\proyectos github\typeracer\main\include\gusavirus.h
+1700180874 f:\proyectos github\typeracer\main\include\gusavirus.h
 	<SFML/Graphics.hpp>
+	"Keyword.h"
 
 1699465942 source:f:\proyectos github\typeracer\main\src\keyword.cpp
 	"Keyword.h"

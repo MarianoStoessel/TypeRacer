@@ -45,9 +45,11 @@
 			<Add library="sfml-system" />
 			<Add directory="SFML/lib" />
 		</Linker>
+		<Unit filename="Clases/Menu/Aplicacion.cpp" />
 		<Unit filename="Clases/Menu/Menu.cpp" />
 		<Unit filename="Clases/Menu/MenuNivel.cpp" />
 		<Unit filename="include/Anonymous.h" />
+		<Unit filename="include/Aplicacion.h" />
 		<Unit filename="include/Gameplay.h" />
 		<Unit filename="include/Gusavirus.h" />
 		<Unit filename="include/Keyword.h" />

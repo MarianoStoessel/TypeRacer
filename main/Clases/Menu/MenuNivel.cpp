@@ -39,19 +39,19 @@ MenuNivel::MenuNivel(float width, float height) //ctor
 }
 void MenuNivel::cmd() //Cmd
 {
-    _state = MenuState::Idle;
+    _state = MenuNivelState::Idle;
 
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::Up))
     {
-        _state = MenuState::Up;
+        _state = MenuNivelState::Up;
     }
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::Down))
     {
-        _state = MenuState::Down;
+        _state = MenuNivelState::Down;
     }
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::Enter))
     {
-        _state = MenuState::Select;
+        _state = MenuNivelState::Select;
     }
 }
 
@@ -60,7 +60,7 @@ void MenuNivel::update()
     _menu[_menuSelected].setFillColor(sf::Color::White); //Inicio
     switch(_state)
     {
-    case MenuState::Up:
+    case MenuNivelState::Up:
         if(_clock.getElapsedTime().asMilliseconds() > 20)
         {
             _menuSelected--;
@@ -68,11 +68,11 @@ void MenuNivel::update()
             {
                 _menuSelected = 3;
             }
-            _state = MenuState::Idle;
+            _state = MenuNivelState::Idle;
         }
         _clock.restart();
         break;
-    case MenuState::Down:
+    case MenuNivelState::Down:
         if(_clock.getElapsedTime().asMilliseconds() > 20)
         {
             _menuSelected++;
@@ -80,7 +80,7 @@ void MenuNivel::update()
             {
                 _menuSelected = 0;
             }
-            _state = MenuState::Idle;
+            _state = MenuNivelState::Idle;
         }
         _clock.restart();
         break;
@@ -99,9 +99,9 @@ void MenuNivel::draw(sf::RenderWindow& window) //Draw Menu
 
 bool MenuNivel::getState()
 {
-    if(_state == MenuState::Select)
+    if(_state == MenuNivelState::Select)
     {
-        _state = MenuState::Idle;
+        _state = MenuNivelState::Idle;
         return true;
     }
     return false;

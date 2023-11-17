@@ -65,6 +65,7 @@ Aplicacion::Aplicacion(sf::Vector2u resolucion) // ctor
                         switch(y)
                         {
                         case 0:
+                            _window.close();
                             break;
                         case 1:
 

@@ -1590,13 +1590,12 @@
 	"Gusavirus.h"
 	"Anonymous.h"
 
-1700180363 source:f:\proyectos github\typeracer\main\clases\menu\menunivel.cpp
+1700181525 source:f:\proyectos github\typeracer\main\clases\menu\menunivel.cpp
 	"MenuNivel.h"
 
-1700179532 f:\proyectos github\typeracer\main\include\menunivel.h
+1700181596 f:\proyectos github\typeracer\main\include\menunivel.h
 	<iostream>
 	<SFML/Graphics.hpp>
-	"Menu.h"
 
 1699577847 source:d:\uni 2023\laboratorio ii\tp integrador\main\clases\menu\menunivel.cpp
 	"MenuNivel.h"
@@ -1614,6 +1613,6 @@
 	"Gusavirus.h"
 	"Anonymous.h"
 
-1700180363 source:f:\proyectos github\typeracer\main\clases\menu\aplicacion.cpp
+1700181546 source:f:\proyectos github\typeracer\main\clases\menu\aplicacion.cpp
 	"Aplicacion.h"
 

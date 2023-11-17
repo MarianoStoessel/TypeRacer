@@ -1,24 +1,34 @@
 #ifndef MENUNIVEL_H
 #define MENUNIVEL_H
-
-#include <SFML/Graphics.hpp>
-#include<iostream>
 #define Max_menu 4
+
+#include<iostream>
+#include <SFML/Graphics.hpp>
 #include "Menu.h"
 
 using namespace std;
-using namespace sf;
 
 class MenuNivel: public Menu //Rehacer
 {
     private:
-        int _MenuSelected;
-        Font _font;
-        Text _menu[Max_menu];
+        sf::Font _font;
+        sf::Text _menu[Max_menu];
+        sf::Sprite _sprite;
+        sf::Texture _texture;
+        sf::Clock _clock;
+
+        int _menuSelected;
+        MenuState _state;
 
     public:
+        MenuNivel();
         MenuNivel(float width, float height);
-        void draw(RenderWindow& window);
+        void cmd();
+        void update();
+        void draw(sf::RenderWindow& window);
+
+        int getSelected();
+        bool getState();
 
         ~MenuNivel();
 };

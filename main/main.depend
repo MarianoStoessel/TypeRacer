@@ -841,7 +841,7 @@
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Window/GlResource.hpp>
 
-1700169185 source:f:\proyectos github\typeracer\main\mani.cpp
+1700177081 source:f:\proyectos github\typeracer\main\mani.cpp
 	"librariesMain.h"
 
 1697663564 f:\proyectos github\typeracer\main\sfml\include\sfml\graphics.hpp
@@ -1266,7 +1266,7 @@
 	<iostream>
 	<SFML/Graphics.hpp>
 
-1700168935 source:f:\proyectos github\typeracer\main\clases\menu\menu.cpp
+1700176139 source:f:\proyectos github\typeracer\main\clases\menu\menu.cpp
 	"Menu.h"
 
 1699910235 source:f:\proyectos github\typeracer\main\src\anonymous.cpp
@@ -1589,12 +1589,12 @@
 	"Gusavirus.h"
 	"Anonymous.h"
 
-1700151529 source:f:\proyectos github\typeracer\main\clases\menu\menunivel.cpp
+1700179047 source:f:\proyectos github\typeracer\main\clases\menu\menunivel.cpp
 	"MenuNivel.h"
 
-1700169583 f:\proyectos github\typeracer\main\include\menunivel.h
-	<SFML/Graphics.hpp>
+1700175506 f:\proyectos github\typeracer\main\include\menunivel.h
 	<iostream>
+	<SFML/Graphics.hpp>
 	"Menu.h"
 
 1699577847 source:d:\uni 2023\laboratorio ii\tp integrador\main\clases\menu\menunivel.cpp
@@ -1602,13 +1602,17 @@
 
 1699577847 d:\uni 2023\laboratorio ii\tp integrador\main\include\menunivel.h
 
-1700169155 f:\proyectos github\typeracer\main\include\aplicacion.h
+1700177007 f:\proyectos github\typeracer\main\include\aplicacion.h
 	<iostream>
 	<ctime>
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
 	"Menu.h"
+	"MenuNivel.h"
+	"Leo.h"
+	"Gusavirus.h"
+	"Anonymous.h"
 
-1700169854 source:f:\proyectos github\typeracer\main\clases\menu\aplicacion.cpp
+1700179332 source:f:\proyectos github\typeracer\main\clases\menu\aplicacion.cpp
 	"Aplicacion.h"
 

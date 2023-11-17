@@ -7,6 +7,10 @@
 #include <SFML/Audio.hpp>
 
 #include "Menu.h"
+#include "MenuNivel.h"
+#include "Leo.h"
+#include "Gusavirus.h"
+#include "Anonymous.h"
 
 class Aplicacion
 {
@@ -16,6 +20,7 @@ private:
     sf::Event _event;
 
     Menu _menu;
+    MenuNivel _menuNivel;
 
 public:
     Aplicacion(sf::Vector2u resolucion);

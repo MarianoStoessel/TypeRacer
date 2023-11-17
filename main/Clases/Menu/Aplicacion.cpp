@@ -16,8 +16,6 @@ Aplicacion::Aplicacion(sf::Vector2u resolucion) // ctor
     //inicializar menu
     Menu _menu(_window.getSize().x, _window.getSize().y);
 
-    int x;
-
     //Game Loop (update del juego)
     while(_window.isOpen())
     {
@@ -28,18 +26,68 @@ Aplicacion::Aplicacion(sf::Vector2u resolucion) // ctor
         while(_window.pollEvent(_event))
         {
             if(_event.type == sf::Event::Closed)
+            {
                 _window.close();
+            }
         }
         if(_menu.getState())
         {
-            x = _menu.getSelected();
+            int x = _menu.getSelected();
 
             switch(x)
             {
-            case 0: //Jugar
-                cout << "OPCION PLAY" << endl;
-                cout << "Cargando juego" << endl;
-                break;
+            case 0:  //Jugar
+            {
+                //set fondo
+                sf::RectangleShape fondo;
+                fondo.setSize(sf::Vector2f(resolucion.x,resolucion.y));
+                sf::Texture menuTexture;
+                menuTexture.loadFromFile("Imagenes/FondoMain.jpg");
+                fondo.setTexture(&menuTexture);
+
+                //inicializar menu Niveles
+                MenuNivel _menuNivel(_window.getSize().x, _window.getSize().y);
+
+                while(_window.isOpen())
+                {
+                    sf::Event aevent;
+                    while(_window.pollEvent(aevent))
+                    {
+                        if(aevent.type == sf::Event::Closed)
+                        {
+                            _window.close();
+                        }
+                    }
+                    if(_menuNivel.getState())
+                    {
+                        int y = _menuNivel.getSelected();
+
+                        switch(y)
+                        {
+                        case 0:
+                            break;
+                        case 1:
+
+                            break;
+                        case 2:
+                            break;
+                        case 3:
+                            break;
+                        }
+                    }
+                    _menuNivel.cmd();
+                    _menuNivel.update();
+
+                    _window.clear();
+
+                    _window.draw(fondo);
+                    _menuNivel.draw(_window);
+
+                    _window.display();
+                }
+
+            }
+            break;
             case 1: //Como Jugar
 
                 break;
@@ -198,5 +246,54 @@ Aplicacion::~Aplicacion() //dtor
     }
 
 }*/
+
+/* //Inicializacion programa
+                sf::RenderWindow Escenario(sf::VideoMode(1500, 900), "LEO PRUEBA");
+                Escenario.setFramerateLimit(60);
+
+                //set fondo
+                sf::RectangleShape fondo;
+                fondo.setSize(sf::Vector2f(1500,900));
+                sf::Texture menutextura;
+                menutextura.loadFromFile("Imagenes/Escenario.jpg");
+                fondo.setTexture(&menutextura);
+
+                Leo Pj;
+                Anonymous Eny;
+                Gusavirus Gus;
+
+                //Game Loop (update del juego
+
+                while(Escenario.isOpen())
+                {
+                    //ReadInput - Actualizar los estados de los perisfericos de entrada
+                    //Leer la cola de mensajes
+                    sf::Event event;
+                    while(Escenario.pollEvent(event))
+                    {
+                        if(event.type == sf::Event::Closed)
+                            Escenario.close();
+                    }
+
+                    //CMD - Joy
+                    Pj.cmd();
+                    Eny.cmd();
+
+                    //Update - Actualiza los estados del juego
+                    Pj.update();
+                    Eny.update();
+                    Gus.update();
+
+                    Escenario.clear();
+
+                    //Draw
+                    Escenario.draw(fondo);
+                    Escenario.draw(Pj);
+                    Escenario.draw(Eny);
+                    Escenario.draw(Gus);
+
+                    //Display - Flip
+                    Escenario.display();
+                } */
 
 

@@ -59,8 +59,8 @@ int main()
          reg.update();
         window.display();
     }
-}*//*
-int main(){
+}*/
+/*int main(){
     srand(time(0));
     //Inicializacion programa
     sf::RenderWindow window(sf::VideoMode(1500, 900), "LEO PRUEBA");

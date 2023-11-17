@@ -19,6 +19,7 @@ using namespace std;
 
 // includes de las clases
 
+#include "Aplicacion.h"
 #include "Gameplay.h"
 #include "Menu.h"
 #include "Keyword.h"

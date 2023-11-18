@@ -103,7 +103,6 @@ bool Menu::getState()
 {
     if(_state == MenuState::Select)
     {
-        _state = MenuState::Idle;
         return true;
     }
     return false;

@@ -4,11 +4,11 @@
 
 #include<iostream>
 #include <SFML/Graphics.hpp>
-#include "Menu.h"
-
 using namespace std;
 
-class MenuNivel: public Menu //Rehacer
+enum class MenuNivelState{Idle, Up, Down, Select};
+
+class MenuNivel //Rehacer
 {
     private:
         sf::Font _font;
@@ -18,7 +18,7 @@ class MenuNivel: public Menu //Rehacer
         sf::Clock _clock;
 
         int _menuSelected;
-        MenuState _state;
+        MenuNivelState _state;
 
     public:
         MenuNivel();

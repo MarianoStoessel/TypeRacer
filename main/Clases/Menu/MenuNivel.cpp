@@ -36,6 +36,7 @@ MenuNivel::MenuNivel(float width, float height) //ctor
     _menu[3].setPosition(600,410);
 
     _menuSelected = 0;
+    _state = MenuNivelState::Idle;
 }
 void MenuNivel::cmd() //Cmd
 {
@@ -101,7 +102,6 @@ bool MenuNivel::getState()
 {
     if(_state == MenuNivelState::Select)
     {
-        _state = MenuNivelState::Idle;
         return true;
     }
     return false;

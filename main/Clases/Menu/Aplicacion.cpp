@@ -19,85 +19,94 @@ Aplicacion::Aplicacion(sf::Vector2u resolucion) // ctor
     //Game Loop (update del juego)
     while(_window.isOpen())
     {
-        //ReadInput - Actualizar los estados de los perisfericos de entrada
-        //Leer la cola de mensajes
-
-        sf::Event _event;
         while(_window.pollEvent(_event))
         {
             if(_event.type == sf::Event::Closed)
             {
                 _window.close();
             }
-        }
-        if(_menu.getState())
-        {
-            int x = _menu.getSelected();
-
-            switch(x)
+            if(_event.type == sf::Event::KeyReleased && _event.key.code == sf::Keyboard::Enter)
             {
-            case 0:  //Jugar
-            {
-                //set fondo
-                sf::RectangleShape fondo;
-                fondo.setSize(sf::Vector2f(resolucion.x,resolucion.y));
-                sf::Texture menuTexture;
-                menuTexture.loadFromFile("Imagenes/FondoMain.jpg");
-                fondo.setTexture(&menuTexture);
-
-                //inicializar menu Niveles
-                MenuNivel _menuNivel(_window.getSize().x, _window.getSize().y);
-
-                while(_window.isOpen())
+                if(_menu.getState())
                 {
-                    sf::Event aevent;
-                    while(_window.pollEvent(aevent))
+                    int x = _menu.getSelected();
+
+                    switch(x)
                     {
-                        if(aevent.type == sf::Event::Closed)
-                        {
-                            _window.close();
-                        }
-                    }
-                    if(_menuNivel.getState())
+                    case 0:  //Jugar
                     {
-                        int y = _menuNivel.getSelected();
+                        //set fondo
+                        sf::RectangleShape fondo;
+                        fondo.setSize(sf::Vector2f(resolucion.x,resolucion.y));
+                        sf::Texture menuTexture;
+                        menuTexture.loadFromFile("Imagenes/FondoMain.jpg");
+                        fondo.setTexture(&menuTexture);
 
-                        switch(y)
+                        //inicializar menu Niveles
+                        MenuNivel _menuNivel(_window.getSize().x, _window.getSize().y);
+                        bool closeMenuNivel = false;
+
+                        while(_window.isOpen())
                         {
-                        case 0:
-                            _window.close();
-                            break;
-                        case 1:
 
-                            break;
-                        case 2:
-                            break;
-                        case 3:
-                            break;
+                            sf::Event event2;
+                            while(_window.pollEvent(event2))
+                            {
+                                if(event2.type == sf::Event::Closed)
+                                {
+                                    _window.close();
+                                }
+                                if(event2.type == sf::Event::KeyReleased && event2.key.code == sf::Keyboard::Enter)
+                                {
+                                    if(_menuNivel.getState())
+                                    {
+                                        int y = _menuNivel.getSelected();
+
+                                        switch(y)
+                                        {
+                                        case 0:
+                                            closeMenuNivel = true;
+                                            break;
+                                        case 1:
+
+                                            break;
+                                        case 2:
+                                            break;
+                                        case 3:
+                                            break;
+                                        }
+                                    }
+                                }
+                            }
+                            if(closeMenuNivel)
+                            {
+                                break;
+                            }
+
+                            _menuNivel.cmd();
+                            _menuNivel.update();
+
+                            _window.clear();
+
+                            _window.draw(fondo);
+                            _menuNivel.draw(_window);
+
+                            _window.display();
                         }
+
                     }
-                    _menuNivel.cmd();
-                    _menuNivel.update();
+                    break;
+                    case 1: //Como Jugar
 
-                    _window.clear();
+                        break;
+                    case 2: //Nosotros
 
-                    _window.draw(fondo);
-                    _menuNivel.draw(_window);
-
-                    _window.display();
+                        break;
+                    case 3: //Salir
+                        _window.close();
+                        break;
+                    }
                 }
-
-            }
-            break;
-            case 1: //Como Jugar
-
-                break;
-            case 2: //Nosotros
-
-                break;
-            case 3: //Salir
-                _window.close();
-                break;
             }
         }
         //CMD - Joy

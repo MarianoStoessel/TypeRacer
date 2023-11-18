@@ -19,9 +19,6 @@ private:
     sf::RenderStates _state;
     sf::Event _event;
 
-    Menu _menu;
-    MenuNivel _menuNivel;
-
 public:
     Aplicacion(sf::Vector2u resolucion);
 

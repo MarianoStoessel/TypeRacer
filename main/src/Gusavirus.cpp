@@ -14,6 +14,12 @@ Gusavirus::Gusavirus()
 void Gusavirus::draw(sf::RenderTarget& target, sf::RenderStates states)const {
     target.draw(_sprite,states);
 }
+int Gusavirus::getposx(){
+    return x;
+}
+int Gusavirus::getposy(){
+    return y;
+}
 
 void Gusavirus::update()
 {

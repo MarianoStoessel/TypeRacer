@@ -13,11 +13,13 @@ class Gusavirus: public sf::Drawable  // en progreso
         int x;
         int y;
         float _frame;
-        Keyword palabra(int *x,int *y);
+        Keyword palabra;
     public:
         //agregar sets y gets
         Gusavirus();
         //void mostrarpalabra(){palabra.Mostrar();}
+        int getposx();
+        int getposy();
         void update();
         void motion();
         void draw(sf::RenderTarget& target, sf::RenderStates states)const override;

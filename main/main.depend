@@ -420,7 +420,7 @@
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Window/GlResource.hpp>
 
-1699830720 source:d:\uni 2023\laboratorio ii\tp integrador\main\mani.cpp
+1700179450 source:d:\uni 2023\laboratorio ii\tp integrador\main\mani.cpp
 	"librariesMain.h"
 
 1688071491 d:\uni 2023\laboratorio ii\tp integrador\main\sfml\include\sfml\graphics.hpp
@@ -1410,12 +1410,12 @@
 	<SFML/Audio/Export.hpp>
 	<string>
 
-1699580012 source:d:\uni 2023\laboratorio ii\tp integrador\main\clases\menu\menu.cpp
+1700352266 source:d:\uni 2023\laboratorio ii\tp integrador\main\clases\menu\menu.cpp
 	"Menu.h"
 
-1698191447 d:\uni 2023\laboratorio ii\tp integrador\main\include\menu.h
-	<SFML/Graphics.hpp>
+1700176363 d:\uni 2023\laboratorio ii\tp integrador\main\include\menu.h
 	<iostream>
+	<SFML/Graphics.hpp>
 
 1699657424 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\anonymous.cpp
 	"Anonymous.h"
@@ -1423,7 +1423,7 @@
 1699577847 d:\uni 2023\laboratorio ii\tp integrador\main\include\anonymous.h
 	<SFML/Graphics.hpp>
 
-1699577847 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\gameplay.cpp
+1700172115 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\gameplay.cpp
 	"Gameplay.h"
 	<iostream>
 	<conio.h>
@@ -1537,19 +1537,21 @@
 	<SFML/Audio/Export.hpp>
 	<string>
 
-1699830759 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\gusavirus.cpp
+1700429659 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\gusavirus.cpp
 	"Gusavirus.h"
 
-1699830720 d:\uni 2023\laboratorio ii\tp integrador\main\include\gusavirus.h
+1700429659 d:\uni 2023\laboratorio ii\tp integrador\main\include\gusavirus.h
 	<SFML/Graphics.hpp>
+	"Keyword.h"
 
-1699480287 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\keyword.cpp
+1700429971 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\keyword.cpp
 	"Keyword.h"
 	<iostream>
 	<cstring>
 	<conio.h>
 
-1699480287 d:\uni 2023\laboratorio ii\tp integrador\main\include\keyword.h
+1700430007 d:\uni 2023\laboratorio ii\tp integrador\main\include\keyword.h
+	<SFML/Graphics.hpp>
 
 1699577847 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\leo.cpp
 	"Leo.h"
@@ -1574,7 +1576,7 @@
 	"Gusavirus.h"
 	"Anonymous.h"
 
-1699577847 d:\uni 2023\laboratorio ii\tp integrador\main\librariesmain.h
+1700176363 d:\uni 2023\laboratorio ii\tp integrador\main\librariesmain.h
 	<SFML/Graphics.hpp>
 	<SFML/Window.hpp>
 	<SFML/System.hpp>
@@ -1583,6 +1585,7 @@
 	<ctime>
 	<stdlib.h>
 	<conio.h>
+	"Aplicacion.h"
 	"Gameplay.h"
 	"Menu.h"
 	"Keyword.h"
@@ -1597,10 +1600,12 @@
 	<iostream>
 	<SFML/Graphics.hpp>
 
-1699577847 source:d:\uni 2023\laboratorio ii\tp integrador\main\clases\menu\menunivel.cpp
+1700352266 source:d:\uni 2023\laboratorio ii\tp integrador\main\clases\menu\menunivel.cpp
 	"MenuNivel.h"
 
-1699577847 d:\uni 2023\laboratorio ii\tp integrador\main\include\menunivel.h
+1700352266 d:\uni 2023\laboratorio ii\tp integrador\main\include\menunivel.h
+	<iostream>
+	<SFML/Graphics.hpp>
 
 1700334576 f:\proyectos github\typeracer\main\include\aplicacion.h
 	<iostream>
@@ -1615,4 +1620,18 @@
 
 1700334697 source:f:\proyectos github\typeracer\main\clases\menu\aplicacion.cpp
 	"Aplicacion.h"
+
+1700429933 source:d:\uni 2023\laboratorio ii\tp integrador\main\clases\menu\aplicacion.cpp
+	"Aplicacion.h"
+
+1700352266 d:\uni 2023\laboratorio ii\tp integrador\main\include\aplicacion.h
+	<iostream>
+	<ctime>
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	"Menu.h"
+	"MenuNivel.h"
+	"Leo.h"
+	"Gusavirus.h"
+	"Anonymous.h"
 

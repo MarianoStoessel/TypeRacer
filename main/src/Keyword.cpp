@@ -15,7 +15,10 @@ Keyword::Keyword(const char *ini)
     strcpy(_p, ini);
     _p[_tam-1] = '\0';
 }
-
+void Keyword::draw(sf::RenderWindow& window) //Draw Menu
+{
+    window.draw(text);
+}
 //getters
 const char *Keyword::getP()
 {

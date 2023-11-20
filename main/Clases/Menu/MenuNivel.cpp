@@ -15,25 +15,25 @@ MenuNivel::MenuNivel(float width, float height) //ctor
     _menu[0].setFillColor(sf::Color::White);
     _menu[0].setString("Volver");
     _menu[0].setCharacterSize(50);
-    _menu[0].setPosition(600,230);
+    _menu[0].setPosition(638,230);
     //Nivel 1
     _menu[1].setFont(_font);
     _menu[1].setFillColor(sf::Color::White);
     _menu[1].setString("Nivel 1");
     _menu[1].setCharacterSize(50);
-    _menu[1].setPosition(600,290);
+    _menu[1].setPosition(638,290);
     //Nivel 2
     _menu[2].setFont(_font);
     _menu[2].setFillColor(sf::Color::White);
     _menu[2].setString("Nivel 2");
     _menu[2].setCharacterSize(50);
-    _menu[2].setPosition(600,350);
+    _menu[2].setPosition(638,350);
     //Nivel 3
     _menu[3].setFont(_font);
     _menu[3].setFillColor(sf::Color::White);
     _menu[3].setString("Nivel 3");
     _menu[3].setCharacterSize(50);
-    _menu[3].setPosition(600,410);
+    _menu[3].setPosition(638,410);
 
     _menuSelected = 0;
     _state = MenuNivelState::Idle;

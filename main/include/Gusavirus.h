@@ -6,7 +6,7 @@
 class Gusavirus: public sf::Drawable  // en progreso
 {
     private:
-        float _velocity=5;
+        float _velocity = 2;
         sf::Sprite _sprite;
         sf::Texture _texture;
         int _color;

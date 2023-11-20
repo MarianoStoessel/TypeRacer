@@ -6,11 +6,9 @@
 #include <SFML/Graphics.hpp>
 #include <SFML/Audio.hpp>
 
+#include "Gameplay.h"
 #include "Menu.h"
 #include "MenuNivel.h"
-#include "Leo.h"
-#include "Gusavirus.h"
-#include "Anonymous.h"
 
 class Aplicacion
 {

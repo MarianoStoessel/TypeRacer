@@ -1544,17 +1544,17 @@
 1700429659 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\gusavirus.cpp
 	"Gusavirus.h"
 
-1700429659 d:\uni 2023\laboratorio ii\tp integrador\main\include\gusavirus.h
+1700432666 d:\uni 2023\laboratorio ii\tp integrador\main\include\gusavirus.h
 	<SFML/Graphics.hpp>
 	"Keyword.h"
 
-1700429971 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\keyword.cpp
+1700432666 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\keyword.cpp
 	"Keyword.h"
 	<iostream>
 	<cstring>
 	<conio.h>
 
-1700430007 d:\uni 2023\laboratorio ii\tp integrador\main\include\keyword.h
+1700432702 d:\uni 2023\laboratorio ii\tp integrador\main\include\keyword.h
 	<SFML/Graphics.hpp>
 
 1699577847 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\leo.cpp

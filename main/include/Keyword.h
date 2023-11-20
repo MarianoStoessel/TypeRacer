@@ -7,14 +7,11 @@ class Keyword
     private:
         char *_p;
         int _tam;
-        sf::Text text;
-        sf::Font font;
 
     public:
-        Keyword(const char *ini = "En tu cara kloster");
+        Keyword(const char *ini = "HOLA COMO ESTAS");
         const char *getP();
         int getTam();
-        void draw(sf::RenderWindow& window);
         void setP(const char *p);
 
         virtual ~Keyword();

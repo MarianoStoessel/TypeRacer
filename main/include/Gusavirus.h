@@ -13,7 +13,6 @@ class Gusavirus: public sf::Drawable  // en progreso
         int x;
         int y;
         float _frame;
-        Keyword palabra;
     public:
         //agregar sets y gets
         Gusavirus();

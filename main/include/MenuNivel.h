@@ -8,7 +8,7 @@ using namespace std;
 
 enum class MenuNivelState{Idle, Up, Down, Select};
 
-class MenuNivel //Rehacer
+class MenuNivel //Modificar
 {
     private:
         sf::Font _font;

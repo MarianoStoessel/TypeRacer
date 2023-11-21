@@ -48,6 +48,7 @@
 		<Unit filename="Clases/Menu/Aplicacion.cpp" />
 		<Unit filename="Clases/Menu/Menu.cpp" />
 		<Unit filename="Clases/Menu/MenuNivel.cpp" />
+		<Unit filename="Clases/Menu/Transicion.cpp" />
 		<Unit filename="include/Anonymous.h" />
 		<Unit filename="include/Aplicacion.h" />
 		<Unit filename="include/Gameplay.h" />
@@ -56,6 +57,7 @@
 		<Unit filename="include/Leo.h" />
 		<Unit filename="include/Menu.h" />
 		<Unit filename="include/MenuNivel.h" />
+		<Unit filename="include/Transicion.h" />
 		<Unit filename="mani.cpp" />
 		<Unit filename="src/Anonymous.cpp" />
 		<Unit filename="src/Gameplay.cpp" />

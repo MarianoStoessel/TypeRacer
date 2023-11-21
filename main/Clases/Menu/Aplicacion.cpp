@@ -70,7 +70,7 @@ Aplicacion::Aplicacion(sf::Vector2u resolucion) // ctor
                                         else
                                         {
                                             int nivel = y;
-                                            Transicion transicion(nivel, &resolucion, &_window); //Pantalla de transicion
+                                            Transicion transicion(nivel, &_window); //Pantalla de transicion
                                             Gameplay gameplay(nivel, &resolucion, &_window); //Entrar al nivel seleccionado
 
                                             ///operador de gameplay

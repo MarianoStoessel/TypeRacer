@@ -10,7 +10,6 @@ class Transicion
     private:
         sf::RenderWindow* _window;
         sf::RenderStates _state;
-        sf::Vector2u* _resolucion;
 
         sf::Font _font;
         sf::Text _tranNiv;
@@ -18,7 +17,7 @@ class Transicion
         sf::Clock _clock;
     public:
         Transicion();
-        Transicion(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window);
+        Transicion(int nivel, sf::RenderWindow* window);
 
         ~Transicion();
 };

@@ -841,7 +841,7 @@
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Window/GlResource.hpp>
 
-1700495300 source:f:\proyectos github\typeracer\main\mani.cpp
+1700590598 source:f:\proyectos github\typeracer\main\mani.cpp
 	"librariesMain.h"
 
 1697663564 f:\proyectos github\typeracer\main\sfml\include\sfml\graphics.hpp
@@ -1288,7 +1288,7 @@
 	"Anonymous.h"
 	"Keyword.h"
 
-1700495301 source:f:\proyectos github\typeracer\main\src\gusavirus.cpp
+1700596770 source:f:\proyectos github\typeracer\main\src\gusavirus.cpp
 	"Gusavirus.h"
 
 1700514779 f:\proyectos github\typeracer\main\include\gusavirus.h
@@ -1621,7 +1621,7 @@
 	"MenuNivel.h"
 	"Transicion.h"
 
-1700587829 source:f:\proyectos github\typeracer\main\clases\menu\aplicacion.cpp
+1700596783 source:f:\proyectos github\typeracer\main\clases\menu\aplicacion.cpp
 	"Aplicacion.h"
 
 1700429933 source:d:\uni 2023\laboratorio ii\tp integrador\main\clases\menu\aplicacion.cpp
@@ -1638,11 +1638,11 @@
 	"Gusavirus.h"
 	"Anonymous.h"
 
-1700588046 f:\proyectos github\typeracer\main\include\transicion.h
+1700590880 f:\proyectos github\typeracer\main\include\transicion.h
 	<iostream>
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
 
-1700590128 source:f:\proyectos github\typeracer\main\clases\menu\transicion.cpp
+1700596853 source:f:\proyectos github\typeracer\main\clases\menu\transicion.cpp
 	"Transicion.h"
 

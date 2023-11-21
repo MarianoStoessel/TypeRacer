@@ -1,18 +1,16 @@
 #include "Gusavirus.h"
 
-Gusavirus::Gusavirus()
+Gusavirus::Gusavirus() //ctor
 {
     _frame=0;
     y=615;
     x=1200;
+    SeeligeColor();
+
     _texture.loadFromFile("Imagenes/gusavirus.png");
     _sprite.setTexture(_texture);
     _sprite.setTextureRect({430,_color,108,65});
     _sprite.setPosition(x,y);
-    //ctor
-}
-void Gusavirus::draw(sf::RenderTarget& target, sf::RenderStates states)const {
-    target.draw(_sprite,states);
 }
 int Gusavirus::getposx(){
     return x;
@@ -48,11 +46,15 @@ void Gusavirus::update()
         _sprite.setPosition(x+25,y+40);
     }
 }
+void Gusavirus::draw(sf::RenderTarget& target, sf::RenderStates states)const
+{
+    target.draw(_sprite,states);
+}
 
 void Gusavirus::SeeligeColor(){
     int tam;
     int vec[7]={8,78,148,221,293,367,440};
     tam = rand() % 8;
-    _color=vec[tam];
+    _color = vec[tam];
 }
 

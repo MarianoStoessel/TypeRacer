@@ -35,7 +35,7 @@ Aplicacion::Aplicacion(sf::Vector2u resolucion) // ctor
                     {
                     case 0:  //Jugar
                     {
-                        //set fondo
+                        //set fondo - REVISAR SI ES NECESARIO!
                         sf::RectangleShape fondo;
                         fondo.setSize(sf::Vector2f(resolucion.x,resolucion.y));
                         sf::Texture menuTexture;
@@ -70,13 +70,10 @@ Aplicacion::Aplicacion(sf::Vector2u resolucion) // ctor
                                         else
                                         {
                                             int nivel = y;
-                                            ///CREAR PANTALLA TRANSICION
+                                            Transicion transicion(nivel, &_window); //Pantalla de transicion
+                                            Gameplay gameplay(nivel, &resolucion, &_window); //Entrar al nivel seleccionado
 
-                                            ///Entrar al nivel seleccionado
-                                            Gameplay gameplay(nivel, &resolucion, &_window);
-
-
-                                            ///operadores de gameplay
+                                            ///operador de gameplay
                                             if(gameplay.getGameOver() == true) //Pierde el nivel
                                             {
                                                 if(nivel > 9) //Juego completado

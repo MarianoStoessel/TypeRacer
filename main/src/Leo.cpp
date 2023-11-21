@@ -117,6 +117,10 @@ void Leo::cmd() //caja de estados - de aca pasa al update
     {
         _state = LeoState::Move;
     }
+    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Space))
+    {
+        _state = LeoState::Move;
+    }
 }
 void Leo::update() //comprueba estado y ejecuta el movimiento si es asi
 {

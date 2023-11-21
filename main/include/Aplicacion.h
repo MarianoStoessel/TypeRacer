@@ -9,6 +9,7 @@
 #include "Gameplay.h"
 #include "Menu.h"
 #include "MenuNivel.h"
+#include "Transicion.h"
 
 class Aplicacion
 {
@@ -19,6 +20,8 @@ private:
 
 public:
     Aplicacion(sf::Vector2u resolucion);
+
+    void transicionNivel(int nivel);
 
     ~Aplicacion();
 };

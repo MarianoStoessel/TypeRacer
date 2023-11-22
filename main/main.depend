@@ -1269,7 +1269,7 @@
 1700495300 source:f:\proyectos github\typeracer\main\clases\menu\menu.cpp
 	"Menu.h"
 
-1700495301 source:f:\proyectos github\typeracer\main\src\anonymous.cpp
+1700597441 source:f:\proyectos github\typeracer\main\src\anonymous.cpp
 	"Anonymous.h"
 
 1699577909 f:\proyectos github\typeracer\main\include\anonymous.h
@@ -1288,7 +1288,7 @@
 	"Anonymous.h"
 	"Keyword.h"
 
-1700596770 source:f:\proyectos github\typeracer\main\src\gusavirus.cpp
+1700597955 source:f:\proyectos github\typeracer\main\src\gusavirus.cpp
 	"Gusavirus.h"
 
 1700514779 f:\proyectos github\typeracer\main\include\gusavirus.h
@@ -1621,7 +1621,7 @@
 	"MenuNivel.h"
 	"Transicion.h"
 
-1700596783 source:f:\proyectos github\typeracer\main\clases\menu\aplicacion.cpp
+1700597955 source:f:\proyectos github\typeracer\main\clases\menu\aplicacion.cpp
 	"Aplicacion.h"
 
 1700429933 source:d:\uni 2023\laboratorio ii\tp integrador\main\clases\menu\aplicacion.cpp

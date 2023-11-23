@@ -1262,9 +1262,10 @@
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Window/GlResource.hpp>
 
-1700495300 f:\proyectos github\typeracer\main\include\menu.h
+1700750179 f:\proyectos github\typeracer\main\include\menu.h
 	<iostream>
 	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
 
 1700495300 source:f:\proyectos github\typeracer\main\clases\menu\menu.cpp
 	"Menu.h"

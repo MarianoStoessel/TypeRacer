@@ -1270,24 +1270,27 @@
 1700495300 source:f:\proyectos github\typeracer\main\clases\menu\menu.cpp
 	"Menu.h"
 
-1700597441 source:f:\proyectos github\typeracer\main\src\anonymous.cpp
+1700777727 source:f:\proyectos github\typeracer\main\src\anonymous.cpp
 	"Anonymous.h"
 
-1699577909 f:\proyectos github\typeracer\main\include\anonymous.h
+1700778169 f:\proyectos github\typeracer\main\include\anonymous.h
 	<SFML/Graphics.hpp>
 
-1700514779 source:f:\proyectos github\typeracer\main\src\gameplay.cpp
+1700782014 source:f:\proyectos github\typeracer\main\src\gameplay.cpp
 	"Gameplay.h"
+
+1700782014 f:\proyectos github\typeracer\main\include\gameplay.h
 	<iostream>
 	<conio.h>
-
-1700514779 f:\proyectos github\typeracer\main\include\gameplay.h
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
 	"Leo.h"
 	"Gusavirus.h"
 	"Anonymous.h"
 	"Keyword.h"
+	"Score.h"
+	"Nivel.h"
+	"Vida.h"
 
 1700597955 source:f:\proyectos github\typeracer\main\src\gusavirus.cpp
 	"Gusavirus.h"
@@ -1564,7 +1567,7 @@
 1699577847 d:\uni 2023\laboratorio ii\tp integrador\main\include\leo.h
 	<SFML/Graphics.hpp>
 
-1700495300 f:\proyectos github\typeracer\main\librariesmain.h
+1700778574 f:\proyectos github\typeracer\main\librariesmain.h
 	<SFML/Graphics.hpp>
 	<SFML/Window.hpp>
 	<SFML/System.hpp>
@@ -1580,6 +1583,7 @@
 	"Leo.h"
 	"Gusavirus.h"
 	"Anonymous.h"
+	"Score.h"
 
 1700176363 d:\uni 2023\laboratorio ii\tp integrador\main\librariesmain.h
 	<SFML/Graphics.hpp>
@@ -1598,7 +1602,7 @@
 	"Gusavirus.h"
 	"Anonymous.h"
 
-1700587829 source:f:\proyectos github\typeracer\main\clases\menu\menunivel.cpp
+1700777976 source:f:\proyectos github\typeracer\main\clases\menu\menunivel.cpp
 	"MenuNivel.h"
 
 1700587829 f:\proyectos github\typeracer\main\include\menunivel.h
@@ -1639,11 +1643,31 @@
 	"Gusavirus.h"
 	"Anonymous.h"
 
-1700590880 f:\proyectos github\typeracer\main\include\transicion.h
+1700778884 f:\proyectos github\typeracer\main\include\transicion.h
 	<iostream>
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
 
 1700596853 source:f:\proyectos github\typeracer\main\clases\menu\transicion.cpp
 	"Transicion.h"
+
+1700779789 source:f:\proyectos github\typeracer\main\src\score.cpp
+	"Score.h"
+
+1700778952 f:\proyectos github\typeracer\main\include\score.h
+	<iostream>
+	<SFML/Graphics.hpp>
+
+1700781266 f:\proyectos github\typeracer\main\include\nivel.h
+	<iostream>
+	<SFML/Graphics.hpp>
+
+1700781409 source:f:\proyectos github\typeracer\main\src\nivel.cpp
+	"Nivel.h"
+
+1700783070 f:\proyectos github\typeracer\main\include\vida.h
+	<SFML/Graphics.hpp>
+
+1700783142 source:f:\proyectos github\typeracer\main\src\vida.cpp
+	"Vida.h"
 

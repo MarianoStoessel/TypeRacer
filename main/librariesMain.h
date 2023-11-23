@@ -26,5 +26,6 @@ using namespace std;
 #include "Leo.h"
 #include "Gusavirus.h"
 #include "Anonymous.h"
+#include "Score.h"
 
 #endif // LIBRARIESMAIN_H_INCLUDED

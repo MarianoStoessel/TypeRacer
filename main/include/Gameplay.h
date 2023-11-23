@@ -2,6 +2,9 @@
 #ifndef GAMEPLAY_H
 #define GAMEPLAY_H
 
+#include <iostream>
+#include <conio.h>
+
 #include <SFML/Graphics.hpp>
 #include <SFML/Audio.hpp>
 
@@ -9,6 +12,9 @@
 #include "Gusavirus.h"
 #include "Anonymous.h"
 #include "Keyword.h"
+#include "Score.h"
+#include "Nivel.h"
+#include "Vida.h"
 
 class Gameplay
 {

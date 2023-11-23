@@ -1,6 +1,6 @@
 #include "Gameplay.h"
-#include <iostream>
-#include <conio.h>
+
+using namespace std;
 
 Gameplay::Gameplay() //ctor
 {
@@ -13,6 +13,7 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
     _resolucion = resolucion;
     _nivel = nivel;
 
+    //fondo
     sf::RectangleShape fondo;
     fondo.setSize(sf::Vector2f(resolucion->x, resolucion->y));
     sf::Texture menutextura;
@@ -23,6 +24,9 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
     sf::Text text;
     font.loadFromFile("Fuentes/Retro Gaming.ttf");
 
+    Nivel Niv(_nivel);
+    Score Sco;
+    Vida Vid;
     Leo Pj;
     Anonymous Eny;
     Gusavirus Gus;
@@ -53,15 +57,21 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
         Pj.update();
         Eny.update();
         Gus.update();
+        Sco.update();
+        Vid.update();
 
         _window->clear();
 
         //Draw
         _window->draw(fondo);
+        _window->draw(Sco);
+        _window->draw(Vid);
+        _window->draw(Niv);
         _window->draw(Pj);
         _window->draw(Eny);
         _window->draw(Gus);
         _window->draw(text);
+
 
         //Display - Flip
         _window->display();

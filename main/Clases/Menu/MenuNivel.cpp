@@ -6,6 +6,25 @@ MenuNivel::MenuNivel()
 }
 MenuNivel::MenuNivel(float width, float height) //ctor
 {
+    if(!_buffer2.loadFromFile("Audio/Selectmenu.wav")){
+        cout << "Error al cargar el audio";
+
+    }
+    _sound2.setBuffer(_buffer2);
+
+    if(!_buffer3.loadFromFile("Audio/Menuenter.wav")){
+        cout << "Error al cargar el audio";
+
+    }
+    _sound3.setBuffer(_buffer3);
+
+    if(!_font.loadFromFile("Fuentes/Retro Gaming.ttf"))
+    {
+        cout <<"No existe la fuente";
+    }
+
+
+
     if(!_font.loadFromFile("Fuentes/Retro Gaming.ttf")){
         cout <<"No existe la fuente";
     }
@@ -44,14 +63,17 @@ void MenuNivel::cmd() //Cmd
 
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::Up))
     {
+        _sound2.play();
         _state = MenuNivelState::Up;
     }
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::Down))
     {
+        _sound2.play();
         _state = MenuNivelState::Down;
     }
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::Enter))
     {
+        _sound3.play();
         _state = MenuNivelState::Select;
     }
 }

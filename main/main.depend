@@ -1647,7 +1647,7 @@
 1700596853 source:f:\proyectos github\typeracer\main\clases\menu\transicion.cpp
 	"Transicion.h"
 
-1700750264 source:d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\clases\menu\aplicacion.cpp
+1700789627 source:d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\clases\menu\aplicacion.cpp
 	"Aplicacion.h"
 
 1700750264 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\include\aplicacion.h
@@ -2208,9 +2208,10 @@
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
 
-1700787706 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\include\menunivel.h
+1700790293 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\include\menunivel.h
 	<iostream>
 	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
 
 1700750264 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\include\transicion.h
 	<iostream>
@@ -2263,6 +2264,6 @@
 1700750264 source:d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\src\leo.cpp
 	"Leo.h"
 
-1700788439 source:d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\clases\menu\menu.cpp
+1700789627 source:d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\clases\menu\menu.cpp
 	"Menu.h"
 

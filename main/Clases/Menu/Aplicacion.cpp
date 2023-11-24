@@ -58,6 +58,7 @@ Aplicacion::Aplicacion(sf::Vector2u resolucion) // ctor
                                 }
                                 if(event2.type == sf::Event::KeyReleased && event2.key.code == sf::Keyboard::Enter)
                                 {
+
                                     if(_menuNivel.getState())
                                     {
                                         int y = _menuNivel.getSelected();

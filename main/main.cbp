@@ -18,6 +18,7 @@
 					<Add directory="include" />
 				</Compiler>
 				<Linker>
+					<Add library="sfml-audio" />
 					<Add directory="SFML/lib" />
 				</Linker>
 			</Target>

@@ -48,7 +48,8 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
         //CMD
         Pj.cmd();
         Eny.cmd();
-
+        Gus.cmd();
+        if(Gus.getposx()==1000){Gus.setmuriendo();}
         //Update - Actualiza los estados del juego
         Pj.update();
         Eny.update();

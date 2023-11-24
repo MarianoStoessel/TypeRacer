@@ -41,19 +41,40 @@ Menu::Menu(float width, float height)
 
 void Menu::cmd() //Cmd
 {
-    _state = MenuState::Idle;
+    if(!_buffer.loadFromFile("Audio/Selectmenu.wav")){
+        cout << "Error al cargar el audio";
+
+    }
+    _sound.setBuffer(_buffer);
+
+    if(!_buffer1.loadFromFile("Audio/Menu.enter.wav")){
+        cout << "Error al cargar el audio";
+
+    }
+        _sound1.setBuffer(_buffer1);
+
+
+        _state = MenuState::Idle;
 
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::Up))
     {
+        _sound.play();
         _state = MenuState::Up;
+
     }
+
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::Down))
     {
+        _sound.play();
         _state = MenuState::Down;
+
     }
+
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::Enter))
     {
+        _sound1.play();
         _state = MenuState::Select;
+
     }
 }
 

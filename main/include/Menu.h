@@ -5,6 +5,7 @@
 #include<iostream>
 #include <SFML/Graphics.hpp>
 #include <SFML/Audio.hpp>
+
 using namespace std;
 
 enum class MenuState{Idle, Up, Down, Select};
@@ -18,6 +19,9 @@ class Menu
         sf::Texture _texture;
         sf::Clock _clock;
         sf::SoundBuffer _buffer;
+        sf::Sound _sound;
+        sf::SoundBuffer _buffer1;
+        sf::Sound _sound1;
 
         int _menuSelected;
         MenuState _state;

@@ -6,7 +6,8 @@ MenuNivel::MenuNivel()
 }
 MenuNivel::MenuNivel(float width, float height) //ctor
 {
-    if(!_font.loadFromFile("Fuentes/Retro Gaming.ttf")){
+    if(!_font.loadFromFile("Fuentes/Retro Gaming.ttf"))
+    {
         cout <<"No existe la fuente";
     }
 

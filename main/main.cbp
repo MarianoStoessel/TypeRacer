@@ -58,13 +58,19 @@
 		<Unit filename="include/Leo.h" />
 		<Unit filename="include/Menu.h" />
 		<Unit filename="include/MenuNivel.h" />
+		<Unit filename="include/Nivel.h" />
+		<Unit filename="include/Score.h" />
 		<Unit filename="include/Transicion.h" />
+		<Unit filename="include/Vida.h" />
 		<Unit filename="mani.cpp" />
 		<Unit filename="src/Anonymous.cpp" />
 		<Unit filename="src/Gameplay.cpp" />
 		<Unit filename="src/Gusavirus.cpp" />
 		<Unit filename="src/Keyword.cpp" />
 		<Unit filename="src/Leo.cpp" />
+		<Unit filename="src/Nivel.cpp" />
+		<Unit filename="src/Score.cpp" />
+		<Unit filename="src/Vida.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

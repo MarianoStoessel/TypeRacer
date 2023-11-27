@@ -1429,12 +1429,12 @@
 1699577847 d:\uni 2023\laboratorio ii\tp integrador\main\include\anonymous.h
 	<SFML/Graphics.hpp>
 
-1700793264 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\gameplay.cpp
+1701031063 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\gameplay.cpp
 	"Gameplay.h"
 	<iostream>
 	<conio.h>
 
-1700780564 d:\uni 2023\laboratorio ii\tp integrador\main\include\gameplay.h
+1701028403 d:\uni 2023\laboratorio ii\tp integrador\main\include\gameplay.h
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
 	"Leo.h"
@@ -1546,10 +1546,11 @@
 	<SFML/Audio/Export.hpp>
 	<string>
 
-1700782897 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\gusavirus.cpp
+1701031238 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\gusavirus.cpp
 	"Gusavirus.h"
+	<iostream>
 
-1700793358 d:\uni 2023\laboratorio ii\tp integrador\main\include\gusavirus.h
+1701029858 d:\uni 2023\laboratorio ii\tp integrador\main\include\gusavirus.h
 	<SFML/Graphics.hpp>
 	"Keyword.h"
 

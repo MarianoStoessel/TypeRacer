@@ -420,7 +420,7 @@
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Window/GlResource.hpp>
 
-1700179450 source:d:\uni 2023\laboratorio ii\tp integrador\main\mani.cpp
+1700610212 source:d:\uni 2023\laboratorio ii\tp integrador\main\mani.cpp
 	"librariesMain.h"
 
 1688071491 d:\uni 2023\laboratorio ii\tp integrador\main\sfml\include\sfml\graphics.hpp
@@ -1270,27 +1270,24 @@
 1700495300 source:f:\proyectos github\typeracer\main\clases\menu\menu.cpp
 	"Menu.h"
 
-1700777727 source:f:\proyectos github\typeracer\main\src\anonymous.cpp
+1700597441 source:f:\proyectos github\typeracer\main\src\anonymous.cpp
 	"Anonymous.h"
 
-1700778169 f:\proyectos github\typeracer\main\include\anonymous.h
+1699577909 f:\proyectos github\typeracer\main\include\anonymous.h
 	<SFML/Graphics.hpp>
 
-1700782014 source:f:\proyectos github\typeracer\main\src\gameplay.cpp
+1700514779 source:f:\proyectos github\typeracer\main\src\gameplay.cpp
 	"Gameplay.h"
-
-1700782014 f:\proyectos github\typeracer\main\include\gameplay.h
 	<iostream>
 	<conio.h>
+
+1700514779 f:\proyectos github\typeracer\main\include\gameplay.h
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
 	"Leo.h"
 	"Gusavirus.h"
 	"Anonymous.h"
 	"Keyword.h"
-	"Score.h"
-	"Nivel.h"
-	"Vida.h"
 
 1700597955 source:f:\proyectos github\typeracer\main\src\gusavirus.cpp
 	"Gusavirus.h"
@@ -1421,9 +1418,10 @@
 1700352266 source:d:\uni 2023\laboratorio ii\tp integrador\main\clases\menu\menu.cpp
 	"Menu.h"
 
-1700176363 d:\uni 2023\laboratorio ii\tp integrador\main\include\menu.h
+1700780567 d:\uni 2023\laboratorio ii\tp integrador\main\include\menu.h
 	<iostream>
 	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
 
 1699657424 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\anonymous.cpp
 	"Anonymous.h"
@@ -1431,14 +1429,17 @@
 1699577847 d:\uni 2023\laboratorio ii\tp integrador\main\include\anonymous.h
 	<SFML/Graphics.hpp>
 
-1700172115 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\gameplay.cpp
+1701050667 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\gameplay.cpp
 	"Gameplay.h"
 	<iostream>
 	<conio.h>
 
-1699577847 d:\uni 2023\laboratorio ii\tp integrador\main\include\gameplay.h
+1701050667 d:\uni 2023\laboratorio ii\tp integrador\main\include\gameplay.h
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
+	"Leo.h"
+	"Gusavirus.h"
+	"Anonymous.h"
 	"Keyword.h"
 
 1688071491 d:\uni 2023\laboratorio ii\tp integrador\main\sfml\include\sfml\audio.hpp
@@ -1545,10 +1546,11 @@
 	<SFML/Audio/Export.hpp>
 	<string>
 
-1700429659 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\gusavirus.cpp
+1701050807 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\gusavirus.cpp
 	"Gusavirus.h"
+	<iostream>
 
-1700432666 d:\uni 2023\laboratorio ii\tp integrador\main\include\gusavirus.h
+1701050667 d:\uni 2023\laboratorio ii\tp integrador\main\include\gusavirus.h
 	<SFML/Graphics.hpp>
 	"Keyword.h"
 
@@ -1561,13 +1563,13 @@
 1700432702 d:\uni 2023\laboratorio ii\tp integrador\main\include\keyword.h
 	<SFML/Graphics.hpp>
 
-1699577847 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\leo.cpp
+1700610215 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\leo.cpp
 	"Leo.h"
 
 1699577847 d:\uni 2023\laboratorio ii\tp integrador\main\include\leo.h
 	<SFML/Graphics.hpp>
 
-1700778574 f:\proyectos github\typeracer\main\librariesmain.h
+1700495300 f:\proyectos github\typeracer\main\librariesmain.h
 	<SFML/Graphics.hpp>
 	<SFML/Window.hpp>
 	<SFML/System.hpp>
@@ -1583,7 +1585,6 @@
 	"Leo.h"
 	"Gusavirus.h"
 	"Anonymous.h"
-	"Score.h"
 
 1700176363 d:\uni 2023\laboratorio ii\tp integrador\main\librariesmain.h
 	<SFML/Graphics.hpp>
@@ -1602,17 +1603,17 @@
 	"Gusavirus.h"
 	"Anonymous.h"
 
-1700777976 source:f:\proyectos github\typeracer\main\clases\menu\menunivel.cpp
+1700587829 source:f:\proyectos github\typeracer\main\clases\menu\menunivel.cpp
 	"MenuNivel.h"
 
 1700587829 f:\proyectos github\typeracer\main\include\menunivel.h
 	<iostream>
 	<SFML/Graphics.hpp>
 
-1700352266 source:d:\uni 2023\laboratorio ii\tp integrador\main\clases\menu\menunivel.cpp
+1701054724 source:d:\uni 2023\laboratorio ii\tp integrador\main\clases\menu\menunivel.cpp
 	"MenuNivel.h"
 
-1700352266 d:\uni 2023\laboratorio ii\tp integrador\main\include\menunivel.h
+1701053741 d:\uni 2023\laboratorio ii\tp integrador\main\include\menunivel.h
 	<iostream>
 	<SFML/Graphics.hpp>
 
@@ -1629,21 +1630,20 @@
 1700597955 source:f:\proyectos github\typeracer\main\clases\menu\aplicacion.cpp
 	"Aplicacion.h"
 
-1700429933 source:d:\uni 2023\laboratorio ii\tp integrador\main\clases\menu\aplicacion.cpp
+1700610215 source:d:\uni 2023\laboratorio ii\tp integrador\main\clases\menu\aplicacion.cpp
 	"Aplicacion.h"
 
-1700352266 d:\uni 2023\laboratorio ii\tp integrador\main\include\aplicacion.h
+1700610215 d:\uni 2023\laboratorio ii\tp integrador\main\include\aplicacion.h
 	<iostream>
 	<ctime>
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
+	"Gameplay.h"
 	"Menu.h"
 	"MenuNivel.h"
-	"Leo.h"
-	"Gusavirus.h"
-	"Anonymous.h"
+	"Transicion.h"
 
-1700778884 f:\proyectos github\typeracer\main\include\transicion.h
+1700590880 f:\proyectos github\typeracer\main\include\transicion.h
 	<iostream>
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
@@ -1651,23 +1651,11 @@
 1700596853 source:f:\proyectos github\typeracer\main\clases\menu\transicion.cpp
 	"Transicion.h"
 
-1700779789 source:f:\proyectos github\typeracer\main\src\score.cpp
-	"Score.h"
-
-1700778952 f:\proyectos github\typeracer\main\include\score.h
+1700610215 d:\uni 2023\laboratorio ii\tp integrador\main\include\transicion.h
 	<iostream>
 	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
 
-1700781266 f:\proyectos github\typeracer\main\include\nivel.h
-	<iostream>
-	<SFML/Graphics.hpp>
-
-1700781409 source:f:\proyectos github\typeracer\main\src\nivel.cpp
-	"Nivel.h"
-
-1700783070 f:\proyectos github\typeracer\main\include\vida.h
-	<SFML/Graphics.hpp>
-
-1700783142 source:f:\proyectos github\typeracer\main\src\vida.cpp
-	"Vida.h"
+1700610215 source:d:\uni 2023\laboratorio ii\tp integrador\main\clases\menu\transicion.cpp
+	"Transicion.h"
 

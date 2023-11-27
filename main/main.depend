@@ -1546,7 +1546,7 @@
 	<SFML/Audio/Export.hpp>
 	<string>
 
-1701050667 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\gusavirus.cpp
+1701050807 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\gusavirus.cpp
 	"Gusavirus.h"
 	<iostream>
 
@@ -1610,10 +1610,10 @@
 	<iostream>
 	<SFML/Graphics.hpp>
 
-1700609682 source:d:\uni 2023\laboratorio ii\tp integrador\main\clases\menu\menunivel.cpp
+1701054724 source:d:\uni 2023\laboratorio ii\tp integrador\main\clases\menu\menunivel.cpp
 	"MenuNivel.h"
 
-1700609682 d:\uni 2023\laboratorio ii\tp integrador\main\include\menunivel.h
+1701053741 d:\uni 2023\laboratorio ii\tp integrador\main\include\menunivel.h
 	<iostream>
 	<SFML/Graphics.hpp>
 

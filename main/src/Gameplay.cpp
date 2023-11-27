@@ -20,11 +20,16 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
     sf::Font font;
     sf::Text text;
     font.loadFromFile("Fuentes/Retro Gaming.ttf");
+
     //llamo clases
+    Nivel Niv(_nivel);
+    Score Sco;
+    Vida Vid;
     Leo Pj;
     Anonymous Eny;
     Gusavirus Gus;
     Keyword palabra;
+
     //muestro palabra por pantalla
     text.setFont(font);
     text.setFillColor(sf::Color::White);
@@ -51,7 +56,10 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
         Pj.cmd();
         Eny.cmd();
         Gus.cmd();
+
         //Update - Actualiza los estados del juego
+        Sco.update();
+        Vid.update();
         Pj.update();
         Eny.update();
         Gus.update();
@@ -60,6 +68,9 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
 
         //Draw
         _window->draw(fondo);
+        _window->draw(Niv);
+        _window->draw(Sco);
+        _window->draw(Vid);
         _window->draw(Pj);
         _window->draw(Eny);
         _window->draw(Gus);

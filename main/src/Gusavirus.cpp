@@ -81,6 +81,7 @@ void Gusavirus::update()
 
                 if(_framemuerto>4.3)
                     {
+                        _framemuerto=0;
                         murio=true;
                     }else
                         {
@@ -119,5 +120,6 @@ void Gusavirus::respawn(){
     _sprite.setPosition(x,y);
     murio=false;
     muriendo=false;
+    _state = GusavirusState::Vivo;
 }
 

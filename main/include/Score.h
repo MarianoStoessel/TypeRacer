@@ -4,8 +4,6 @@
 #include <iostream>
 #include <SFML/Graphics.hpp>
 
-#include "Gusavirus.h"
-
 class Score: public sf::Drawable
 {
     private:

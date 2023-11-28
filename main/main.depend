@@ -1667,10 +1667,9 @@
 1700610215 source:d:\uni 2023\laboratorio ii\tp integrador\main\clases\menu\transicion.cpp
 	"Transicion.h"
 
-1701177321 f:\proyectos github\typeracer\main\include\score.h
+1701177542 f:\proyectos github\typeracer\main\include\score.h
 	<iostream>
 	<SFML/Graphics.hpp>
-	"Gusavirus.h"
 
 1701099507 f:\proyectos github\typeracer\main\include\nivel.h
 	<iostream>

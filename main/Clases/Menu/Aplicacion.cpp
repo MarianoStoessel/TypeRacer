@@ -6,6 +6,7 @@ Aplicacion::Aplicacion(sf::Vector2u resolucion) // ctor
     sf::RenderWindow _window(sf::VideoMode(resolucion.x,resolucion.y), "TYPERACER", sf::Style::Default);
     _window.setFramerateLimit(60);
 
+
     //set fondo
     sf::RectangleShape fondo;
     fondo.setSize(sf::Vector2f(resolucion.x,resolucion.y));
@@ -13,14 +14,31 @@ Aplicacion::Aplicacion(sf::Vector2u resolucion) // ctor
     menuTexture.loadFromFile("Imagenes/FondoMain.jpg");
     fondo.setTexture(&menuTexture);
 
+    if(!_musicmenu.openFromFile("Audio/menu.menu.wav")){
+        cout << "Error al cargar el audio";
+
+    }
+
+    if(!_musicjuego.openFromFile("Audio/juego.juego.wav")){
+        cout << "Error al cargar el audio";
+
+    }
+
+
     //inicializar menu
     Menu menu(_window.getSize().x, _window.getSize().y);
+
 
     //Game Loop (update del juego)
     while(_window.isOpen())
     {
+        _musicmenu.play();
+
+
+
         while(_window.pollEvent(_event))
         {
+            _musicmenu.play();
             if(_event.type == sf::Event::Closed)
             {
                 _window.close();
@@ -29,6 +47,7 @@ Aplicacion::Aplicacion(sf::Vector2u resolucion) // ctor
             {
                 if(menu.getState())
                 {
+
                     int x = menu.getSelected();
 
                     switch(x)
@@ -44,10 +63,14 @@ Aplicacion::Aplicacion(sf::Vector2u resolucion) // ctor
 
                         //inicializar menu Niveles
                         MenuNivel _menuNivel(_window.getSize().x, _window.getSize().y);
+
                         bool closeMenuNivel = false;
 
                         while(_window.isOpen())
+
                         {
+                            _musicjuego.play();
+
 
                             sf::Event event2;
                             while(_window.pollEvent(event2))

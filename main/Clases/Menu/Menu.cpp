@@ -68,14 +68,14 @@ void Menu::cmd() //Cmd
 
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::Up))
     {
-        _sound.play();
+
         _state = MenuState::Up;
 
     }
 
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::Down))
     {
-        _sound.play();
+
         _state = MenuState::Down;
 
     }
@@ -83,6 +83,7 @@ void Menu::cmd() //Cmd
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::Enter))
     {
         _sound1.play();
+
         _state = MenuState::Select;
 
     }
@@ -94,8 +95,10 @@ void Menu::update()
     switch(_state)
     {
     case MenuState::Up:
+
         if(_clock.getElapsedTime().asMilliseconds() > 20)
         {
+            _sound.play();
             _menuSelected--;
             if(_menuSelected < 0)
             {
@@ -106,8 +109,11 @@ void Menu::update()
         _clock.restart();
         break;
     case MenuState::Down:
+
         if(_clock.getElapsedTime().asMilliseconds() > 20)
+
         {
+            _sound.play();
             _menuSelected++;
             if(_menuSelected > Max_menu-1)
             {

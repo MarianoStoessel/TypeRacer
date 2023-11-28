@@ -39,11 +39,9 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
     Vida Vid;
 
     //muestro palabra Gusavirus por pantalla
-    sf::Font font;
     sf::Text text;
-    font.loadFromFile("Fuentes/Retro Gaming.ttf");
 
-    text.setFont(font);
+    text.setFont(_font);
     text.setFillColor(sf::Color::White);
     text.setString(palabra.getP());
     text.setCharacterSize(15);
@@ -60,7 +58,7 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
         {
             if (event.type == sf::Event::TextEntered)
             {
-                if (event.text.unicode == 8 || event.text.unicode == 13) // Backspace y enter
+                if (event.text.unicode == 8 || event.text.unicode == 13 || event.text.unicode == 27) // Backspace, Enter y Escape
                 {
                     //Se puede agregar restricciones o no
                 }
@@ -94,8 +92,14 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
                     if(!verifica)
                     {
                         cout << endl;
-                        cout << "VUELVE A INTENTARLO \n"; //Agregar en pantalla de juego
+                        cout << "VUELVE A INTENTARLO... \n"; //Agregar en pantalla de juego
                         verifica = true;
+
+                        _textPan2.setFont(_font);
+                        _textPan2.setFillColor(sf::Color::Black);
+                        _textPan2.setString("Error al ingresar datos...");
+                        _textPan2.setCharacterSize(36);
+                        _textPan2.setPosition(32,827);
                     }
                     else
                     {
@@ -105,6 +109,13 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
                     {
                         cout << endl;
                         cout << "VIRUS HECHO PELOTA" << endl;
+
+                        _textPan2.setFont(_font);
+                        _textPan2.setFillColor(sf::Color::Black);
+                        _textPan2.setString("Datos correctamente ingresados...");
+                        _textPan2.setCharacterSize(36);
+                        _textPan2.setPosition(32,827);
+
                         _textPan.setString("");
                         _caracter = 0;
                         auxTam = 0;
@@ -124,28 +135,25 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
             Gus.setmuriendo();
             text.setString("");
 
-            if(Vid.getVida() == 3)
+            for(int i=0; i<=3; i++)
             {
-                Vid.setVIda(2);
-                Pj.setGolpe(true);
-                _clock.restart();
-            }
-            else if(Vid.getVida() == 2)
-            {
-                Vid.setVIda(1);
-                Pj.setGolpe(true);
-                _clock.restart();
-            }
-            else if(Vid.getVida() == 1)
-            {
-                Vid.setVIda(0);
-                Pj.setMuriendo(true);
+                if(Vid.getVida() == i)
+                {
+                    Vid.setVIda(i-1);
+                    Pj.setGolpe(true);
+                    _clock.restart();
+
+                    if(Vid.getVida() == 0)
+                    {
+                        Pj.setMuriendo(true);
+                    }
+                }
             }
         }
         if(_clock.getElapsedTime().asSeconds() > 2 && Pj.getGolpe() == true)
-            {
-                Pj.setGolpe(false);
-            }
+        {
+            Pj.setGolpe(false);
+        }
         if(Gus.getmurio()==true)
         {
             Gus.respawn();
@@ -176,6 +184,7 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
         _window->draw(Gus);
         _window->draw(text);
         _window->draw(_textPan);
+        _window->draw(_textPan2);
 
         //Display - Flip
         _window->display();

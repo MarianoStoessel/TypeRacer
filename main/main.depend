@@ -1276,11 +1276,11 @@
 1701099507 f:\proyectos github\typeracer\main\include\anonymous.h
 	<SFML/Graphics.hpp>
 
-1701209796 source:f:\proyectos github\typeracer\main\src\gameplay.cpp
+1701211291 source:f:\proyectos github\typeracer\main\src\gameplay.cpp
 	"Gameplay.h"
 	<iostream>
 
-1701207358 f:\proyectos github\typeracer\main\include\gameplay.h
+1701211040 f:\proyectos github\typeracer\main\include\gameplay.h
 	<iostream>
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>

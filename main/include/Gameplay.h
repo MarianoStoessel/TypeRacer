@@ -31,6 +31,7 @@ class Gameplay
 
         sf::Font _font;
         sf::Text _textPan;
+        sf::Text _textPan2;
         std::string _textoPantalla;
 
         char _caracter;

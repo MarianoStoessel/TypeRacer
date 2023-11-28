@@ -12,7 +12,6 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
     _window = window;
     _resolucion = resolucion;
     _nivel = nivel;
-    _exitoPalabra = false;
 
     //int cantenem = 0;
     sf::RectangleShape fondo;
@@ -51,6 +50,11 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
     text.setCharacterSize(15);
     text.setPosition(Gus.getposx(),Gus.getposy());
 
+    cout << palabra.getP(); //Keyword del Gusavirus
+    cout << endl;
+
+    //compararKeyWord(&palabra);
+
     //Game Loop
     while(_window->isOpen())
     {
@@ -65,10 +69,51 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
                 }
                 else if (event.text.unicode < 128)
                 {
-                    // Agregar caracter
+
+                    //Agregar caracter
                     _textoPantalla = _textPan.getString();
                     _textoPantalla += static_cast<char>(event.text.unicode);
                     _textPan.setString(_textoPantalla);
+
+                    //Comparacion
+
+                    if(verifica && auxTam < palabra.getTam()-1)
+                    {
+                        _caracter = static_cast<char>(event.text.unicode);
+                        cout << _caracter;
+
+                        int comparacion = palabra.getP()[auxTam] - _caracter;
+                        if(comparacion != 0)
+                        {
+                            verifica = false;
+                            _textPan.setString("");
+                            _caracter = 0;
+                            auxTam = 0;
+                        }
+                        else
+                        {
+                            auxTam++;
+                        }
+                    }
+                    if(!verifica)
+                    {
+                        cout << endl;
+                        cout << "VUELVE A INTENTARLO \n"; //Agregar en pantalla de juego
+                        verifica = true;
+                    }
+                    else
+                    {
+                        verifica = true;
+                    }
+                    if(verifica && auxTam == palabra.getTam()-1)
+                    {
+                        cout << endl;
+                        cout << "VIRUS HECHO PIJA" << endl;
+                        _textPan.setString("");
+                        _caracter = 0;
+                        auxTam = 0;
+                        Gus.setmuriendo();
+                    }
                 }
             }
             if(event.type == sf::Event::Closed)
@@ -76,7 +121,7 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
         }
         text.setPosition(Gus.getposx(),Gus.getposy());
 
-        if(Gus.getposx()==1300)
+        if(Gus.getposx()==300)
         {
             Gus.setmuriendo();
             text.setString("");
@@ -118,43 +163,52 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
         _window->display();
     }
 }
-void Gameplay::compararKeyWord(Keyword kw)
+/*void Gameplay::compararKeyWord(Keyword* kw)
 {
-    //forma de aplicar la mecanica
-
-    while(!_exitoPalabra)
+    Keyword* keyword = kw;
+    thread t([this, keyword]()
     {
+        cout << keyword->getP(); //Keyword del Gusavirus
+        cout << endl;
 
-        bool verifica = true;
-        char caracter;
-        int auxTam = 0;
-
-        while(verifica && auxTam < kw.getTam()-1)
+        while(!_exitoPalabra) //forma de aplicar la mecanica
         {
-            caracter = getch();
-            std::cout << caracter;
+            cout << "A" << endl;
+            bool verifica = true;
+            int auxTam = 0;
 
-            int comparacion = kw.getP()[auxTam] - caracter;
-            if(comparacion != 0)
+            while(verifica && auxTam < keyword->getTam()-1)
             {
-                verifica = false;
-            }
-            auxTam++;
-        }
-        std::cout << std::endl << std::endl;
+                cout << "A" << endl;
+                cout << _caracter << endl;
 
-        if(!verifica)
-        {
-            std::cout << "VUELVE A INTENTARLO \n";
-            std::cout << std::endl;
+                _caracter = getch();
+                std::cout << _caracter;
+
+                int comparacion = keyword->getP()[auxTam] - _caracter;
+                if(comparacion != 0)
+                {
+                    verifica = false;
+                    _caracter = NULL;
+                }
+                auxTam++;
+            }
+            std::cout << std::endl << std::endl;
+
+            if(!verifica)
+            {
+                std::cout << "VUELVE A INTENTARLO \n";
+                std::cout << std::endl;
+            }
+            else
+            {
+                _exitoPalabra = 1;
+                std::cout<< "EXCELENTE \n\n";
+            }
         }
-        else
-        {
-            _exitoPalabra = 1;
-            std::cout<< "EXCELENTE \n\n";
-        }
-    }
-}
+    });
+    t.detach();
+}*/
 void Gameplay::logicajuego()  ///Maneja la logica del juego
 {
     /*

@@ -9,7 +9,7 @@ class Keyword
         int _tam;
 
     public:
-        Keyword(const char *ini = "HOLA COMO ESTAS");
+        Keyword(const char *ini = "hola como estas");
         const char *getP();
         int getTam();
         void setP(const char *p);

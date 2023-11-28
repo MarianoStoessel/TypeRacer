@@ -1,6 +1,8 @@
 #include "Gusavirus.h"
 #include <iostream>
 
+using namespace std;
+
 //Construcctor
 Gusavirus::Gusavirus()
 {
@@ -114,7 +116,7 @@ void Gusavirus::SeeligeColor()
 
 //Respawn
 void Gusavirus::respawn(){
-    std::cout<<"llego";
+    cout << "llego" << endl;
     SeeligeColor();
     x=1550;
     _sprite.setPosition(x,y);

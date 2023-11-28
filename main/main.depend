@@ -1276,7 +1276,7 @@
 1701099507 f:\proyectos github\typeracer\main\include\anonymous.h
 	<SFML/Graphics.hpp>
 
-1701131473 source:f:\proyectos github\typeracer\main\src\gameplay.cpp
+1701132075 source:f:\proyectos github\typeracer\main\src\gameplay.cpp
 	"Gameplay.h"
 	<iostream>
 	<conio.h>
@@ -1624,7 +1624,7 @@
 	<iostream>
 	<SFML/Graphics.hpp>
 
-1700794758 f:\proyectos github\typeracer\main\include\aplicacion.h
+1701133373 f:\proyectos github\typeracer\main\include\aplicacion.h
 	<iostream>
 	<ctime>
 	<SFML/Graphics.hpp>
@@ -1633,8 +1633,9 @@
 	"Menu.h"
 	"MenuNivel.h"
 	"Transicion.h"
+	"scode.h"
 
-1701131473 source:f:\proyectos github\typeracer\main\clases\menu\aplicacion.cpp
+1701133246 source:f:\proyectos github\typeracer\main\clases\menu\aplicacion.cpp
 	"Aplicacion.h"
 
 1700610215 source:d:\uni 2023\laboratorio ii\tp integrador\main\clases\menu\aplicacion.cpp
@@ -1650,12 +1651,12 @@
 	"MenuNivel.h"
 	"Transicion.h"
 
-1701099507 f:\proyectos github\typeracer\main\include\transicion.h
+1701132691 f:\proyectos github\typeracer\main\include\transicion.h
 	<iostream>
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
 
-1700596853 source:f:\proyectos github\typeracer\main\clases\menu\transicion.cpp
+1701133277 source:f:\proyectos github\typeracer\main\clases\menu\transicion.cpp
 	"Transicion.h"
 
 1700610215 d:\uni 2023\laboratorio ii\tp integrador\main\include\transicion.h
@@ -1666,7 +1667,7 @@
 1700610215 source:d:\uni 2023\laboratorio ii\tp integrador\main\clases\menu\transicion.cpp
 	"Transicion.h"
 
-1701099507 f:\proyectos github\typeracer\main\include\score.h
+1701133246 f:\proyectos github\typeracer\main\include\score.h
 	<iostream>
 	<SFML/Graphics.hpp>
 
@@ -1680,7 +1681,7 @@
 1701099507 source:f:\proyectos github\typeracer\main\src\nivel.cpp
 	"Nivel.h"
 
-1701099507 source:f:\proyectos github\typeracer\main\src\score.cpp
+1701133258 source:f:\proyectos github\typeracer\main\src\score.cpp
 	"Score.h"
 
 1701099507 source:f:\proyectos github\typeracer\main\src\vida.cpp

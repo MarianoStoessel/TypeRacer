@@ -18,6 +18,10 @@ Score::Score() //ctor
     _scoreNiv.setCharacterSize(35);
     _scoreNiv.setPosition(1263,726);
 }
+int Score::getScore()
+{
+    return _score;
+}
 void Score::update()
 {
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::A)) //Sacar lo que tiene y Añadir cuando se mata a un virus

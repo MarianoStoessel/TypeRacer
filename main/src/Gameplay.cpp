@@ -31,10 +31,6 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
     _textPan.setCharacterSize(30);
     _textPan.setPosition(241,747);
 
-    sf::Font font;
-    sf::Text text;
-    font.loadFromFile("Fuentes/Retro Gaming.ttf");
-
     //llamo clases
     Nivel Niv(_nivel);
     Score Sco;
@@ -44,7 +40,11 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
     Gusavirus Gus;
     Keyword palabra;
 
-    //muestro palabra por pantalla
+    //muestro palabra Gusavirus por pantalla
+    sf::Font font;
+    sf::Text text;
+    font.loadFromFile("Fuentes/Retro Gaming.ttf");
+
     text.setFont(font);
     text.setFillColor(sf::Color::White);
     text.setString(palabra.getP());

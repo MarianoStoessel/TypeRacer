@@ -10,6 +10,7 @@
 #include "Menu.h"
 #include "MenuNivel.h"
 #include "Transicion.h"
+#include "scode.h"
 
 class Aplicacion
 {

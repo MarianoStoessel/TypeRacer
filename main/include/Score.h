@@ -15,7 +15,9 @@ class Score: public sf::Drawable
     public:
         Score();
 
-        void update();
+        int getScore();
+        void sumarScore();
+
         void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
 
         ~Score();

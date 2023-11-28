@@ -70,19 +70,20 @@ Aplicacion::Aplicacion(sf::Vector2u resolucion) // ctor
                                         else
                                         {
                                             int nivel = y;
-                                            Transicion transicion(nivel, &_window); //Pantalla de transicion
+                                            //Transicion transicion(nivel, &_window); //Pantalla de transicion
                                             Gameplay gameplay(nivel, &resolucion, &_window); //Entrar al nivel seleccionado
 
                                             ///operador de gameplay
                                             if(gameplay.getGameOver() == true) //Pierde el nivel
                                             {
+                                                int score = 0;
                                                 if(nivel > 9) //Juego completado
                                                 {
-                                                    ///crear transicion juego temrinado aca
+                                                    Transicion transicion(nivel, &_window); //transicion juego temrinado aca
                                                 }
                                                 else
                                                 {
-                                                    ///crear transicion perdite aca
+                                                    Transicion transicion(nivel, &_window); //crear transicion perdite aca
                                                 }
                                                 closeMenuNivel = true;
                                                 break;

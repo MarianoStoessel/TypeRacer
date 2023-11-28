@@ -13,6 +13,10 @@ void Vida::setVIda(int vida)
 {
     _vida = vida;
 }
+int Vida::getVida()
+{
+    return _vida;
+}
 void Vida::update()
 {
     switch(_vida)

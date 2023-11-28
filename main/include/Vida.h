@@ -15,6 +15,8 @@ public:
     Vida();
 
     void setVIda(int vida);
+    int getVida();
+
     void update();
     void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
 

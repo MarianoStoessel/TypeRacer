@@ -3,7 +3,6 @@
 #define GAMEPLAY_H
 
 #include <iostream>
-#include <conio.h>
 
 #include <SFML/Graphics.hpp>
 #include <SFML/Audio.hpp>
@@ -21,19 +20,23 @@ class Gameplay
     private:
         sf::RenderWindow* _window;
         sf::RenderStates _state;
-        sf::Event _evento;
         sf::Vector2u* _resolucion;
+        sf::Clock _clock;
         int _cantE;
         int _enemigosActivos;
         int _score;
         int _nivel;
-        bool _exitoPalabra;
         bool _gameover=false;
         bool _levelUp=false;
 
         sf::Font _font;
         sf::Text _textPan;
+        sf::Text _textPan2;
         std::string _textoPantalla;
+
+        char _caracter;
+        bool verifica = true;
+        int auxTam = 0;
 
     public:
         Gameplay();
@@ -51,7 +54,7 @@ class Gameplay
         bool getGameOver(){return _gameover;}
 
 
-        void compararKeyWord(Keyword kw);
+        //void compararKeyWord(Keyword* kw);
 };
 
 #endif // GAMEPLAY_H

@@ -18,10 +18,12 @@ Score::Score() //ctor
     _scoreNiv.setCharacterSize(35);
     _scoreNiv.setPosition(1263,726);
 }
-void Score::update()
+int Score::getScore()
 {
-    if(sf::Keyboard::isKeyPressed(sf::Keyboard::A)) //Sacar lo que tiene y Añadir cuando se mata a un virus
-    {
+    return _score;
+}
+void Score::sumarScore()
+{
         _score += 100;
         string strScore = std::to_string(_score);
         //Score
@@ -30,7 +32,6 @@ void Score::update()
         _scoreNiv.setString(strScore);
         _scoreNiv.setCharacterSize(35);
         _scoreNiv.setPosition(1263,726);
-    }
 }
 void Score::draw(sf::RenderTarget& target, sf::RenderStates states) const
 {

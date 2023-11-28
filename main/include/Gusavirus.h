@@ -21,12 +21,14 @@ class Gusavirus: public sf::Drawable  // en progreso
         bool murio = false;
         bool muriendo = false;
         GusavirusState _state;
+
     public:
         //Construcctor
         Gusavirus();
         //Sets
         void setmurio();
         void setmuriendo();
+        void setposx(int posx);
         //Gets
         bool getmurio();
         bool getmuriendo();

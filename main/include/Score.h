@@ -4,6 +4,8 @@
 #include <iostream>
 #include <SFML/Graphics.hpp>
 
+#include "Gusavirus.h"
+
 class Score: public sf::Drawable
 {
     private:
@@ -16,8 +18,8 @@ class Score: public sf::Drawable
         Score();
 
         int getScore();
+        void sumarScore();
 
-        void update();
         void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
 
         ~Score();

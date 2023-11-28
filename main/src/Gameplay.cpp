@@ -33,12 +33,12 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
 
     //llamo clases
     Nivel Niv(_nivel);
-    Score Sco;
-    Vida Vid;
     Leo Pj;
     Anonymous Eny;
     Gusavirus Gus;
     Keyword palabra;
+    Score Sco;
+    Vida Vid;
 
     //muestro palabra Gusavirus por pantalla
     sf::Font font;
@@ -61,11 +61,11 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
             {
                 if (event.text.unicode == 8) // Backspace
                 {
-
+                    //Se puede agregar restricciones o no
                 }
                 else if (event.text.unicode < 128)
                 {
-                    // Add a character
+                    // Agregar caracter
                     _textoPantalla = _textPan.getString();
                     _textoPantalla += static_cast<char>(event.text.unicode);
                     _textPan.setString(_textoPantalla);
@@ -74,7 +74,6 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
             if(event.type == sf::Event::Closed)
                 _window->close();
         }
-
         text.setPosition(Gus.getposx(),Gus.getposy());
 
         if(Gus.getposx()==1300)
@@ -84,6 +83,8 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
         }
         if(Gus.getmurio()==true)
         {
+            Sco.sumarScore();
+
             Gus.respawn();
             text.setPosition(Gus.getposx(),Gus.getposy());
             text.setString("Hola");
@@ -95,11 +96,10 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
         Gus.cmd();
 
         //Update - Actualiza los estados del juego
-        Sco.update();
-        Vid.update();
         Pj.update();
         Eny.update();
         Gus.update();
+        Vid.update();
 
         _window->clear();
 

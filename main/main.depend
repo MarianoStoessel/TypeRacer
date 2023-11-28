@@ -1270,13 +1270,14 @@
 1701098138 source:f:\proyectos github\typeracer\main\clases\menu\menu.cpp
 	"Menu.h"
 
-1701099507 source:f:\proyectos github\typeracer\main\src\anonymous.cpp
+1701213728 source:f:\proyectos github\typeracer\main\src\anonymous.cpp
 	"Anonymous.h"
 
-1701099507 f:\proyectos github\typeracer\main\include\anonymous.h
+1701212598 f:\proyectos github\typeracer\main\include\anonymous.h
+	<iostream>
 	<SFML/Graphics.hpp>
 
-1701211291 source:f:\proyectos github\typeracer\main\src\gameplay.cpp
+1701213316 source:f:\proyectos github\typeracer\main\src\gameplay.cpp
 	"Gameplay.h"
 	<iostream>
 
@@ -1309,7 +1310,7 @@
 1701183199 f:\proyectos github\typeracer\main\include\keyword.h
 	<SFML/Graphics.hpp>
 
-1701207899 source:f:\proyectos github\typeracer\main\src\leo.cpp
+1701212966 source:f:\proyectos github\typeracer\main\src\leo.cpp
 	"Leo.h"
 
 1701204598 f:\proyectos github\typeracer\main\include\leo.h

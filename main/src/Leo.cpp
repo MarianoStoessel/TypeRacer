@@ -12,7 +12,6 @@ Leo::Leo() //ctor
     _sprite.setPosition(30, 330);
     LeoState _state = LeoState::Idle;
 }
-//Sets
 void Leo::setGolpe(bool golpe)
 {
     _golpe = golpe;
@@ -21,7 +20,6 @@ void Leo::setMuriendo(bool muriendo)
 {
     _muriendo = muriendo;
 }
-//Gets
 bool Leo::getGolpe()
 {
     return _golpe;
@@ -30,7 +28,6 @@ bool Leo::getMuriendo()
 {
     return _muriendo;
 }
-//Cmd
 void Leo::cmd()
 {
     _state = LeoState::Idle;
@@ -81,7 +78,7 @@ void Leo::update() //comprueba estado y ejecuta el movimiento si es asi
     {
         _frameMuerto += 0.05;
 
-        if(_frameMuerto < 6)
+        if(_frameMuerto <= 5)
         {
             _sprite.setTextureRect({10+ int(_frameMuerto) * 154, 142, 144, 120});
         }

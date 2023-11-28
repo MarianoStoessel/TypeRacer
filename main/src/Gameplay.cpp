@@ -1,8 +1,10 @@
 #include "Gameplay.h"
 #include <iostream>
 #include <conio.h>
+using namespace std;
+
 //Constructor
-Gameplay::Gameplay(){_exitoPalabra = false;}
+Gameplay::Gameplay() {}
 
 //Constructor 2
 Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window)
@@ -10,12 +12,24 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
     _window = window;
     _resolucion = resolucion;
     _nivel = nivel;
+    _exitoPalabra = false;
+
     //int cantenem = 0;
     sf::RectangleShape fondo;
     fondo.setSize(sf::Vector2f(resolucion->x, resolucion->y));
     sf::Texture menutextura;
     menutextura.loadFromFile("Imagenes/Escenario.jpg");
     fondo.setTexture(&menutextura);
+
+    if(!_font.loadFromFile("Fuentes/Retro Gaming.ttf"))
+    {
+        cout <<"No existe la fuente";
+    }
+    //TextoPantalla
+    _textPan.setFont(_font);
+    _textPan.setFillColor(sf::Color::Black);
+    _textPan.setCharacterSize(30);
+    _textPan.setPosition(241,747);
 
     sf::Font font;
     sf::Text text;
@@ -43,14 +57,37 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
         sf::Event event;
         while(_window->pollEvent(event))
         {
+            if (event.type == sf::Event::TextEntered)
+            {
+                if (event.text.unicode == 8) // Backspace
+                {
+
+                }
+                else if (event.text.unicode < 128)
+                {
+                    // Add a character
+                    _textoPantalla = _textPan.getString();
+                    _textoPantalla += static_cast<char>(event.text.unicode);
+                    _textPan.setString(_textoPantalla);
+                }
+            }
             if(event.type == sf::Event::Closed)
                 _window->close();
         }
 
         text.setPosition(Gus.getposx(),Gus.getposy());
 
-        if(Gus.getposx()==1300){Gus.setmuriendo();text.setString("");}
-        if(Gus.getmurio()==true){Gus.respawn();text.setPosition(Gus.getposx(),Gus.getposy());text.setString("Hola");}
+        if(Gus.getposx()==1300)
+        {
+            Gus.setmuriendo();
+            text.setString("");
+        }
+        if(Gus.getmurio()==true)
+        {
+            Gus.respawn();
+            text.setPosition(Gus.getposx(),Gus.getposy());
+            text.setString("Hola");
+        }
 
         //CMD
         Pj.cmd();
@@ -75,6 +112,7 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
         _window->draw(Eny);
         _window->draw(Gus);
         _window->draw(text);
+        _window->draw(_textPan);
 
         //Display - Flip
         _window->display();
@@ -117,26 +155,27 @@ void Gameplay::compararKeyWord(Keyword kw)
         }
     }
 }
-void Gameplay::logicajuego(){ ///Maneja la logica del juego
-        /*
-        //respaw si muere;
-        if(compararKeyWord()==true){Gus.setmuriendo();score+=100;}
-        //si murio respawnea
-        if(Gus[cantenem].getmurio()==true && Gus[cantenem-1]){Gus[cantenem].respawn(); palabra[cantenem].reasignaP();}//codear la funcion respawn
-        //si llega a x punto aparece 1 enemigo mas
-        if(Gus[cantenem].getposx()==900){Gus[cantenem+1];palabra[cantenem+1].reasignaP();}
-        //si gusavirus llega a leo baja vida y respawn
-        if(Gus[cantenem].getposy()== 330){vida--;Gus[cantenem].respawn();palabra[cantenem]reasignaP()}//330=posy de leo
-        //si leo erra palabra le incrementa la velocidad al gusano
-        //si leo junta 1000puntos termina nivel
-        if(score==1000){nivel.sumarnivel();}/*si sube de nivel tiene q haber transicion y mueren todos los gusanos en
-                                            pantalla*/
-        /*
-        //si vidas=0 leo muere y gameover
-        if(vida==0){gameover}
-        //si toca la puerta aparece foto de braian diciendo tremendo
-        */
-        /*funcion que restree donde se hace click si es en la parte de la puerta aparece*/
+void Gameplay::logicajuego()  ///Maneja la logica del juego
+{
+    /*
+    //respaw si muere;
+    if(compararKeyWord()==true){Gus.setmuriendo();score+=100;}
+    //si murio respawnea
+    if(Gus[cantenem].getmurio()==true && Gus[cantenem-1]){Gus[cantenem].respawn(); palabra[cantenem].reasignaP();}//codear la funcion respawn
+    //si llega a x punto aparece 1 enemigo mas
+    if(Gus[cantenem].getposx()==900){Gus[cantenem+1];palabra[cantenem+1].reasignaP();}
+    //si gusavirus llega a leo baja vida y respawn
+    if(Gus[cantenem].getposy()== 330){vida--;Gus[cantenem].respawn();palabra[cantenem]reasignaP()}//330=posy de leo
+    //si leo erra palabra le incrementa la velocidad al gusano
+    //si leo junta 1000puntos termina nivel
+    if(score==1000){nivel.sumarnivel();}/*si sube de nivel tiene q haber transicion y mueren todos los gusanos en
+                                        pantalla*/
+    /*
+    //si vidas=0 leo muere y gameover
+    if(vida==0){gameover}
+    //si toca la puerta aparece foto de braian diciendo tremendo
+    */
+    /*funcion que restree donde se hace click si es en la parte de la puerta aparece*/
 }
 
 /*void Gameplay::Renderizar()///En esta funcion van todos los draws

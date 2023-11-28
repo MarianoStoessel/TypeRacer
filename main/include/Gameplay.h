@@ -31,6 +31,10 @@ class Gameplay
         bool _gameover=false;
         bool _levelUp=false;
 
+        sf::Font _font;
+        sf::Text _textPan;
+        std::string _textoPantalla;
+
     public:
         Gameplay();
         Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window);

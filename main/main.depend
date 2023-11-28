@@ -1276,12 +1276,11 @@
 1701099507 f:\proyectos github\typeracer\main\include\anonymous.h
 	<SFML/Graphics.hpp>
 
-1701188151 source:f:\proyectos github\typeracer\main\src\gameplay.cpp
+1701209796 source:f:\proyectos github\typeracer\main\src\gameplay.cpp
 	"Gameplay.h"
 	<iostream>
-	<conio.h>
 
-1701188001 f:\proyectos github\typeracer\main\include\gameplay.h
+1701207358 f:\proyectos github\typeracer\main\include\gameplay.h
 	<iostream>
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
@@ -1293,11 +1292,11 @@
 	"Nivel.h"
 	"Vida.h"
 
-1701188120 source:f:\proyectos github\typeracer\main\src\gusavirus.cpp
+1701207030 source:f:\proyectos github\typeracer\main\src\gusavirus.cpp
 	"Gusavirus.h"
 	<iostream>
 
-1701098247 f:\proyectos github\typeracer\main\include\gusavirus.h
+1701207023 f:\proyectos github\typeracer\main\include\gusavirus.h
 	<SFML/Graphics.hpp>
 	"Keyword.h"
 
@@ -1310,10 +1309,11 @@
 1701183199 f:\proyectos github\typeracer\main\include\keyword.h
 	<SFML/Graphics.hpp>
 
-1700514947 source:f:\proyectos github\typeracer\main\src\leo.cpp
+1701207899 source:f:\proyectos github\typeracer\main\src\leo.cpp
 	"Leo.h"
 
-1699577909 f:\proyectos github\typeracer\main\include\leo.h
+1701204598 f:\proyectos github\typeracer\main\include\leo.h
+	<iostream>
 	<SFML/Graphics.hpp>
 
 1697663564 f:\proyectos github\typeracer\main\sfml\include\sfml\audio.hpp
@@ -1634,7 +1634,7 @@
 	"Transicion.h"
 	"scode.h"
 
-1701177756 source:f:\proyectos github\typeracer\main\clases\menu\aplicacion.cpp
+1701192803 source:f:\proyectos github\typeracer\main\clases\menu\aplicacion.cpp
 	"Aplicacion.h"
 
 1700610215 source:d:\uni 2023\laboratorio ii\tp integrador\main\clases\menu\aplicacion.cpp
@@ -1674,7 +1674,7 @@
 	<iostream>
 	<SFML/Graphics.hpp>
 
-1701099507 f:\proyectos github\typeracer\main\include\vida.h
+1701205483 f:\proyectos github\typeracer\main\include\vida.h
 	<SFML/Graphics.hpp>
 
 1701099507 source:f:\proyectos github\typeracer\main\src\nivel.cpp
@@ -1683,7 +1683,7 @@
 1701177321 source:f:\proyectos github\typeracer\main\src\score.cpp
 	"Score.h"
 
-1701099507 source:f:\proyectos github\typeracer\main\src\vida.cpp
+1701207358 source:f:\proyectos github\typeracer\main\src\vida.cpp
 	"Vida.h"
 
 1701129613 source:f:\proyectos github\typeracer\main\src\textopantalla.cpp

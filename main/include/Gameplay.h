@@ -21,6 +21,7 @@ class Gameplay
         sf::RenderWindow* _window;
         sf::RenderStates _state;
         sf::Vector2u* _resolucion;
+        sf::Clock _clock;
         int _cantE;
         int _enemigosActivos;
         int _score;

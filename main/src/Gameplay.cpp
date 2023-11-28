@@ -1,6 +1,5 @@
 #include "Gameplay.h"
 #include <iostream>
-#include <conio.h>
 using namespace std;
 
 //Constructor
@@ -53,8 +52,6 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
     cout << palabra.getP(); //Keyword del Gusavirus
     cout << endl;
 
-    //compararKeyWord(&palabra);
-
     //Game Loop
     while(_window->isOpen())
     {
@@ -63,7 +60,7 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
         {
             if (event.type == sf::Event::TextEntered)
             {
-                if (event.text.unicode == 8) // Backspace
+                if (event.text.unicode == 8 || event.text.unicode == 13) // Backspace y enter
                 {
                     //Se puede agregar restricciones o no
                 }
@@ -75,8 +72,7 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
                     _textoPantalla += static_cast<char>(event.text.unicode);
                     _textPan.setString(_textoPantalla);
 
-                    //Comparacion
-
+                    //Comparacion - Mecanica principal del juego
                     if(verifica && auxTam < palabra.getTam()-1)
                     {
                         _caracter = static_cast<char>(event.text.unicode);
@@ -108,11 +104,12 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
                     if(verifica && auxTam == palabra.getTam()-1)
                     {
                         cout << endl;
-                        cout << "VIRUS HECHO PIJA" << endl;
+                        cout << "VIRUS HECHO PELOTA" << endl;
                         _textPan.setString("");
                         _caracter = 0;
                         auxTam = 0;
                         Gus.setmuriendo();
+                        Sco.sumarScore();
                     }
                 }
             }
@@ -121,15 +118,36 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
         }
         text.setPosition(Gus.getposx(),Gus.getposy());
 
-        if(Gus.getposx()==300)
+        if(Gus.getposx()==900)
         {
+            Gus.setposx(901);
             Gus.setmuriendo();
             text.setString("");
+
+            if(Vid.getVida() == 3)
+            {
+                Vid.setVIda(2);
+                Pj.setGolpe(true);
+                _clock.restart();
+            }
+            else if(Vid.getVida() == 2)
+            {
+                Vid.setVIda(1);
+                Pj.setGolpe(true);
+                _clock.restart();
+            }
+            else if(Vid.getVida() == 1)
+            {
+                Vid.setVIda(0);
+                Pj.setMuriendo(true);
+            }
         }
+        if(_clock.getElapsedTime().asSeconds() > 2 && Pj.getGolpe() == true)
+            {
+                Pj.setGolpe(false);
+            }
         if(Gus.getmurio()==true)
         {
-            Sco.sumarScore();
-
             Gus.respawn();
             text.setPosition(Gus.getposx(),Gus.getposy());
             text.setString("Hola");

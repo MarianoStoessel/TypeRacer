@@ -24,6 +24,8 @@ void Gusavirus::setmurio(){murio=true;}
 
 void Gusavirus::setmuriendo(){muriendo=true;}
 
+void Gusavirus::setposx(int posx){x = posx;}
+
 //Gets
 int Gusavirus::getposx(){return x;}
 

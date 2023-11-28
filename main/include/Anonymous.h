@@ -15,9 +15,11 @@ class Anonymous: public sf::Drawable // en progreso
         sf::Texture _texture;
 
         float _frame;
+        float _frameMove;
         float _frameGolpe;
         float _frameMuerto;
 
+        bool _move = false;
         bool _golpe = false;
         bool _muriendo = false;
 

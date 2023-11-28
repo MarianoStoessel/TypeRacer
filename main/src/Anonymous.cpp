@@ -3,6 +3,7 @@
 Anonymous::Anonymous() //ctor
 {
     _frame = 0;
+    _frameMove = 0;
     _frameGolpe = 0;
     _frameMuerto = 0;
 
@@ -32,6 +33,10 @@ void Anonymous::Anonymous::cmd()
 {
     _state = AnonymousState::Idle;
 
+    if(_move == true)
+    {
+        _state = AnonymousState::Move;
+    }
     if(_golpe == true && _muriendo == false)
     {
         _state = AnonymousState::kick;

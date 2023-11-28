@@ -23,7 +23,7 @@ Transicion::Transicion(int nivel, sf::RenderWindow* window)
 
     while(_window->isOpen())
     {
-        if(_clock.getElapsedTime().asSeconds() > 3)
+        if(_clock.getElapsedTime().asSeconds() > 2)
         {
             break;
         }

@@ -1276,12 +1276,12 @@
 1701099507 f:\proyectos github\typeracer\main\include\anonymous.h
 	<SFML/Graphics.hpp>
 
-1701131146 source:f:\proyectos github\typeracer\main\src\gameplay.cpp
+1701131473 source:f:\proyectos github\typeracer\main\src\gameplay.cpp
 	"Gameplay.h"
 	<iostream>
 	<conio.h>
 
-1701130800 f:\proyectos github\typeracer\main\include\gameplay.h
+1701131473 f:\proyectos github\typeracer\main\include\gameplay.h
 	<iostream>
 	<conio.h>
 	<SFML/Graphics.hpp>
@@ -1302,7 +1302,7 @@
 	<SFML/Graphics.hpp>
 	"Keyword.h"
 
-1701101788 source:f:\proyectos github\typeracer\main\src\keyword.cpp
+1701131473 source:f:\proyectos github\typeracer\main\src\keyword.cpp
 	"Keyword.h"
 	<iostream>
 	<cstring>
@@ -1634,7 +1634,7 @@
 	"MenuNivel.h"
 	"Transicion.h"
 
-1701128188 source:f:\proyectos github\typeracer\main\clases\menu\aplicacion.cpp
+1701131473 source:f:\proyectos github\typeracer\main\clases\menu\aplicacion.cpp
 	"Aplicacion.h"
 
 1700610215 source:d:\uni 2023\laboratorio ii\tp integrador\main\clases\menu\aplicacion.cpp

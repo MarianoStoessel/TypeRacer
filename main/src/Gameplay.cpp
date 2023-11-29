@@ -28,7 +28,7 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
 
     if(!_font.loadFromFile("Fuentes/Retro Gaming.ttf"))
     {
-        cout <<"No existe la fuente";
+        cout << "No existe la fuente";
     }
     //TextoPantalla
     _textPan.setFont(_font);
@@ -46,25 +46,16 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
     Vida Vid;
 
     //Archivo de Keywords
-    ArchivosEditor archEditor("Archivos/nivel1.dat");
+    ArchivosEditor archEditor("Archivos/nivel9.dat");
     int cantRegistros = archEditor.contarRegistros();
 
-    Archivos * vec;
+    Archivos vec[30];
     if(cantRegistros > 0)
     {
-        vec = new Archivos[cantRegistros];
-        if(vec == NULL)
-        {
-            cout << "Error de asignacion de memoria.";
-            return;
-        }
-        for(int i=0; i<cantRegistros; i++)
+        for(int i=0; i<30; i++)
         {
             vec[i] = archEditor.leerRegistro(i);
-            //vec[i].Mostrar();
             cout << vec[i].getKeyword() << endl;
-
-            cout << endl;
         }
     }
 

@@ -1278,11 +1278,11 @@
 1701262813 f:\proyectos github\typeracer\main\include\anonymous.h
 	<SFML/Graphics.hpp>
 
-1701282965 source:f:\proyectos github\typeracer\main\src\gameplay.cpp
+1701294124 source:f:\proyectos github\typeracer\main\src\gameplay.cpp
 	"Gameplay.h"
 	<iostream>
 
-1701282965 f:\proyectos github\typeracer\main\include\gameplay.h
+1701291074 f:\proyectos github\typeracer\main\include\gameplay.h
 	<iostream>
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
@@ -1725,11 +1725,11 @@
 1701213532 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\vida.cpp
 	"Vida.h"
 
-1701282965 source:f:\proyectos github\typeracer\main\src\archivos.cpp
+1701294189 source:f:\proyectos github\typeracer\main\src\archivos.cpp
 	<iostream>
 	"Archivos.h"
 
-1701282965 f:\proyectos github\typeracer\main\include\archivos.h
+1701294171 f:\proyectos github\typeracer\main\include\archivos.h
 	<iostream>
 	<cstring>
 

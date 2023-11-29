@@ -65,9 +65,6 @@ public:
     {
         return _gameover;
     }
-
-
-    //void compararKeyWord(Keyword* kw);
 };
 
 #endif // GAMEPLAY_H

@@ -14,13 +14,15 @@ Aplicacion::Aplicacion(sf::Vector2u resolucion) // ctor
     menuTexture.loadFromFile("Imagenes/FondoMain.jpg");
     fondo.setTexture(&menuTexture);
 
-    if(!_musicmenu.openFromFile("Audio/menu.menu.wav")){
+    if(!_musicmenu.openFromFile("Audio/menu.menu.wav"))
+    {
         cout << "Error al cargar el audio";
     }
     _musicmenu.play();
     _musicmenu.setLoop(true);
 
-     if(!_buffer1.loadFromFile("Audio/Menuenter.wav")){
+    if(!_buffer1.loadFromFile("Audio/Menuenter.wav"))
+    {
         cout << "Error al cargar el audio";
     }
     _sound1.setBuffer(_buffer1);

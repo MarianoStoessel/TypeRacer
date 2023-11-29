@@ -4,25 +4,25 @@
 
 #include <SFML/Graphics.hpp>
 
-enum class AnonymousState{Idle = 0, Move};
+enum class AnonymousState {Idle = 0, Move};
 
 class Anonymous: public sf::Drawable // en progreso
 {
-    private:
-        sf::Sprite _sprite;
-        sf::Texture _texture;
+private:
+    sf::Sprite _sprite;
+    sf::Texture _texture;
 
-        float _frame;
-        AnonymousState _state;
+    float _frame;
+    AnonymousState _state;
 
-    public:
-        Anonymous();
+public:
+    Anonymous();
 
-        void cmd();
-        void update();
-        void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
+    void cmd();
+    void update();
+    void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
 
-        ~Anonymous();
+    ~Anonymous();
 };
 
 #endif // ANONYMOUS_H

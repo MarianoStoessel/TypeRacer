@@ -6,7 +6,8 @@ Menu::Menu() //ctor
 }
 Menu::Menu(float width, float height)
 {
-    if(!_buffer.loadFromFile("Audio/Selectmenu.wav")){
+    if(!_buffer.loadFromFile("Audio/Selectmenu.wav"))
+    {
         cout << "Error al cargar el audio";
     }
     _sound.setBuffer(_buffer);
@@ -15,7 +16,6 @@ Menu::Menu(float width, float height)
     {
         cout <<"No existe la fuente";
     }
-
     //Jugar
     _menu[0].setFont(_font);
     _menu[0].setFillColor(sf::Color::White);
@@ -49,7 +49,7 @@ void Menu::cmd() //Cmd
 
 {
 
- _state = MenuState::Idle;
+    _state = MenuState::Idle;
 
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::Up))
     {

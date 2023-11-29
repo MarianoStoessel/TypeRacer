@@ -24,14 +24,14 @@ int Score::getScore()
 }
 void Score::sumarScore()
 {
-        _score += 100;
-        string strScore = std::to_string(_score);
-        //Score
-        _scoreNiv.setFont(_font);
-        _scoreNiv.setFillColor(sf::Color::Black);
-        _scoreNiv.setString(strScore);
-        _scoreNiv.setCharacterSize(35);
-        _scoreNiv.setPosition(1263,726);
+    _score += 100;
+    string strScore = std::to_string(_score);
+    //Score
+    _scoreNiv.setFont(_font);
+    _scoreNiv.setFillColor(sf::Color::Black);
+    _scoreNiv.setString(strScore);
+    _scoreNiv.setCharacterSize(35);
+    _scoreNiv.setPosition(1263,726);
 }
 void Score::draw(sf::RenderTarget& target, sf::RenderStates states) const
 {

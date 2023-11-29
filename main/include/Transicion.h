@@ -7,18 +7,18 @@
 
 class Transicion
 {
-    private:
-        sf::RenderWindow* _window;
-        sf::RenderStates _state;
+private:
+    sf::RenderWindow* _window;
+    sf::RenderStates _state;
 
-        sf::Font _font;
-        sf::Text _tranNiv;
-        sf::Clock _clock;
-    public:
-        Transicion();
-        Transicion(int nivel, sf::RenderWindow* window);
+    sf::Font _font;
+    sf::Text _tranNiv;
+    sf::Clock _clock;
+public:
+    Transicion();
+    Transicion(int nivel, sf::RenderWindow* window);
 
-        ~Transicion();
+    ~Transicion();
 };
 
 #endif // TRANSICION_H

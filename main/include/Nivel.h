@@ -6,18 +6,18 @@
 
 class Nivel: public sf::Drawable
 {
-    private:
-        sf::Font _font;
-        sf::Text _nivNiv;
+private:
+    sf::Font _font;
+    sf::Text _nivNiv;
 
-        int _nivel;
-    public:
-        Nivel();
-        Nivel(int nivel);
+    int _nivel;
+public:
+    Nivel();
+    Nivel(int nivel);
 
-        void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
+    void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
 
-        ~Nivel();
+    ~Nivel();
 };
 
 #endif // NIVEL_H

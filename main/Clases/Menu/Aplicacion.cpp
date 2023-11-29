@@ -18,11 +18,13 @@ Aplicacion::Aplicacion(sf::Vector2u resolucion) // ctor
         cout << "Error al cargar el audio";
 
     }
+    _musicmenu.setLoop(true);
 
     if(!_musicjuego.openFromFile("Audio/juego.juego.wav")){
         cout << "Error al cargar el audio";
 
     }
+    _musicjuego.setLoop(true);
 
 
     //inicializar menu

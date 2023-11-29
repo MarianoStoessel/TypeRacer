@@ -26,6 +26,8 @@ void Gusavirus::setmuriendo(){muriendo=true;}
 
 void Gusavirus::setposx(int posx){x = posx;}
 
+void Gusavirus::setposy(int posy){y = posy;}
+
 //Gets
 int Gusavirus::getposx(){return x;}
 
@@ -120,10 +122,14 @@ void Gusavirus::SeeligeColor()
 void Gusavirus::respawn(){
     cout << "llego" << endl;
     SeeligeColor();
+    y=615;
     x=1550;
+    _sprite.setScale(1,1);
+    _sprite.setRotation(0);
     _sprite.setPosition(x,y);
     murio=false;
     muriendo=false;
     _state = GusavirusState::Vivo;
 }
+
 

@@ -1278,7 +1278,7 @@
 1701262813 f:\proyectos github\typeracer\main\include\anonymous.h
 	<SFML/Graphics.hpp>
 
-1701294124 source:f:\proyectos github\typeracer\main\src\gameplay.cpp
+1701294621 source:f:\proyectos github\typeracer\main\src\gameplay.cpp
 	"Gameplay.h"
 	<iostream>
 
@@ -1644,7 +1644,7 @@
 	"Transicion.h"
 	"scode.h"
 
-1701277328 source:f:\proyectos github\typeracer\main\clases\menu\aplicacion.cpp
+1701297836 source:f:\proyectos github\typeracer\main\clases\menu\aplicacion.cpp
 	"Aplicacion.h"
 
 1701213531 source:d:\uni 2023\laboratorio ii\tp integrador\main\clases\menu\aplicacion.cpp
@@ -1661,12 +1661,12 @@
 	"Transicion.h"
 	"scode.h"
 
-1701262813 f:\proyectos github\typeracer\main\include\transicion.h
+1701296318 f:\proyectos github\typeracer\main\include\transicion.h
 	<iostream>
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
 
-1701219231 source:f:\proyectos github\typeracer\main\clases\menu\transicion.cpp
+1701298244 source:f:\proyectos github\typeracer\main\clases\menu\transicion.cpp
 	"Transicion.h"
 
 1701101206 d:\uni 2023\laboratorio ii\tp integrador\main\include\transicion.h

@@ -16,7 +16,7 @@ private:
     sf::Clock _clock;
 public:
     Transicion();
-    Transicion(int nivel, sf::RenderWindow* window);
+    Transicion(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window);
 
     ~Transicion();
 };

@@ -1267,7 +1267,7 @@
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
 
-1701217762 source:f:\proyectos github\typeracer\main\clases\menu\menu.cpp
+1701218571 source:f:\proyectos github\typeracer\main\clases\menu\menu.cpp
 	"Menu.h"
 
 1701215617 source:f:\proyectos github\typeracer\main\src\anonymous.cpp
@@ -1276,7 +1276,7 @@
 1701215617 f:\proyectos github\typeracer\main\include\anonymous.h
 	<SFML/Graphics.hpp>
 
-1701217897 source:f:\proyectos github\typeracer\main\src\gameplay.cpp
+1701218603 source:f:\proyectos github\typeracer\main\src\gameplay.cpp
 	"Gameplay.h"
 	<iostream>
 	<conio.h>
@@ -1613,7 +1613,7 @@
 	<iostream>
 	<SFML/Graphics.hpp>
 
-1701217870 f:\proyectos github\typeracer\main\include\aplicacion.h
+1701219060 f:\proyectos github\typeracer\main\include\aplicacion.h
 	<iostream>
 	<ctime>
 	<SFML/Graphics.hpp>
@@ -1623,7 +1623,7 @@
 	"MenuNivel.h"
 	"Transicion.h"
 
-1701217870 source:f:\proyectos github\typeracer\main\clases\menu\aplicacion.cpp
+1701218571 source:f:\proyectos github\typeracer\main\clases\menu\aplicacion.cpp
 	"Aplicacion.h"
 
 1700429933 source:d:\uni 2023\laboratorio ii\tp integrador\main\clases\menu\aplicacion.cpp

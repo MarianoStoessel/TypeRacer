@@ -27,6 +27,7 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
         std::cout << "Error al cargar el audio";
     }
     _musicjuego.play();
+    _musicjuego.getLoop();
 
     Leo Pj;
     Anonymous Eny;

@@ -62,7 +62,6 @@ void Menu::cmd() //Cmd
     }
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::Enter))
     {
-        //_sound1.play();
         _state = MenuState::Select;
     }
 }

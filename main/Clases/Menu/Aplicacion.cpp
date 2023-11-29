@@ -6,6 +6,7 @@ Aplicacion::Aplicacion(sf::Vector2u resolucion) // ctor
     sf::RenderWindow _window(sf::VideoMode(resolucion.x,resolucion.y), "TYPERACER", sf::Style::Default);
     _window.setFramerateLimit(60);
 
+
     //set fondo
     sf::RectangleShape fondo;
     fondo.setSize(sf::Vector2f(resolucion.x,resolucion.y));
@@ -15,14 +16,16 @@ Aplicacion::Aplicacion(sf::Vector2u resolucion) // ctor
 
     if(!_musicmenu.openFromFile("Audio/menu.menu.wav")){
         cout << "Error al cargar el audio";
+
     }
-    _musicmenu.play();
     _musicmenu.setLoop(true);
 
-    if(!_buffer1.loadFromFile("Audio/Menuenter.wav")){
+    if(!_musicjuego.openFromFile("Audio/juego.juego.wav")){
         cout << "Error al cargar el audio";
+
     }
-    _sound1.setBuffer(_buffer1);
+    _musicjuego.setLoop(true);
+
 
     //inicializar menu
     Menu menu(_window.getSize().x, _window.getSize().y);
@@ -31,18 +34,22 @@ Aplicacion::Aplicacion(sf::Vector2u resolucion) // ctor
     //Game Loop (update del juego)
     while(_window.isOpen())
     {
+        _musicmenu.play();
+
+
 
         while(_window.pollEvent(_event))
         {
+            _musicmenu.play();
             if(_event.type == sf::Event::Closed)
             {
                 _window.close();
             }
             if(_event.type == sf::Event::KeyReleased && _event.key.code == sf::Keyboard::Enter)
             {
-                _sound1.play();
                 if(menu.getState())
                 {
+
                     int x = menu.getSelected();
 
                     switch(x)
@@ -62,7 +69,11 @@ Aplicacion::Aplicacion(sf::Vector2u resolucion) // ctor
                         bool closeMenuNivel = false;
 
                         while(_window.isOpen())
+
                         {
+                            _musicjuego.play();
+
+
                             sf::Event event2;
                             while(_window.pollEvent(event2))
                             {
@@ -79,14 +90,12 @@ Aplicacion::Aplicacion(sf::Vector2u resolucion) // ctor
 
                                         if(y == 0)
                                         {
-                                            _sound1.play();
                                             closeMenuNivel = true;
                                             break;
                                         }
                                         else
                                         {
                                             int nivel = y;
-                                            _musicmenu.pause();
                                             Transicion transicion(nivel, &_window); //Pantalla de transicion
                                             Gameplay gameplay(nivel, &resolucion, &_window); //Entrar al nivel seleccionado
 

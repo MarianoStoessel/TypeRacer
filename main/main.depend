@@ -420,7 +420,7 @@
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Window/GlResource.hpp>
 
-1700179450 source:d:\uni 2023\laboratorio ii\tp integrador\main\mani.cpp
+1700610212 source:d:\uni 2023\laboratorio ii\tp integrador\main\mani.cpp
 	"librariesMain.h"
 
 1688071491 d:\uni 2023\laboratorio ii\tp integrador\main\sfml\include\sfml\graphics.hpp
@@ -1262,53 +1262,58 @@
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Window/GlResource.hpp>
 
-1701217762 f:\proyectos github\typeracer\main\include\menu.h
+1701098138 f:\proyectos github\typeracer\main\include\menu.h
 	<iostream>
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
 
-1701218571 source:f:\proyectos github\typeracer\main\clases\menu\menu.cpp
+1701098138 source:f:\proyectos github\typeracer\main\clases\menu\menu.cpp
 	"Menu.h"
 
-1701215617 source:f:\proyectos github\typeracer\main\src\anonymous.cpp
+1701099507 source:f:\proyectos github\typeracer\main\src\anonymous.cpp
 	"Anonymous.h"
 
-1701215617 f:\proyectos github\typeracer\main\include\anonymous.h
+1701099507 f:\proyectos github\typeracer\main\include\anonymous.h
 	<SFML/Graphics.hpp>
 
-1701218603 source:f:\proyectos github\typeracer\main\src\gameplay.cpp
+1701211291 source:f:\proyectos github\typeracer\main\src\gameplay.cpp
 	"Gameplay.h"
 	<iostream>
-	<conio.h>
 
-1701217870 f:\proyectos github\typeracer\main\include\gameplay.h
+1701211040 f:\proyectos github\typeracer\main\include\gameplay.h
+	<iostream>
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
 	"Leo.h"
 	"Gusavirus.h"
 	"Anonymous.h"
 	"Keyword.h"
+	"Score.h"
+	"Nivel.h"
+	"Vida.h"
 
-1701215617 source:f:\proyectos github\typeracer\main\src\gusavirus.cpp
+1701207030 source:f:\proyectos github\typeracer\main\src\gusavirus.cpp
 	"Gusavirus.h"
+	<iostream>
 
-1701215617 f:\proyectos github\typeracer\main\include\gusavirus.h
+1701207023 f:\proyectos github\typeracer\main\include\gusavirus.h
 	<SFML/Graphics.hpp>
 	"Keyword.h"
 
-1701215617 source:f:\proyectos github\typeracer\main\src\keyword.cpp
+1701131473 source:f:\proyectos github\typeracer\main\src\keyword.cpp
 	"Keyword.h"
 	<iostream>
 	<cstring>
 	<conio.h>
 
-1701215617 f:\proyectos github\typeracer\main\include\keyword.h
+1701183199 f:\proyectos github\typeracer\main\include\keyword.h
 	<SFML/Graphics.hpp>
 
-1701215617 source:f:\proyectos github\typeracer\main\src\leo.cpp
+1701207899 source:f:\proyectos github\typeracer\main\src\leo.cpp
 	"Leo.h"
 
-1701215617 f:\proyectos github\typeracer\main\include\leo.h
+1701204598 f:\proyectos github\typeracer\main\include\leo.h
+	<iostream>
 	<SFML/Graphics.hpp>
 
 1697663564 f:\proyectos github\typeracer\main\sfml\include\sfml\audio.hpp
@@ -1418,9 +1423,10 @@
 1700352266 source:d:\uni 2023\laboratorio ii\tp integrador\main\clases\menu\menu.cpp
 	"Menu.h"
 
-1700176363 d:\uni 2023\laboratorio ii\tp integrador\main\include\menu.h
+1700780567 d:\uni 2023\laboratorio ii\tp integrador\main\include\menu.h
 	<iostream>
 	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
 
 1699657424 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\anonymous.cpp
 	"Anonymous.h"
@@ -1428,14 +1434,17 @@
 1699577847 d:\uni 2023\laboratorio ii\tp integrador\main\include\anonymous.h
 	<SFML/Graphics.hpp>
 
-1700172115 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\gameplay.cpp
+1701050667 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\gameplay.cpp
 	"Gameplay.h"
 	<iostream>
 	<conio.h>
 
-1699577847 d:\uni 2023\laboratorio ii\tp integrador\main\include\gameplay.h
+1701050667 d:\uni 2023\laboratorio ii\tp integrador\main\include\gameplay.h
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
+	"Leo.h"
+	"Gusavirus.h"
+	"Anonymous.h"
 	"Keyword.h"
 
 1688071491 d:\uni 2023\laboratorio ii\tp integrador\main\sfml\include\sfml\audio.hpp
@@ -1542,10 +1551,11 @@
 	<SFML/Audio/Export.hpp>
 	<string>
 
-1700429659 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\gusavirus.cpp
+1701050807 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\gusavirus.cpp
 	"Gusavirus.h"
+	<iostream>
 
-1700432666 d:\uni 2023\laboratorio ii\tp integrador\main\include\gusavirus.h
+1701050667 d:\uni 2023\laboratorio ii\tp integrador\main\include\gusavirus.h
 	<SFML/Graphics.hpp>
 	"Keyword.h"
 
@@ -1558,13 +1568,13 @@
 1700432702 d:\uni 2023\laboratorio ii\tp integrador\main\include\keyword.h
 	<SFML/Graphics.hpp>
 
-1699577847 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\leo.cpp
+1700610215 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\leo.cpp
 	"Leo.h"
 
 1699577847 d:\uni 2023\laboratorio ii\tp integrador\main\include\leo.h
 	<SFML/Graphics.hpp>
 
-1701215617 f:\proyectos github\typeracer\main\librariesmain.h
+1701099507 f:\proyectos github\typeracer\main\librariesmain.h
 	<SFML/Graphics.hpp>
 	<SFML/Window.hpp>
 	<SFML/System.hpp>
@@ -1580,6 +1590,7 @@
 	"Leo.h"
 	"Gusavirus.h"
 	"Anonymous.h"
+	"Score.h"
 
 1700176363 d:\uni 2023\laboratorio ii\tp integrador\main\librariesmain.h
 	<SFML/Graphics.hpp>
@@ -1598,22 +1609,38 @@
 	"Gusavirus.h"
 	"Anonymous.h"
 
-1701217762 source:f:\proyectos github\typeracer\main\clases\menu\menunivel.cpp
+1701099507 source:f:\proyectos github\typeracer\main\clases\menu\menunivel.cpp
 	"MenuNivel.h"
 
-1701217762 f:\proyectos github\typeracer\main\include\menunivel.h
+1701098247 f:\proyectos github\typeracer\main\include\menunivel.h
 	<iostream>
+	<SFML/Graphics.hpp>
+
+1701054724 source:d:\uni 2023\laboratorio ii\tp integrador\main\clases\menu\menunivel.cpp
+	"MenuNivel.h"
+
+1701053741 d:\uni 2023\laboratorio ii\tp integrador\main\include\menunivel.h
+	<iostream>
+	<SFML/Graphics.hpp>
+
+1701133373 f:\proyectos github\typeracer\main\include\aplicacion.h
+	<iostream>
+	<ctime>
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
-
-1700352266 source:d:\uni 2023\laboratorio ii\tp integrador\main\clases\menu\menunivel.cpp
+	"Gameplay.h"
+	"Menu.h"
 	"MenuNivel.h"
+	"Transicion.h"
+	"scode.h"
 
-1700352266 d:\uni 2023\laboratorio ii\tp integrador\main\include\menunivel.h
-	<iostream>
-	<SFML/Graphics.hpp>
+1701192803 source:f:\proyectos github\typeracer\main\clases\menu\aplicacion.cpp
+	"Aplicacion.h"
 
-1701219060 f:\proyectos github\typeracer\main\include\aplicacion.h
+1700610215 source:d:\uni 2023\laboratorio ii\tp integrador\main\clases\menu\aplicacion.cpp
+	"Aplicacion.h"
+
+1700610215 d:\uni 2023\laboratorio ii\tp integrador\main\include\aplicacion.h
 	<iostream>
 	<ctime>
 	<SFML/Graphics.hpp>
@@ -1623,648 +1650,47 @@
 	"MenuNivel.h"
 	"Transicion.h"
 
-1701218571 source:f:\proyectos github\typeracer\main\clases\menu\aplicacion.cpp
-	"Aplicacion.h"
-
-1700429933 source:d:\uni 2023\laboratorio ii\tp integrador\main\clases\menu\aplicacion.cpp
-	"Aplicacion.h"
-
-1700352266 d:\uni 2023\laboratorio ii\tp integrador\main\include\aplicacion.h
-	<iostream>
-	<ctime>
-	<SFML/Graphics.hpp>
-	<SFML/Audio.hpp>
-	"Menu.h"
-	"MenuNivel.h"
-	"Leo.h"
-	"Gusavirus.h"
-	"Anonymous.h"
-
-1701215617 f:\proyectos github\typeracer\main\include\transicion.h
+1701132691 f:\proyectos github\typeracer\main\include\transicion.h
 	<iostream>
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
 
-1701215617 source:f:\proyectos github\typeracer\main\clases\menu\transicion.cpp
+1701133277 source:f:\proyectos github\typeracer\main\clases\menu\transicion.cpp
 	"Transicion.h"
 
-1701022346 source:d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\clases\menu\aplicacion.cpp
-	"Aplicacion.h"
-
-1701214203 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\include\aplicacion.h
+1700610215 d:\uni 2023\laboratorio ii\tp integrador\main\include\transicion.h
 	<iostream>
-	<ctime>
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
-	"Gameplay.h"
-	"Menu.h"
-	"MenuNivel.h"
+
+1700610215 source:d:\uni 2023\laboratorio ii\tp integrador\main\clases\menu\transicion.cpp
 	"Transicion.h"
 
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\graphics.hpp
-	<SFML/Window.hpp>
-	<SFML/Graphics/BlendMode.hpp>
-	<SFML/Graphics/CircleShape.hpp>
-	<SFML/Graphics/Color.hpp>
-	<SFML/Graphics/ConvexShape.hpp>
-	<SFML/Graphics/Drawable.hpp>
-	<SFML/Graphics/Font.hpp>
-	<SFML/Graphics/Glyph.hpp>
-	<SFML/Graphics/Image.hpp>
-	<SFML/Graphics/PrimitiveType.hpp>
-	<SFML/Graphics/Rect.hpp>
-	<SFML/Graphics/RectangleShape.hpp>
-	<SFML/Graphics/RenderStates.hpp>
-	<SFML/Graphics/RenderTarget.hpp>
-	<SFML/Graphics/RenderTexture.hpp>
-	<SFML/Graphics/RenderWindow.hpp>
-	<SFML/Graphics/Shader.hpp>
-	<SFML/Graphics/Shape.hpp>
-	<SFML/Graphics/Sprite.hpp>
-	<SFML/Graphics/Text.hpp>
-	<SFML/Graphics/Texture.hpp>
-	<SFML/Graphics/Transform.hpp>
-	<SFML/Graphics/Transformable.hpp>
-	<SFML/Graphics/Vertex.hpp>
-	<SFML/Graphics/VertexArray.hpp>
-	<SFML/Graphics/VertexBuffer.hpp>
-	<SFML/Graphics/View.hpp>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\window.hpp
-	<SFML/System.hpp>
-	<SFML/Window/Clipboard.hpp>
-	<SFML/Window/Context.hpp>
-	<SFML/Window/ContextSettings.hpp>
-	<SFML/Window/Cursor.hpp>
-	<SFML/Window/Event.hpp>
-	<SFML/Window/Joystick.hpp>
-	<SFML/Window/Keyboard.hpp>
-	<SFML/Window/Mouse.hpp>
-	<SFML/Window/Sensor.hpp>
-	<SFML/Window/Touch.hpp>
-	<SFML/Window/VideoMode.hpp>
-	<SFML/Window/Window.hpp>
-	<SFML/Window/WindowHandle.hpp>
-	<SFML/Window/WindowStyle.hpp>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\system.hpp
-	<SFML/Config.hpp>
-	<SFML/System/Clock.hpp>
-	<SFML/System/Err.hpp>
-	<SFML/System/FileInputStream.hpp>
-	<SFML/System/InputStream.hpp>
-	<SFML/System/Lock.hpp>
-	<SFML/System/MemoryInputStream.hpp>
-	<SFML/System/Mutex.hpp>
-	<SFML/System/NonCopyable.hpp>
-	<SFML/System/Sleep.hpp>
-	<SFML/System/String.hpp>
-	<SFML/System/Thread.hpp>
-	<SFML/System/ThreadLocal.hpp>
-	<SFML/System/ThreadLocalPtr.hpp>
-	<SFML/System/Time.hpp>
-	<SFML/System/Utf.hpp>
-	<SFML/System/Vector2.hpp>
-	<SFML/System/Vector3.hpp>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\config.hpp
-	"TargetConditionals.h"
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\system\clock.hpp
-	<SFML/System/Export.hpp>
-	<SFML/System/Time.hpp>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\system\export.hpp
-	<SFML/Config.hpp>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\system\time.hpp
-	<SFML/System/Export.hpp>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\system\err.hpp
-	<SFML/System/Export.hpp>
-	<ostream>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\system\fileinputstream.hpp
-	<SFML/Config.hpp>
-	<SFML/System/Export.hpp>
-	<SFML/System/InputStream.hpp>
-	<SFML/System/NonCopyable.hpp>
-	<cstdio>
-	<string>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\system\inputstream.hpp
-	<SFML/Config.hpp>
-	<SFML/System/Export.hpp>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\system\noncopyable.hpp
-	<SFML/System/Export.hpp>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\system\lock.hpp
-	<SFML/System/Export.hpp>
-	<SFML/System/NonCopyable.hpp>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\system\memoryinputstream.hpp
-	<SFML/Config.hpp>
-	<SFML/System/InputStream.hpp>
-	<SFML/System/Export.hpp>
-	<cstdlib>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\system\mutex.hpp
-	<SFML/System/Export.hpp>
-	<SFML/System/NonCopyable.hpp>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\system\sleep.hpp
-	<SFML/System/Export.hpp>
-	<SFML/System/Time.hpp>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\system\string.hpp
-	<SFML/System/Export.hpp>
-	<SFML/System/Utf.hpp>
-	<iterator>
-	<locale>
-	<string>
-	<SFML/System/String.inl>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\system\utf.hpp
-	<SFML/Config.hpp>
-	<algorithm>
-	<locale>
-	<string>
-	<cstdlib>
-	<SFML/System/Utf.inl>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\system\utf.inl
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\system\string.inl
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\system\thread.hpp
-	<SFML/System/Export.hpp>
-	<SFML/System/NonCopyable.hpp>
-	<cstdlib>
-	<SFML/System/Thread.inl>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\system\thread.inl
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\system\threadlocal.hpp
-	<SFML/System/Export.hpp>
-	<SFML/System/NonCopyable.hpp>
-	<cstdlib>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\system\threadlocalptr.hpp
-	<SFML/System/ThreadLocal.hpp>
-	<SFML/System/ThreadLocalPtr.inl>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\system\threadlocalptr.inl
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\system\vector2.hpp
-	<SFML/System/Vector2.inl>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\system\vector2.inl
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\system\vector3.hpp
-	<SFML/System/Vector3.inl>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\system\vector3.inl
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\window\clipboard.hpp
-	<SFML/Window/Export.hpp>
-	<SFML/System/String.hpp>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\window\export.hpp
-	<SFML/Config.hpp>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\window\context.hpp
-	<SFML/Window/Export.hpp>
-	<SFML/Window/GlResource.hpp>
-	<SFML/Window/ContextSettings.hpp>
-	<SFML/System/NonCopyable.hpp>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\window\glresource.hpp
-	<SFML/Window/Export.hpp>
-	<SFML/System/NonCopyable.hpp>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\window\contextsettings.hpp
-	<SFML/Config.hpp>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\window\cursor.hpp
-	<SFML/Window/Export.hpp>
-	<SFML/System/NonCopyable.hpp>
-	<SFML/System/Vector2.hpp>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\window\event.hpp
-	<SFML/Config.hpp>
-	<SFML/Window/Joystick.hpp>
-	<SFML/Window/Keyboard.hpp>
-	<SFML/Window/Mouse.hpp>
-	<SFML/Window/Sensor.hpp>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\window\joystick.hpp
-	<SFML/Window/Export.hpp>
-	<SFML/System/String.hpp>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\window\keyboard.hpp
-	<SFML/Window/Export.hpp>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\window\mouse.hpp
-	<SFML/Window/Export.hpp>
-	<SFML/System/Vector2.hpp>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\window\sensor.hpp
-	<SFML/Window/Export.hpp>
-	<SFML/System/Vector3.hpp>
-	<SFML/System/Time.hpp>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\window\touch.hpp
-	<SFML/Window/Export.hpp>
-	<SFML/System/Vector2.hpp>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\window\videomode.hpp
-	<SFML/Window/Export.hpp>
-	<vector>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\window\window.hpp
-	<SFML/Window/ContextSettings.hpp>
-	<SFML/Window/GlResource.hpp>
-	<SFML/Window/WindowBase.hpp>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\window\windowbase.hpp
-	<SFML/Window/Cursor.hpp>
-	<SFML/Window/Export.hpp>
-	<SFML/Window/VideoMode.hpp>
-	<SFML/Window/Vulkan.hpp>
-	<SFML/Window/WindowHandle.hpp>
-	<SFML/Window/WindowStyle.hpp>
-	<SFML/System/Clock.hpp>
-	<SFML/System/NonCopyable.hpp>
-	<SFML/System/String.hpp>
-	<SFML/System/Vector2.hpp>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\window\vulkan.hpp
-	<SFML/Window/Export.hpp>
-	<SFML/Window/WindowHandle.hpp>
-	<vector>
-	<cstddef>
-	<stdint.h>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\window\windowhandle.hpp
-	<SFML/Config.hpp>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\window\windowstyle.hpp
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\graphics\blendmode.hpp
-	<SFML/Graphics/Export.hpp>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\graphics\export.hpp
-	<SFML/Config.hpp>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\graphics\circleshape.hpp
-	<SFML/Graphics/Export.hpp>
-	<SFML/Graphics/Shape.hpp>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\graphics\shape.hpp
-	<SFML/Graphics/Export.hpp>
-	<SFML/Graphics/Drawable.hpp>
-	<SFML/Graphics/Transformable.hpp>
-	<SFML/Graphics/VertexArray.hpp>
-	<SFML/System/Vector2.hpp>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\graphics\drawable.hpp
-	<SFML/Graphics/Export.hpp>
-	<SFML/Graphics/RenderStates.hpp>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\graphics\renderstates.hpp
-	<SFML/Graphics/Export.hpp>
-	<SFML/Graphics/BlendMode.hpp>
-	<SFML/Graphics/Transform.hpp>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\graphics\transform.hpp
-	<SFML/Graphics/Export.hpp>
-	<SFML/Graphics/Rect.hpp>
-	<SFML/System/Vector2.hpp>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\graphics\rect.hpp
-	<SFML/System/Vector2.hpp>
-	<algorithm>
-	<SFML/Graphics/Rect.inl>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\graphics\rect.inl
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\graphics\transformable.hpp
-	<SFML/Graphics/Export.hpp>
-	<SFML/Graphics/Transform.hpp>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\graphics\vertexarray.hpp
-	<SFML/Graphics/Export.hpp>
-	<SFML/Graphics/Vertex.hpp>
-	<SFML/Graphics/PrimitiveType.hpp>
-	<SFML/Graphics/Rect.hpp>
-	<SFML/Graphics/Drawable.hpp>
-	<vector>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\graphics\vertex.hpp
-	<SFML/Graphics/Export.hpp>
-	<SFML/Graphics/Color.hpp>
-	<SFML/System/Vector2.hpp>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\graphics\color.hpp
-	<SFML/Graphics/Export.hpp>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\graphics\primitivetype.hpp
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\graphics\convexshape.hpp
-	<SFML/Graphics/Export.hpp>
-	<SFML/Graphics/Shape.hpp>
-	<vector>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\graphics\font.hpp
-	<SFML/Graphics/Export.hpp>
-	<SFML/Graphics/Glyph.hpp>
-	<SFML/Graphics/Texture.hpp>
-	<SFML/Graphics/Rect.hpp>
-	<map>
-	<string>
-	<vector>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\graphics\glyph.hpp
-	<SFML/Graphics/Export.hpp>
-	<SFML/Graphics/Rect.hpp>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\graphics\texture.hpp
-	<SFML/Graphics/Export.hpp>
-	<SFML/Graphics/Image.hpp>
-	<SFML/Window/GlResource.hpp>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\graphics\image.hpp
-	<SFML/Graphics/Export.hpp>
-	<SFML/Graphics/Color.hpp>
-	<SFML/Graphics/Rect.hpp>
-	<string>
-	<vector>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\graphics\rectangleshape.hpp
-	<SFML/Graphics/Export.hpp>
-	<SFML/Graphics/Shape.hpp>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\graphics\rendertarget.hpp
-	<SFML/Graphics/Export.hpp>
-	<SFML/Graphics/Color.hpp>
-	<SFML/Graphics/Rect.hpp>
-	<SFML/Graphics/View.hpp>
-	<SFML/Graphics/Transform.hpp>
-	<SFML/Graphics/BlendMode.hpp>
-	<SFML/Graphics/RenderStates.hpp>
-	<SFML/Graphics/PrimitiveType.hpp>
-	<SFML/Graphics/Vertex.hpp>
-	<SFML/System/NonCopyable.hpp>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\graphics\view.hpp
-	<SFML/Graphics/Export.hpp>
-	<SFML/Graphics/Rect.hpp>
-	<SFML/Graphics/Transform.hpp>
-	<SFML/System/Vector2.hpp>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\graphics\rendertexture.hpp
-	<SFML/Graphics/Export.hpp>
-	<SFML/Graphics/Texture.hpp>
-	<SFML/Graphics/RenderTarget.hpp>
-	<SFML/Window/ContextSettings.hpp>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\graphics\renderwindow.hpp
-	<SFML/Graphics/Export.hpp>
-	<SFML/Graphics/RenderTarget.hpp>
-	<SFML/Graphics/Image.hpp>
-	<SFML/Window/Window.hpp>
-	<string>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\graphics\shader.hpp
-	<SFML/Graphics/Export.hpp>
-	<SFML/Graphics/Glsl.hpp>
-	<SFML/Window/GlResource.hpp>
-	<SFML/System/NonCopyable.hpp>
-	<SFML/System/Vector2.hpp>
-	<SFML/System/Vector3.hpp>
-	<map>
-	<string>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\graphics\glsl.hpp
-	<SFML/Graphics/Transform.hpp>
-	<SFML/Graphics/Color.hpp>
-	<SFML/System/Vector2.hpp>
-	<SFML/System/Vector3.hpp>
-	<SFML/Graphics/Glsl.inl>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\graphics\glsl.inl
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\graphics\sprite.hpp
-	<SFML/Graphics/Export.hpp>
-	<SFML/Graphics/Drawable.hpp>
-	<SFML/Graphics/Transformable.hpp>
-	<SFML/Graphics/Vertex.hpp>
-	<SFML/Graphics/Rect.hpp>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\graphics\text.hpp
-	<SFML/Graphics/Export.hpp>
-	<SFML/Graphics/Drawable.hpp>
-	<SFML/Graphics/Transformable.hpp>
-	<SFML/Graphics/Font.hpp>
-	<SFML/Graphics/Rect.hpp>
-	<SFML/Graphics/VertexArray.hpp>
-	<SFML/System/String.hpp>
-	<string>
-	<vector>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\graphics\vertexbuffer.hpp
-	<SFML/Graphics/Export.hpp>
-	<SFML/Graphics/PrimitiveType.hpp>
-	<SFML/Graphics/Drawable.hpp>
-	<SFML/Window/GlResource.hpp>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\audio.hpp
-	<SFML/System.hpp>
-	<SFML/Audio/InputSoundFile.hpp>
-	<SFML/Audio/Listener.hpp>
-	<SFML/Audio/Music.hpp>
-	<SFML/Audio/OutputSoundFile.hpp>
-	<SFML/Audio/Sound.hpp>
-	<SFML/Audio/SoundBuffer.hpp>
-	<SFML/Audio/SoundBufferRecorder.hpp>
-	<SFML/Audio/SoundFileFactory.hpp>
-	<SFML/Audio/SoundFileReader.hpp>
-	<SFML/Audio/SoundFileWriter.hpp>
-	<SFML/Audio/SoundRecorder.hpp>
-	<SFML/Audio/SoundSource.hpp>
-	<SFML/Audio/SoundStream.hpp>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\audio\inputsoundfile.hpp
-	<SFML/Audio/Export.hpp>
-	<SFML/System/NonCopyable.hpp>
-	<SFML/System/Time.hpp>
-	<string>
-	<cstddef>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\audio\export.hpp
-	<SFML/Config.hpp>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\audio\listener.hpp
-	<SFML/Audio/Export.hpp>
-	<SFML/System/Vector3.hpp>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\audio\music.hpp
-	<SFML/Audio/Export.hpp>
-	<SFML/Audio/SoundStream.hpp>
-	<SFML/Audio/InputSoundFile.hpp>
-	<SFML/System/Mutex.hpp>
-	<SFML/System/Time.hpp>
-	<string>
-	<vector>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\audio\soundstream.hpp
-	<SFML/Audio/Export.hpp>
-	<SFML/Audio/SoundSource.hpp>
-	<SFML/System/Thread.hpp>
-	<SFML/System/Time.hpp>
-	<SFML/System/Mutex.hpp>
-	<cstdlib>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\audio\soundsource.hpp
-	<SFML/Audio/Export.hpp>
-	<SFML/Audio/AlResource.hpp>
-	<SFML/System/Vector3.hpp>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\audio\alresource.hpp
-	<SFML/Audio/Export.hpp>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\audio\outputsoundfile.hpp
-	<SFML/Audio/Export.hpp>
-	<SFML/System/NonCopyable.hpp>
-	<string>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\audio\sound.hpp
-	<SFML/Audio/Export.hpp>
-	<SFML/Audio/SoundSource.hpp>
-	<SFML/System/Time.hpp>
-	<cstdlib>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\audio\soundbuffer.hpp
-	<SFML/Audio/Export.hpp>
-	<SFML/Audio/AlResource.hpp>
-	<SFML/System/Time.hpp>
-	<string>
-	<vector>
-	<set>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\audio\soundbufferrecorder.hpp
-	<SFML/Audio/Export.hpp>
-	<SFML/Audio/SoundBuffer.hpp>
-	<SFML/Audio/SoundRecorder.hpp>
-	<vector>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\audio\soundrecorder.hpp
-	<SFML/Audio/Export.hpp>
-	<SFML/Audio/AlResource.hpp>
-	<SFML/System/Thread.hpp>
-	<SFML/System/Time.hpp>
-	<vector>
-	<string>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\audio\soundfilefactory.hpp
-	<SFML/Audio/Export.hpp>
-	<string>
-	<vector>
-	<SFML/Audio/SoundFileFactory.inl>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\audio\soundfilefactory.inl
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\audio\soundfilereader.hpp
-	<SFML/Audio/Export.hpp>
-	<string>
-
-1697756850 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\sfml\include\sfml\audio\soundfilewriter.hpp
-	<SFML/Audio/Export.hpp>
-	<string>
-
-1700750264 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\include\gameplay.h
-	<SFML/Graphics.hpp>
-	<SFML/Audio.hpp>
-	"Leo.h"
-	"Gusavirus.h"
-	"Anonymous.h"
-	"Keyword.h"
-
-1700750264 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\include\leo.h
+1701177542 f:\proyectos github\typeracer\main\include\score.h
+	<iostream>
 	<SFML/Graphics.hpp>
 
-1700750264 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\include\gusavirus.h
+1701099507 f:\proyectos github\typeracer\main\include\nivel.h
+	<iostream>
+	<SFML/Graphics.hpp>
+
+1701205483 f:\proyectos github\typeracer\main\include\vida.h
+	<SFML/Graphics.hpp>
+
+1701099507 source:f:\proyectos github\typeracer\main\src\nivel.cpp
+	"Nivel.h"
+
+1701177321 source:f:\proyectos github\typeracer\main\src\score.cpp
+	"Score.h"
+
+1701207358 source:f:\proyectos github\typeracer\main\src\vida.cpp
+	"Vida.h"
+
+1701129613 source:f:\proyectos github\typeracer\main\src\textopantalla.cpp
+	"TextoPantalla.h"
+
+1701129593 f:\proyectos github\typeracer\main\include\textopantalla.h
+	<iostream>
 	<SFML/Graphics.hpp>
 	"Keyword.h"
-
-1700750264 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\include\keyword.h
-	<SFML/Graphics.hpp>
-
-1700750264 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\include\anonymous.h
-	<SFML/Graphics.hpp>
-
-1700788601 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\include\menu.h
-	<iostream>
-	<SFML/Graphics.hpp>
-	<SFML/Audio.hpp>
-
-1700790293 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\include\menunivel.h
-	<iostream>
-	<SFML/Graphics.hpp>
-	<SFML/Audio.hpp>
-
-1700750264 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\include\transicion.h
-	<iostream>
-	<SFML/Graphics.hpp>
-	<SFML/Audio.hpp>
-
-1700957437 source:d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\clases\menu\menunivel.cpp
-	"MenuNivel.h"
-
-1700750264 source:d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\clases\menu\transicion.cpp
-	"Transicion.h"
-
-1700750264 source:d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\mani.cpp
-	"librariesMain.h"
-
-1700750264 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\librariesmain.h
-	<SFML/Graphics.hpp>
-	<SFML/Window.hpp>
-	<SFML/System.hpp>
-	<SFML/Audio.hpp>
-	<iostream>
-	<ctime>
-	<stdlib.h>
-	<conio.h>
-	"Aplicacion.h"
-	"Gameplay.h"
-	"Menu.h"
-	"Keyword.h"
-	"Leo.h"
-	"Gusavirus.h"
-	"Anonymous.h"
-
-1700750264 source:d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\src\anonymous.cpp
-	"Anonymous.h"
-
-1700750264 source:d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\src\gameplay.cpp
-	"Gameplay.h"
-	<iostream>
-	<conio.h>
-
-1700750264 source:d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\src\gusavirus.cpp
-	"Gusavirus.h"
-
-1700750264 source:d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\src\keyword.cpp
-	"Keyword.h"
-	<iostream>
-	<cstring>
-	<conio.h>
-
-1700750264 source:d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\src\leo.cpp
-	"Leo.h"
-
-1700957371 source:d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\clases\menu\menu.cpp
-	"Menu.h"
 

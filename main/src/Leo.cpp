@@ -3,123 +3,53 @@
 Leo::Leo() //ctor
 {
     _frame = 0;
+    _frameGolpe = 0;
+    _frameMuerto = 0;
+
     _texture.loadFromFile("Imagenes/SpriteLeo.png");
     _sprite.setTexture(_texture);
     _sprite.setTextureRect({10, 10, 144, 120});
     _sprite.setPosition(30, 330);
     LeoState _state = LeoState::Idle;
 }
-void Leo::cmd() //caja de estados - de aca pasa al update
+//Sets
+void Leo::setGolpe(bool golpe)
+{
+    _golpe = golpe;
+}
+void Leo::setMuriendo(bool muriendo)
+{
+    _muriendo = muriendo;
+}
+//Gets
+bool Leo::getGolpe()
+{
+    return _golpe;
+}
+bool Leo::getMuriendo()
+{
+    return _muriendo;
+}
+//Cmd
+void Leo::cmd()
 {
     _state = LeoState::Idle;
 
-    if(sf::Keyboard::isKeyPressed(sf::Keyboard::A))
+    for (int i = 0; i < sf::Keyboard::KeyCount; i++)
     {
-        _state = LeoState::Move;
+        if (sf::Keyboard::isKeyPressed(static_cast<sf::Keyboard::Key>(i)))
+        {
+            _state = LeoState::Move;
+            break;
+        }
     }
-    if(sf::Keyboard::isKeyPressed(sf::Keyboard::B))
+    if(_golpe == true && _muriendo == false)
     {
-        _state = LeoState::Move;
+        _state = LeoState::kick;
     }
-    if(sf::Keyboard::isKeyPressed(sf::Keyboard::C))
+    if(_muriendo == true)
     {
-        _state = LeoState::Move;
-    }
-    if(sf::Keyboard::isKeyPressed(sf::Keyboard::D))
-    {
-        _state = LeoState::Move;
-    }
-    if(sf::Keyboard::isKeyPressed(sf::Keyboard::E))
-    {
-        _state = LeoState::Move;
-    }
-    if(sf::Keyboard::isKeyPressed(sf::Keyboard::F))
-    {
-        _state = LeoState::Move;
-    }
-    if(sf::Keyboard::isKeyPressed(sf::Keyboard::G))
-    {
-        _state = LeoState::Move;
-    }
-    if(sf::Keyboard::isKeyPressed(sf::Keyboard::H))
-    {
-        _state = LeoState::Move;
-    }
-    if(sf::Keyboard::isKeyPressed(sf::Keyboard::I))
-    {
-        _state = LeoState::Move;
-    }
-    if(sf::Keyboard::isKeyPressed(sf::Keyboard::J))
-    {
-        _state = LeoState::Move;
-    }
-    if(sf::Keyboard::isKeyPressed(sf::Keyboard::K))
-    {
-        _state = LeoState::Move;
-    }
-    if(sf::Keyboard::isKeyPressed(sf::Keyboard::L))
-    {
-        _state = LeoState::Move;
-    }
-    if(sf::Keyboard::isKeyPressed(sf::Keyboard::M))
-    {
-        _state = LeoState::Move;
-    }
-    if(sf::Keyboard::isKeyPressed(sf::Keyboard::N))
-    {
-        _state = LeoState::Move;
-    }
-    if(sf::Keyboard::isKeyPressed(sf::Keyboard::O))
-    {
-        _state = LeoState::Move;
-    }
-    if(sf::Keyboard::isKeyPressed(sf::Keyboard::P))
-    {
-        _state = LeoState::Move;
-    }
-    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Q))
-    {
-        _state = LeoState::Move;
-    }
-    if(sf::Keyboard::isKeyPressed(sf::Keyboard::R))
-    {
-        _state = LeoState::Move;
-    }
-    if(sf::Keyboard::isKeyPressed(sf::Keyboard::S))
-    {
-        _state = LeoState::Move;
-    }
-    if(sf::Keyboard::isKeyPressed(sf::Keyboard::T))
-    {
-        _state = LeoState::Move;
-    }
-    if(sf::Keyboard::isKeyPressed(sf::Keyboard::U))
-    {
-        _state = LeoState::Move;
-    }
-    if(sf::Keyboard::isKeyPressed(sf::Keyboard::V))
-    {
-        _state = LeoState::Move;
-    }
-    if(sf::Keyboard::isKeyPressed(sf::Keyboard::W))
-    {
-        _state = LeoState::Move;
-    }
-    if(sf::Keyboard::isKeyPressed(sf::Keyboard::X))
-    {
-        _state = LeoState::Move;
-    }
-    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Y))
-    {
-        _state = LeoState::Move;
-    }
-    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Z))
-    {
-        _state = LeoState::Move;
-    }
-    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Space))
-    {
-        _state = LeoState::Move;
+        _state = LeoState::death;
     }
 }
 void Leo::update() //comprueba estado y ejecuta el movimiento si es asi
@@ -138,8 +68,25 @@ void Leo::update() //comprueba estado y ejecuta el movimiento si es asi
         }
         _sprite.setTextureRect({10 + int(_frame) * 154, 10, 144, 120});
         break;
-    default:
+    case LeoState::kick:
+        _frameGolpe += 0.18;
+
+        if(_frameGolpe >= 2)
+        {
+            _frameGolpe = 0;
+        }
+        _sprite.setTextureRect({626 + int(_frameGolpe) * 154, 10, 144, 120});
         break;
+    case LeoState::death:
+    {
+        _frameMuerto += 0.05;
+
+        if(_frameMuerto < 6)
+        {
+            _sprite.setTextureRect({10+ int(_frameMuerto) * 154, 142, 144, 120});
+        }
+    }
+    break;
     }
 }
 void Leo::draw(sf::RenderTarget& target, sf::RenderStates states) const

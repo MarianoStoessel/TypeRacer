@@ -13,7 +13,6 @@ class Transicion
 
         sf::Font _font;
         sf::Text _tranNiv;
-        sf::Texture _texture;
         sf::Clock _clock;
     public:
         Transicion();

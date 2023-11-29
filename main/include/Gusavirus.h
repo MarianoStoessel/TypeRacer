@@ -3,26 +3,47 @@
 #define GUSAVIRUS_H
 #include <SFML/Graphics.hpp>
 #include "Keyword.h"
+
+enum class  GusavirusState{Vivo , Muriendo, Muerto};
+
 class Gusavirus: public sf::Drawable  // en progreso
 {
     private:
-        float _velocity = 2;
         sf::Sprite _sprite;
+        sf::Sprite _spritemuerte;
         sf::Texture _texture;
         int _color;
         int x;
         int y;
+        float _velocity = 2;
         float _frame;
+        float _framemuerto=0;
+        bool murio = false;
+        bool muriendo = false;
+        GusavirusState _state;
+
     public:
-        //agregar sets y gets
+        //Construcctor
         Gusavirus();
-        //void mostrarpalabra(){palabra.Mostrar();}
+        //Sets
+        void setmurio();
+        void setmuriendo();
+        void setposx(int posx);
+        //Gets
+        bool getmurio();
+        bool getmuriendo();
         int getposx();
         int getposy();
+        //Cmd
+        void cmd();
+        //Update
         void update();
-        void motion();
+        //Enseño a windows a dibujar la clase en pantalla
         void draw(sf::RenderTarget& target, sf::RenderStates states)const override;
+        //Seteo el color
         void SeeligeColor();
+        //Respawn
+        void respawn();
 };
 
 #endif // GUSAVIRUS_H

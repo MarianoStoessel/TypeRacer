@@ -1,6 +1,6 @@
 #ifndef MENUNIVEL_H
 #define MENUNIVEL_H
-#define Max_menu 4
+#define Max_menunivel 10
 
 #include<iostream>
 #include <SFML/Graphics.hpp>
@@ -14,7 +14,7 @@ class MenuNivel //Modificar
 {
     private:
         sf::Font _font;
-        sf::Text _menu[Max_menu];
+        sf::Text _menu[Max_menunivel];
         sf::Sprite _sprite;
         sf::Texture _texture;
         sf::Clock _clock;
@@ -30,6 +30,7 @@ class MenuNivel //Modificar
         void cmd();
         void update();
         void draw(sf::RenderWindow& window);
+        void ordenmenus();
 
         int getSelected();
         bool getState();

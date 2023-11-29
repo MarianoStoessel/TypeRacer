@@ -6,6 +6,12 @@ MenuNivel::MenuNivel()
 }
 MenuNivel::MenuNivel(float width, float height) //ctor
 {
+    if(!_buffer.loadFromFile("Audio/Selectmenu.wav"))
+    {
+        cout << "Error al cargar el audio";
+    }
+    _sound.setBuffer(_buffer);
+
     if(!_font.loadFromFile("Fuentes/Retro Gaming.ttf"))
     {
         cout <<"No existe la fuente";
@@ -112,8 +118,8 @@ void MenuNivel::update()
     case MenuNivelState::Up:
         if(_clock.getElapsedTime().asMilliseconds() > 20)
         {
+            _sound.play();
             _menuSelected--;
-
             if(_menuSelected < 0)
             {
                 _menu[1].setPosition(0,0);
@@ -137,7 +143,8 @@ void MenuNivel::update()
                 _menuSelected = 9;
             }
 
-            if(_menuSelected > 3 && _menuSelected < 7){
+            if(_menuSelected > 3 && _menuSelected < 7)
+            {
 
                 _menu[7].setPosition(0,0);
                 _menu[7].setColor(sf::Color(0,0,0,0));
@@ -159,7 +166,8 @@ void MenuNivel::update()
 
             }
 
-            if(_menuSelected > 0 && _menuSelected < 4){
+            if(_menuSelected > 0 && _menuSelected < 4)
+            {
 
                 _menu[4].setPosition(0,0);
                 _menu[4].setColor(sf::Color(0,0,0,0));
@@ -188,6 +196,7 @@ void MenuNivel::update()
     case MenuNivelState::Down:
         if(_clock.getElapsedTime().asMilliseconds() > 20)
         {
+            _sound.play();
             _menuSelected++;
             if(_menuSelected > Max_menunivel-1)
             {
@@ -215,7 +224,8 @@ void MenuNivel::update()
 
             }
 
-            if(_menuSelected > 6 && _menuSelected < 10){
+            if(_menuSelected > 6 && _menuSelected < 10)
+            {
 
                 _menu[4].setPosition(0,0);
                 _menu[4].setColor(sf::Color(0,0,0,0));
@@ -237,7 +247,8 @@ void MenuNivel::update()
 
             }
 
-            if(_menuSelected > 0 && _menuSelected < 4){
+            if(_menuSelected > 0 && _menuSelected < 4)
+            {
 
                 _menu[7].setPosition(0,0);
                 _menu[7].setColor(sf::Color(0,0,0,0));

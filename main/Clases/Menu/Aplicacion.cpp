@@ -6,12 +6,26 @@ Aplicacion::Aplicacion(sf::Vector2u resolucion) // ctor
     sf::RenderWindow _window(sf::VideoMode(resolucion.x,resolucion.y), "TYPERACER", sf::Style::Default);
     _window.setFramerateLimit(60);
 
+
     //set fondo
     sf::RectangleShape fondo;
     fondo.setSize(sf::Vector2f(resolucion.x,resolucion.y));
     sf::Texture menuTexture;
     menuTexture.loadFromFile("Imagenes/FondoMain.jpg");
     fondo.setTexture(&menuTexture);
+
+    if(!_musicmenu.openFromFile("Audio/menu.menu.wav"))
+    {
+        cout << "Error al cargar el audio";
+    }
+    _musicmenu.play();
+    _musicmenu.setLoop(true);
+
+    if(!_buffer1.loadFromFile("Audio/Menuenter.wav"))
+    {
+        cout << "Error al cargar el audio";
+    }
+    _sound1.setBuffer(_buffer1);
 
     //inicializar menu
     Menu menu(_window.getSize().x, _window.getSize().y);
@@ -27,6 +41,7 @@ Aplicacion::Aplicacion(sf::Vector2u resolucion) // ctor
             }
             if(_event.type == sf::Event::KeyReleased && _event.key.code == sf::Keyboard::Enter)
             {
+                _sound1.play();
                 if(menu.getState())
                 {
                     int x = menu.getSelected();
@@ -44,11 +59,12 @@ Aplicacion::Aplicacion(sf::Vector2u resolucion) // ctor
 
                         //inicializar menu Niveles
                         MenuNivel _menuNivel(_window.getSize().x, _window.getSize().y);
+
                         bool closeMenuNivel = false;
 
                         while(_window.isOpen())
-                        {
 
+                        {
                             sf::Event event2;
                             while(_window.pollEvent(event2))
                             {
@@ -58,32 +74,34 @@ Aplicacion::Aplicacion(sf::Vector2u resolucion) // ctor
                                 }
                                 if(event2.type == sf::Event::KeyReleased && event2.key.code == sf::Keyboard::Enter)
                                 {
+
                                     if(_menuNivel.getState())
                                     {
                                         int y = _menuNivel.getSelected();
 
                                         if(y == 0)
                                         {
+                                            _sound1.play();
                                             closeMenuNivel = true;
                                             break;
                                         }
                                         else
                                         {
                                             int nivel = y;
-                                            //Transicion transicion(nivel, &_window); //Pantalla de transicion
+                                            _musicmenu.pause();
+                                            Transicion transicion(nivel, &_window); //Pantalla de transicion
                                             Gameplay gameplay(nivel, &resolucion, &_window); //Entrar al nivel seleccionado
 
                                             ///operador de gameplay
                                             if(gameplay.getGameOver() == true) //Pierde el nivel
                                             {
-                                                int score = 0;
                                                 if(nivel > 9) //Juego completado
                                                 {
-                                                    Transicion transicion(nivel, &_window); //transicion juego temrinado aca
+                                                    ///crear transicion juego temrinado aca
                                                 }
                                                 else
                                                 {
-                                                    Transicion transicion(nivel, &_window); //crear transicion perdite aca
+                                                    ///crear transicion perdite aca
                                                 }
                                                 closeMenuNivel = true;
                                                 break;

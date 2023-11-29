@@ -6,21 +6,21 @@
 
 class Score: public sf::Drawable
 {
-    private:
-        sf::Font _font;
-        sf::Text _scoreNiv;
+private:
+    sf::Font _font;
+    sf::Text _scoreNiv;
 
-        int _score;
+    int _score;
 
-    public:
-        Score();
+public:
+    Score();
 
-        int getScore();
-        void sumarScore();
+    int getScore();
+    void sumarScore();
 
-        void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
+    void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
 
-        ~Score();
+    ~Score();
 };
 
 #endif // SCORE_H

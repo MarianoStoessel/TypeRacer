@@ -19,6 +19,9 @@ private:
     sf::RenderStates _state;
     sf::Event _event;
 
+    sf::Music _musicmenu;
+    sf::SoundBuffer _buffer1;
+    sf::Sound _sound1;
 public:
     Aplicacion(sf::Vector2u resolucion);
 

@@ -8,7 +8,8 @@ Keyword::Keyword(const char *ini)
 {
     _tam = strlen(ini)+1;
     _p = new char [_tam];
-    if(_p == NULL){
+    if(_p == NULL)
+    {
         std::cout << "ERROR DE ASIGNACION DE MEMORIA" << std::endl;
         exit(1);
     }

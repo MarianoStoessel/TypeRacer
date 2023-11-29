@@ -6,6 +6,12 @@ Menu::Menu() //ctor
 }
 Menu::Menu(float width, float height)
 {
+    if(!_buffer.loadFromFile("Audio/Selectmenu.wav"))
+    {
+        cout << "Error al cargar el audio";
+    }
+    _sound.setBuffer(_buffer);
+
     if(!_font.loadFromFile("Fuentes/Retro Gaming.ttf"))
     {
         cout <<"No existe la fuente";
@@ -40,12 +46,15 @@ Menu::Menu(float width, float height)
 }
 
 void Menu::cmd() //Cmd
+
 {
+
     _state = MenuState::Idle;
 
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::Up))
     {
         _state = MenuState::Up;
+
     }
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::Down))
     {
@@ -56,7 +65,6 @@ void Menu::cmd() //Cmd
         _state = MenuState::Select;
     }
 }
-
 void Menu::update()
 {
     _menu[_menuSelected].setFillColor(sf::Color::White); //Inicio
@@ -65,6 +73,7 @@ void Menu::update()
     case MenuState::Up:
         if(_clock.getElapsedTime().asMilliseconds() > 20)
         {
+            _sound.play();
             _menuSelected--;
             if(_menuSelected < 0)
             {
@@ -77,6 +86,7 @@ void Menu::update()
     case MenuState::Down:
         if(_clock.getElapsedTime().asMilliseconds() > 20)
         {
+            _sound.play();
             _menuSelected++;
             if(_menuSelected > Max_menu-1)
             {

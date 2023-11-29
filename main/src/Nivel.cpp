@@ -22,6 +22,8 @@ Nivel::Nivel(int nivel)
     _nivNiv.setCharacterSize(30);
     _nivNiv.setPosition(1187,771);
 }
+int Nivel::getnivel(){return _nivel;}
+void Nivel::setnivel(int niv){_nivel=niv;}
 void Nivel::draw(sf::RenderTarget& target, sf::RenderStates states) const
 {
     target.draw(_nivNiv, states);

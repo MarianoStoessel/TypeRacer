@@ -14,6 +14,8 @@ class Nivel: public sf::Drawable
     public:
         Nivel();
         Nivel(int nivel);
+        int getnivel();
+        void setnivel(int niv);
 
         void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
 

@@ -34,7 +34,7 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
     Leo Pj;
     Anonymous Eny;
     Gusavirus Gus;
-    Keyword palabra;
+    Keyword palabra(Niv.getnivel());
     Score Sco;
     Vida Vid;
 

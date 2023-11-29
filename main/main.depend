@@ -1434,7 +1434,7 @@
 1701101206 d:\uni 2023\laboratorio ii\tp integrador\main\include\anonymous.h
 	<SFML/Graphics.hpp>
 
-1701219552 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\gameplay.cpp
+1701252304 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\gameplay.cpp
 	"Gameplay.h"
 	<iostream>
 
@@ -1568,8 +1568,9 @@
 	<cstring>
 	<conio.h>
 
-1701225984 d:\uni 2023\laboratorio ii\tp integrador\main\include\keyword.h
+1701253555 d:\uni 2023\laboratorio ii\tp integrador\main\include\keyword.h
 	<SFML/Graphics.hpp>
+	"Nivel.h"
 
 1701219235 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\leo.cpp
 	"Leo.h"
@@ -1704,14 +1705,14 @@
 	<iostream>
 	<SFML/Graphics.hpp>
 
-1701101206 d:\uni 2023\laboratorio ii\tp integrador\main\include\nivel.h
+1701251960 d:\uni 2023\laboratorio ii\tp integrador\main\include\nivel.h
 	<iostream>
 	<SFML/Graphics.hpp>
 
 1701213531 d:\uni 2023\laboratorio ii\tp integrador\main\include\vida.h
 	<SFML/Graphics.hpp>
 
-1701101206 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\nivel.cpp
+1701251960 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\nivel.cpp
 	"Nivel.h"
 
 1701213532 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\score.cpp

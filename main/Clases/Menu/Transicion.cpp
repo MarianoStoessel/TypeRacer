@@ -29,8 +29,8 @@ Transicion::Transicion(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* wi
         _tranNiv.setFont(_font);
         _tranNiv.setFillColor(sf::Color::White);
         _tranNiv.setString("Perdiste");
-        _tranNiv.setCharacterSize(65);
-        _tranNiv.setPosition(530,350);
+        _tranNiv.setCharacterSize(75);
+        _tranNiv.setPosition(530,250);
     }
     else if(nivel <= 9)
     {

@@ -105,12 +105,6 @@ Aplicacion::Aplicacion(sf::Vector2u resolucion) // ctor
                                                 closeMenuNivel = true;
                                                 break;
                                             }
-
-                                            /*if(gameplay.getLevelUp() == true) ///Dentro de gameplay
-                                            {
-                                                ///crear transicion Nivel completado aca
-                                                nivel++; //Gana el nivel
-                                            }*/
                                         }
                                     }
                                 }

@@ -13,11 +13,18 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
     _nivel = nivel;
 
     //int cantenem = 0;
+
+    //set fondo
     sf::RectangleShape fondo;
     fondo.setSize(sf::Vector2f(resolucion->x, resolucion->y));
     sf::Texture menutextura;
     menutextura.loadFromFile("Imagenes/Escenario.jpg");
     fondo.setTexture(&menutextura);
+
+    //set rectangulo Negro
+    sf::RectangleShape rectangulo(sf::Vector2f(76, 76));
+    rectangulo.setFillColor(sf::Color::Black);
+    rectangulo.setPosition(202, 600);
 
     if(!_font.loadFromFile("Fuentes/Retro Gaming.ttf"))
     {
@@ -187,6 +194,7 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
         _window->draw(Pj);
         _window->draw(Eny);
         _window->draw(Gus);
+        _window->draw(rectangulo);
         _window->draw(text);
         _window->draw(_textPan);
         _window->draw(_textPan2);

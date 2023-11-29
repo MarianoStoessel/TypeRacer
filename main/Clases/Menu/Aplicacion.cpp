@@ -6,7 +6,6 @@ Aplicacion::Aplicacion(sf::Vector2u resolucion) // ctor
     sf::RenderWindow _window(sf::VideoMode(resolucion.x,resolucion.y), "TYPERACER", sf::Style::Default);
     _window.setFramerateLimit(60);
 
-
     //set fondo
     sf::RectangleShape fondo;
     fondo.setSize(sf::Vector2f(resolucion.x,resolucion.y));

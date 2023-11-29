@@ -112,7 +112,8 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
 
                         _textPan2.setFont(_font);
                         _textPan2.setFillColor(sf::Color::Black);
-                        _textPan2.setString("Datos correctamente ingresados...");
+                        if(_clock2.getElapsedTime().asSeconds() > 2){
+                        _textPan2.setString("Datos correctamente ingresados...");}
                         _textPan2.setCharacterSize(36);
                         _textPan2.setPosition(32,827);
 
@@ -129,11 +130,13 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
         }
         text.setPosition(Gus.getposx(),Gus.getposy());
 
-        if(Gus.getposx()==900)
+        if(Gus.getposy() == 360 )
         {
-            Gus.setposx(901);
+            Gus.setposy(1500);
+            cout<<"ee"<<endl;
             Gus.setmuriendo();
             text.setString("");
+
 
             for(int i=0; i<=3; i++)
             {
@@ -159,8 +162,8 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
             Gus.respawn();
             text.setPosition(Gus.getposx(),Gus.getposy());
             text.setString("Hola");
+            palabra.setP("Hola");
         }
-
         //CMD
         Pj.cmd();
         Eny.cmd();

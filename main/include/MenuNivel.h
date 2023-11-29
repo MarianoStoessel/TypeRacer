@@ -20,8 +20,6 @@ class MenuNivel //Modificar
         sf::Clock _clock;
         sf::SoundBuffer _buffer2;
         sf::Sound _sound2;
-        sf::SoundBuffer _buffer3;
-        sf::Sound _sound3;
 
         int _menuSelected;
         MenuNivelState _state;

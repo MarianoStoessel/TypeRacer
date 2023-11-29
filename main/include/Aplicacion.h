@@ -17,10 +17,10 @@ private:
     sf::RenderWindow _window;
     sf::RenderStates _state;
     sf::Event _event;
+
     sf::Music _musicmenu;
-    sf::Music _musicjuego;
-
-
+    sf::SoundBuffer _buffer1;
+    sf::Sound _sound1;
 public:
     Aplicacion(sf::Vector2u resolucion);
 

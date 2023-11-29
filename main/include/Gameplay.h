@@ -18,6 +18,8 @@ class Gameplay
         sf::Event _evento;
         sf::Vector2u* _resolucion;
 
+        sf::Music _musicjuego;
+
         int _nivel;
         bool _exitoPalabra;
 

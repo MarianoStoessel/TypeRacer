@@ -23,6 +23,11 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
     sf::Text text;
     font.loadFromFile("Fuentes/Retro Gaming.ttf");
 
+    if(!_musicjuego.openFromFile("Audio/juego.juego.wav")){
+        std::cout << "Error al cargar el audio";
+    }
+    _musicjuego.play();
+
     Leo Pj;
     Anonymous Eny;
     Gusavirus Gus;

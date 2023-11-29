@@ -1262,26 +1262,26 @@
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Window/GlResource.hpp>
 
-1700750179 f:\proyectos github\typeracer\main\include\menu.h
+1701217762 f:\proyectos github\typeracer\main\include\menu.h
 	<iostream>
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
 
-1700495300 source:f:\proyectos github\typeracer\main\clases\menu\menu.cpp
+1701217762 source:f:\proyectos github\typeracer\main\clases\menu\menu.cpp
 	"Menu.h"
 
-1700597441 source:f:\proyectos github\typeracer\main\src\anonymous.cpp
+1701215617 source:f:\proyectos github\typeracer\main\src\anonymous.cpp
 	"Anonymous.h"
 
-1699577909 f:\proyectos github\typeracer\main\include\anonymous.h
+1701215617 f:\proyectos github\typeracer\main\include\anonymous.h
 	<SFML/Graphics.hpp>
 
-1700514779 source:f:\proyectos github\typeracer\main\src\gameplay.cpp
+1701217897 source:f:\proyectos github\typeracer\main\src\gameplay.cpp
 	"Gameplay.h"
 	<iostream>
 	<conio.h>
 
-1700514779 f:\proyectos github\typeracer\main\include\gameplay.h
+1701217870 f:\proyectos github\typeracer\main\include\gameplay.h
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
 	"Leo.h"
@@ -1289,26 +1289,26 @@
 	"Anonymous.h"
 	"Keyword.h"
 
-1700597955 source:f:\proyectos github\typeracer\main\src\gusavirus.cpp
+1701215617 source:f:\proyectos github\typeracer\main\src\gusavirus.cpp
 	"Gusavirus.h"
 
-1700514779 f:\proyectos github\typeracer\main\include\gusavirus.h
+1701215617 f:\proyectos github\typeracer\main\include\gusavirus.h
 	<SFML/Graphics.hpp>
 	"Keyword.h"
 
-1700514504 source:f:\proyectos github\typeracer\main\src\keyword.cpp
+1701215617 source:f:\proyectos github\typeracer\main\src\keyword.cpp
 	"Keyword.h"
 	<iostream>
 	<cstring>
 	<conio.h>
 
-1700514504 f:\proyectos github\typeracer\main\include\keyword.h
+1701215617 f:\proyectos github\typeracer\main\include\keyword.h
 	<SFML/Graphics.hpp>
 
-1700514947 source:f:\proyectos github\typeracer\main\src\leo.cpp
+1701215617 source:f:\proyectos github\typeracer\main\src\leo.cpp
 	"Leo.h"
 
-1699577909 f:\proyectos github\typeracer\main\include\leo.h
+1701215617 f:\proyectos github\typeracer\main\include\leo.h
 	<SFML/Graphics.hpp>
 
 1697663564 f:\proyectos github\typeracer\main\sfml\include\sfml\audio.hpp
@@ -1564,7 +1564,7 @@
 1699577847 d:\uni 2023\laboratorio ii\tp integrador\main\include\leo.h
 	<SFML/Graphics.hpp>
 
-1700495300 f:\proyectos github\typeracer\main\librariesmain.h
+1701215617 f:\proyectos github\typeracer\main\librariesmain.h
 	<SFML/Graphics.hpp>
 	<SFML/Window.hpp>
 	<SFML/System.hpp>
@@ -1598,12 +1598,13 @@
 	"Gusavirus.h"
 	"Anonymous.h"
 
-1700587829 source:f:\proyectos github\typeracer\main\clases\menu\menunivel.cpp
+1701217762 source:f:\proyectos github\typeracer\main\clases\menu\menunivel.cpp
 	"MenuNivel.h"
 
-1700587829 f:\proyectos github\typeracer\main\include\menunivel.h
+1701217762 f:\proyectos github\typeracer\main\include\menunivel.h
 	<iostream>
 	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
 
 1700352266 source:d:\uni 2023\laboratorio ii\tp integrador\main\clases\menu\menunivel.cpp
 	"MenuNivel.h"
@@ -1612,7 +1613,7 @@
 	<iostream>
 	<SFML/Graphics.hpp>
 
-1700586682 f:\proyectos github\typeracer\main\include\aplicacion.h
+1701217870 f:\proyectos github\typeracer\main\include\aplicacion.h
 	<iostream>
 	<ctime>
 	<SFML/Graphics.hpp>
@@ -1622,7 +1623,7 @@
 	"MenuNivel.h"
 	"Transicion.h"
 
-1700597955 source:f:\proyectos github\typeracer\main\clases\menu\aplicacion.cpp
+1701217870 source:f:\proyectos github\typeracer\main\clases\menu\aplicacion.cpp
 	"Aplicacion.h"
 
 1700429933 source:d:\uni 2023\laboratorio ii\tp integrador\main\clases\menu\aplicacion.cpp
@@ -1639,12 +1640,12 @@
 	"Gusavirus.h"
 	"Anonymous.h"
 
-1700590880 f:\proyectos github\typeracer\main\include\transicion.h
+1701215617 f:\proyectos github\typeracer\main\include\transicion.h
 	<iostream>
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
 
-1700596853 source:f:\proyectos github\typeracer\main\clases\menu\transicion.cpp
+1701215617 source:f:\proyectos github\typeracer\main\clases\menu\transicion.cpp
 	"Transicion.h"
 
 1701022346 source:d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\clases\menu\aplicacion.cpp

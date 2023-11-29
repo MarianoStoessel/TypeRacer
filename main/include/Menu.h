@@ -20,8 +20,6 @@ class Menu
         sf::Clock _clock;
         sf::SoundBuffer _buffer;
         sf::Sound _sound;
-        sf::SoundBuffer _buffer1;
-        sf::Sound _sound1;
 
         int _menuSelected;
         MenuState _state;

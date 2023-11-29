@@ -4,6 +4,10 @@
 #include<conio.h>
 
 //constructor
+Keyword::Keyword()
+{
+
+}
 Keyword::Keyword(const char *ini)
 {
     _tam = strlen(ini)+1;

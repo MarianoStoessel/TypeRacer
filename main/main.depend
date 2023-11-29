@@ -841,7 +841,7 @@
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Window/GlResource.hpp>
 
-1701282883 source:f:\proyectos github\typeracer\main\mani.cpp
+1701282965 source:f:\proyectos github\typeracer\main\mani.cpp
 	"librariesMain.h"
 	"ArchivosEditor.h"
 	"Archivos.h"
@@ -1278,11 +1278,11 @@
 1701262813 f:\proyectos github\typeracer\main\include\anonymous.h
 	<SFML/Graphics.hpp>
 
-1701282231 source:f:\proyectos github\typeracer\main\src\gameplay.cpp
+1701282965 source:f:\proyectos github\typeracer\main\src\gameplay.cpp
 	"Gameplay.h"
 	<iostream>
 
-1701280701 f:\proyectos github\typeracer\main\include\gameplay.h
+1701282965 f:\proyectos github\typeracer\main\include\gameplay.h
 	<iostream>
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
@@ -1300,17 +1300,17 @@
 	"Gusavirus.h"
 	<iostream>
 
-1701282176 f:\proyectos github\typeracer\main\include\gusavirus.h
+1701282965 f:\proyectos github\typeracer\main\include\gusavirus.h
 	<SFML/Graphics.hpp>
 	"Keyword.h"
 
-1701280163 source:f:\proyectos github\typeracer\main\src\keyword.cpp
+1701282965 source:f:\proyectos github\typeracer\main\src\keyword.cpp
 	"Keyword.h"
 	<iostream>
 	<cstring>
 	<conio.h>
 
-1701280163 f:\proyectos github\typeracer\main\include\keyword.h
+1701282965 f:\proyectos github\typeracer\main\include\keyword.h
 	<SFML/Graphics.hpp>
 
 1701262813 source:f:\proyectos github\typeracer\main\src\leo.cpp
@@ -1725,17 +1725,17 @@
 1701213532 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\vida.cpp
 	"Vida.h"
 
-1701279273 source:f:\proyectos github\typeracer\main\src\archivos.cpp
+1701282965 source:f:\proyectos github\typeracer\main\src\archivos.cpp
 	<iostream>
 	"Archivos.h"
 
-1701279258 f:\proyectos github\typeracer\main\include\archivos.h
+1701282965 f:\proyectos github\typeracer\main\include\archivos.h
 	<iostream>
 	<cstring>
 
-1699488891 source:f:\proyectos github\typeracer\main\src\archivoseditor.cpp
+1701282965 source:f:\proyectos github\typeracer\main\src\archivoseditor.cpp
 	"ArchivosEditor.h"
 
-1699488927 f:\proyectos github\typeracer\main\include\archivoseditor.h
+1701282965 f:\proyectos github\typeracer\main\include\archivoseditor.h
 	"Archivos.h"
 

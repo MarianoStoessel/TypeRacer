@@ -45,8 +45,32 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
     Score Sco;
     Vida Vid;
 
+    //Archivo de Keywords
+    ArchivosEditor archEditor("Archivos/nivel1.dat");
+    int cantRegistros = archEditor.contarRegistros();
+
+    Archivos * vec;
+    if(cantRegistros > 0)
+    {
+        vec = new Archivos[cantRegistros];
+        if(vec == NULL)
+        {
+            cout << "Error de asignacion de memoria.";
+            return;
+        }
+        for(int i=0; i<cantRegistros; i++)
+        {
+            vec[i] = archEditor.leerRegistro(i);
+            //vec[i].Mostrar();
+            cout << vec[i].getKeyword() << endl;
+
+            cout << endl;
+        }
+    }
+
     //muestro palabra Gusavirus por pantalla
     sf::Text text;
+    palabra.setP(vec[rand()%29].getKeyword());
 
     text.setFont(_font);
     text.setFillColor(sf::Color::White);
@@ -169,9 +193,9 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
         if(Gus.getmurio()==true)
         {
             Gus.respawn();
+            palabra.setP(vec[rand()%29].getKeyword());
             text.setPosition(Gus.getposx(),Gus.getposy());
-            text.setString("Hola");
-            palabra.setP("Hola");
+            text.setString(palabra.getP());
         }
         //CMD
         Pj.cmd();

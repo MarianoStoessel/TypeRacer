@@ -841,8 +841,10 @@
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Window/GlResource.hpp>
 
-1701274725 source:f:\proyectos github\typeracer\main\mani.cpp
+1701281892 source:f:\proyectos github\typeracer\main\mani.cpp
 	"librariesMain.h"
+	"ArchivosEditor.h"
+	"Archivos.h"
 
 1697663564 f:\proyectos github\typeracer\main\sfml\include\sfml\graphics.hpp
 	<SFML/Window.hpp>
@@ -1276,14 +1278,16 @@
 1701262813 f:\proyectos github\typeracer\main\include\anonymous.h
 	<SFML/Graphics.hpp>
 
-1701269802 source:f:\proyectos github\typeracer\main\src\gameplay.cpp
+1701282231 source:f:\proyectos github\typeracer\main\src\gameplay.cpp
 	"Gameplay.h"
 	<iostream>
 
-1701269802 f:\proyectos github\typeracer\main\include\gameplay.h
+1701280701 f:\proyectos github\typeracer\main\include\gameplay.h
 	<iostream>
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
+	"ArchivosEditor.h"
+	"Archivos.h"
 	"Leo.h"
 	"Gusavirus.h"
 	"Anonymous.h"
@@ -1296,17 +1300,17 @@
 	"Gusavirus.h"
 	<iostream>
 
-1701262813 f:\proyectos github\typeracer\main\include\gusavirus.h
+1701282176 f:\proyectos github\typeracer\main\include\gusavirus.h
 	<SFML/Graphics.hpp>
 	"Keyword.h"
 
-1701275698 source:f:\proyectos github\typeracer\main\src\keyword.cpp
+1701280163 source:f:\proyectos github\typeracer\main\src\keyword.cpp
 	"Keyword.h"
 	<iostream>
 	<cstring>
 	<conio.h>
 
-1701275680 f:\proyectos github\typeracer\main\include\keyword.h
+1701280163 f:\proyectos github\typeracer\main\include\keyword.h
 	<SFML/Graphics.hpp>
 
 1701262813 source:f:\proyectos github\typeracer\main\src\leo.cpp
@@ -1640,7 +1644,7 @@
 	"Transicion.h"
 	"scode.h"
 
-1701262813 source:f:\proyectos github\typeracer\main\clases\menu\aplicacion.cpp
+1701277328 source:f:\proyectos github\typeracer\main\clases\menu\aplicacion.cpp
 	"Aplicacion.h"
 
 1701213531 source:d:\uni 2023\laboratorio ii\tp integrador\main\clases\menu\aplicacion.cpp
@@ -1720,4 +1724,18 @@
 
 1701213532 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\vida.cpp
 	"Vida.h"
+
+1701279273 source:f:\proyectos github\typeracer\main\src\archivos.cpp
+	<iostream>
+	"Archivos.h"
+
+1701279258 f:\proyectos github\typeracer\main\include\archivos.h
+	<iostream>
+	<cstring>
+
+1699488891 source:f:\proyectos github\typeracer\main\src\archivoseditor.cpp
+	"ArchivosEditor.h"
+
+1699488927 f:\proyectos github\typeracer\main\include\archivoseditor.h
+	"Archivos.h"
 

@@ -10,9 +10,10 @@ private:
 
 public:
     Keyword();
-    Keyword(const char *ini);
+
     const char *getP();
     int getTam();
+
     void setP(const char *p);
 
     virtual ~Keyword();

@@ -7,6 +7,9 @@
 #include <SFML/Graphics.hpp>
 #include <SFML/Audio.hpp>
 
+#include "ArchivosEditor.h"
+#include "Archivos.h"
+
 #include "Leo.h"
 #include "Gusavirus.h"
 #include "Anonymous.h"

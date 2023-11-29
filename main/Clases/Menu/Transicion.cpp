@@ -8,7 +8,6 @@ Transicion::Transicion() //ctor
 }
 Transicion::Transicion(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window)
 {
-    nivel = 0;
     _window = window;
     string strNivel = std::to_string(nivel);
 

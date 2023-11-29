@@ -9,9 +9,11 @@ private:
     int _tam;
 
 public:
-    Keyword(const char *ini = "hola como estas");
+    Keyword();
+
     const char *getP();
     int getTam();
+
     void setP(const char *p);
 
     virtual ~Keyword();

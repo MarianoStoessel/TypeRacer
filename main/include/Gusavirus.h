@@ -15,7 +15,7 @@ private:
     int _color;
     int x;
     int y;
-    float _velocity = 6;
+    float _velocity = 2;
     float _frame;
     float _framemuerto=0;
     bool murio = false;

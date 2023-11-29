@@ -1,7 +1,10 @@
 #include "librariesMain.h"
 
-// MAIN PRINCIPAL
+#include "ArchivosEditor.h"
+#include "Archivos.h"
 
+
+// MAIN PRINCIPAL
 int main()
 {
     srand((unsigned)time(0));

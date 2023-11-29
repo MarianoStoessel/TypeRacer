@@ -22,9 +22,9 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
     fondo.setTexture(&menutextura);
 
     //set rectangulo Negro
-    sf::RectangleShape rectangulo(sf::Vector2f(76, 76));
+    sf::RectangleShape rectangulo(sf::Vector2f(153, 110));
     rectangulo.setFillColor(sf::Color::Black);
-    rectangulo.setPosition(202, 600);
+    rectangulo.setPosition(125, 575);
 
     if(!_font.loadFromFile("Fuentes/Retro Gaming.ttf"))
     {
@@ -44,9 +44,9 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
     Keyword palabra;
     Score Sco;
     Vida Vid;
-
     //Archivo de Keywords
-    ArchivosEditor archEditor("Archivos/nivel9.dat");
+    setnombre();
+    ArchivosEditor archEditor(_nombre);
     int cantRegistros = archEditor.contarRegistros();
 
     Archivos vec[30];
@@ -66,7 +66,7 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
     text.setFont(_font);
     text.setFillColor(sf::Color::White);
     text.setString(palabra.getP());
-    text.setCharacterSize(15);
+    text.setCharacterSize(20);
     text.setPosition(Gus.getposx(),Gus.getposy());
 
     cout << palabra.getP(); //Keyword del Gusavirus
@@ -305,3 +305,37 @@ void Gameplay::logicajuego()  ///Maneja la logica del juego
     //Display - Flip
     _window->display();
 }*/
+
+void Gameplay::setnombre()
+{
+    switch (_nivel)
+    {
+    case 1:
+        strcpy(_nombre,"Archivos/nivel1.dat");
+        break;
+    case 2:
+        strcpy(_nombre,"Archivos/nivel2.dat");
+        break;
+    case 3:
+        strcpy(_nombre,"Archivos/nivel3.dat");
+        break;
+    case 4:
+        strcpy(_nombre,"Archivos/nivel4.dat");
+        break;
+    case 5:
+        strcpy(_nombre,"Archivos/nivel5.dat");
+        break;
+    case 6:
+        strcpy(_nombre,"Archivos/nivel6.dat");
+        break;
+    case 7:
+        strcpy(_nombre,"Archivos/nivel7.dat");
+        break;
+    case 8:
+        strcpy(_nombre,"Archivos/nivel8.dat");
+        break;
+    case 9:
+        strcpy(_nombre,"Archivos/nivel9.dat");
+        break;
+    }
+}

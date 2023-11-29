@@ -27,6 +27,7 @@ public:
     Gusavirus();
     //Sets
     void setmurio();
+    void setvelocity(float vel){_velocity=vel;};
     void setmuriendo();
     void setposx(int posx);
     void setposy(int posy);

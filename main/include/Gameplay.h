@@ -37,7 +37,7 @@ private:
     sf::Text _textPan;
     sf::Text _textPan2;
     std::string _textoPantalla;
-
+    char _nombre[30];
     char _caracter;
     bool verifica = true;
     int auxTam = 0;
@@ -46,6 +46,7 @@ public:
     Gameplay();
     Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window);
 
+    void setnombre();
     void Renderizar();
     void logicajuego();
     void procesar_eventos();

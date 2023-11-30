@@ -106,6 +106,17 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
             {
                 _window->close();
             }
+            if(event.type == sf::Event::MouseMoved)
+            {
+                if(Sal.getSprite().getGlobalBounds().contains(event.mouseMove.x, event.mouseMove.y))
+                {
+                    Sal.setPosicion(true);
+                }
+                else
+                {
+                    Sal.setPosicion(false);
+                }
+            }
             if(event.type == sf::Event::TextEntered)
             {
                 if(event.text.unicode == 8 || event.text.unicode == 13) //Backspace y Enter

@@ -843,7 +843,7 @@
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Window/GlResource.hpp>
 
-1701355546 source:f:\proyectos github\typeracer\main\mani.cpp
+1701356853 source:f:\proyectos github\typeracer\main\mani.cpp
 	"librariesMain.h"
 
 1697663564 f:\proyectos github\typeracer\main\sfml\include\sfml\graphics.hpp
@@ -1278,11 +1278,11 @@
 1701354931 f:\proyectos github\typeracer\main\include\anonymous.h
 	<SFML/Graphics.hpp>
 
-1701356324 source:f:\proyectos github\typeracer\main\src\gameplay.cpp
+1701357896 source:f:\proyectos github\typeracer\main\src\gameplay.cpp
 	"Gameplay.h"
 	<iostream>
 
-1701356240 f:\proyectos github\typeracer\main\include\gameplay.h
+1701356853 f:\proyectos github\typeracer\main\include\gameplay.h
 	<iostream>
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
@@ -2428,10 +2428,10 @@
 	"Gameplay.h"
 	<iostream>
 
-1701356410 source:f:\proyectos github\typeracer\main\src\iconosalir.cpp
+1701357966 source:f:\proyectos github\typeracer\main\src\iconosalir.cpp
 	"IconoSalir.h"
 
-1701356469 f:\proyectos github\typeracer\main\include\iconosalir.h
+1701357607 f:\proyectos github\typeracer\main\include\iconosalir.h
 	<iostream>
 	<SFML/Graphics.hpp>
 

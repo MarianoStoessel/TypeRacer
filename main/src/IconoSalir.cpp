@@ -12,13 +12,21 @@ void IconoSalir::setPosicion(bool pos)
 {
     _pos = pos;
 }
+void IconoSalir::setSprite(sf::Sprite sprite)
+{
+    _sprite = sprite;
+}
 bool IconoSalir::getPosicion()
 {
     return _pos;
 }
+sf::Sprite IconoSalir::getSprite()
+{
+    return _sprite;
+}
 void IconoSalir::cmd()
 {
-    _state = SalirState::Move;
+    _state = SalirState::Idle;
 
     if(_pos == true)
     {

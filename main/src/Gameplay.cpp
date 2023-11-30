@@ -230,11 +230,6 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
                     Jug.setGolpe(true);
                     _ouch.play();
                     _clock.restart();
-
-                    if(Vid.getVida() == 0)
-                    {
-                        Jug.setMuriendo(true);
-                    }
                 }
             }
         }
@@ -258,7 +253,7 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
         }
 
         //Si se llega a 1000 puntos gana el nivel
-        if(Sco.getScore()>1000)
+        if(Sco.getScore()>=1000)
         {
             Eny.setMuriendo(true);
             if(Eny.getframemuerto()>11.5)
@@ -270,12 +265,16 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
             }
         }
         //si leo se queda sin vidas muere
-        if(Vid.getVida()<1 && Jug.getframemuerto()>5.5)
+        if(Vid.getVida()<=0)
         {
-            setnivel(0);
-            _gameover=true;
-            _jugando.pause();
-            break;
+            Jug.setMuriendo(true);
+            if(Jug.getframemuerto()>5.5)
+            {
+                setnivel(0);
+                _gameover=true;
+                _jugando.pause();
+                break;
+            }
         }
 
         //CMD

@@ -1276,7 +1276,7 @@
 1701354931 f:\proyectos github\typeracer\main\include\anonymous.h
 	<SFML/Graphics.hpp>
 
-1701361021 source:f:\proyectos github\typeracer\main\src\gameplay.cpp
+1701365917 source:f:\proyectos github\typeracer\main\src\gameplay.cpp
 	"Gameplay.h"
 	<iostream>
 
@@ -1651,7 +1651,7 @@
 	"Transicion.h"
 	"scode.h"
 
-1701360790 source:f:\proyectos github\typeracer\main\clases\menu\aplicacion.cpp
+1701365572 source:f:\proyectos github\typeracer\main\clases\menu\aplicacion.cpp
 	"Aplicacion.h"
 
 1701312370 source:d:\uni 2023\laboratorio ii\tp integrador\main\clases\menu\aplicacion.cpp
@@ -1668,12 +1668,12 @@
 	"Transicion.h"
 	"scode.h"
 
-1701346218 f:\proyectos github\typeracer\main\include\transicion.h
+1701365723 f:\proyectos github\typeracer\main\include\transicion.h
 	<iostream>
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
 
-1701354931 source:f:\proyectos github\typeracer\main\clases\menu\transicion.cpp
+1701365954 source:f:\proyectos github\typeracer\main\clases\menu\transicion.cpp
 	"Transicion.h"
 
 1701308102 d:\uni 2023\laboratorio ii\tp integrador\main\include\transicion.h
@@ -2440,4 +2440,11 @@
 
 1701359447 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\iconosalir.cpp
 	"IconoSalir.h"
+
+1701362922 source:f:\proyectos github\typeracer\main\src\easteregg.cpp
+	"EasterEgg.h"
+
+1701362922 f:\proyectos github\typeracer\main\include\easteregg.h
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
 

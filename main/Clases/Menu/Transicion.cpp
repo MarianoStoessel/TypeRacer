@@ -43,7 +43,7 @@ Transicion::Transicion(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* wi
         _tranNiv.setString("Perdiste");
         _tranNiv.setCharacterSize(75);
         _tranNiv.setPosition(530,250);
-        _tiempo = 10;
+        _tiempo = 9;
 
         _gameover.play();
     }
@@ -63,7 +63,7 @@ Transicion::Transicion(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* wi
         _tranNiv.setString("Ganaste");
         _tranNiv.setCharacterSize(150);
         _tranNiv.setPosition(350,300);
-        _tiempo = 10;
+        _tiempo = 7.5;
 
         _win.play();
     }

@@ -86,6 +86,7 @@ Aplicacion::Aplicacion(sf::Vector2u resolucion) // ctor
                                             Gameplay gameplay(_nivel, &resolucion, &_window); //Entrar al nivel seleccionado
                                             _nivel=gameplay.getnivel();
                                             cout<<_nivel<<endl;
+
                                             //operador de gameplay
                                             if(gameplay.getGameOver() == true) //Pierde el nivel
                                             {

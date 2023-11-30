@@ -1270,13 +1270,13 @@
 1701303242 source:f:\proyectos github\typeracer\main\clases\menu\menu.cpp
 	"Menu.h"
 
-1701354931 source:f:\proyectos github\typeracer\main\src\anonymous.cpp
+1701359847 source:f:\proyectos github\typeracer\main\src\anonymous.cpp
 	"Anonymous.h"
 
 1701354931 f:\proyectos github\typeracer\main\include\anonymous.h
 	<SFML/Graphics.hpp>
 
-1701357979 source:f:\proyectos github\typeracer\main\src\gameplay.cpp
+1701360690 source:f:\proyectos github\typeracer\main\src\gameplay.cpp
 	"Gameplay.h"
 	<iostream>
 
@@ -1296,7 +1296,7 @@
 	"Aplicacion.h"
 	"IconoSalir.h"
 
-1701354931 source:f:\proyectos github\typeracer\main\src\gusavirus.cpp
+1701359847 source:f:\proyectos github\typeracer\main\src\gusavirus.cpp
 	"Gusavirus.h"
 	<iostream>
 
@@ -1651,7 +1651,7 @@
 	"Transicion.h"
 	"scode.h"
 
-1701346218 source:f:\proyectos github\typeracer\main\clases\menu\aplicacion.cpp
+1701360690 source:f:\proyectos github\typeracer\main\clases\menu\aplicacion.cpp
 	"Aplicacion.h"
 
 1701312370 source:d:\uni 2023\laboratorio ii\tp integrador\main\clases\menu\aplicacion.cpp
@@ -2427,10 +2427,10 @@
 	"Gameplay.h"
 	<iostream>
 
-1701357966 source:f:\proyectos github\typeracer\main\src\iconosalir.cpp
+1701359847 source:f:\proyectos github\typeracer\main\src\iconosalir.cpp
 	"IconoSalir.h"
 
-1701357607 f:\proyectos github\typeracer\main\include\iconosalir.h
+1701359847 f:\proyectos github\typeracer\main\include\iconosalir.h
 	<iostream>
 	<SFML/Graphics.hpp>
 

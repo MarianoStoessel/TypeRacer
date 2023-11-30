@@ -16,7 +16,7 @@ private:
     sf::Clock _clock;
     sf::Music _gameover;
     sf::Music _win;
-    int _tiempo;
+    float _tiempo;
     int _nivel;
 public:
     Transicion();

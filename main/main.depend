@@ -843,10 +843,8 @@
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Window/GlResource.hpp>
 
-1701282965 source:f:\proyectos github\typeracer\main\mani.cpp
+1701355546 source:f:\proyectos github\typeracer\main\mani.cpp
 	"librariesMain.h"
-	"ArchivosEditor.h"
-	"Archivos.h"
 
 1697663564 f:\proyectos github\typeracer\main\sfml\include\sfml\graphics.hpp
 	<SFML/Window.hpp>
@@ -1274,17 +1272,17 @@
 1701303242 source:f:\proyectos github\typeracer\main\clases\menu\menu.cpp
 	"Menu.h"
 
-1701354544 source:f:\proyectos github\typeracer\main\src\anonymous.cpp
+1701354931 source:f:\proyectos github\typeracer\main\src\anonymous.cpp
 	"Anonymous.h"
 
-1701353348 f:\proyectos github\typeracer\main\include\anonymous.h
+1701354931 f:\proyectos github\typeracer\main\include\anonymous.h
 	<SFML/Graphics.hpp>
 
-1701354759 source:f:\proyectos github\typeracer\main\src\gameplay.cpp
+1701356324 source:f:\proyectos github\typeracer\main\src\gameplay.cpp
 	"Gameplay.h"
 	<iostream>
 
-1701346218 f:\proyectos github\typeracer\main\include\gameplay.h
+1701356240 f:\proyectos github\typeracer\main\include\gameplay.h
 	<iostream>
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
@@ -1298,8 +1296,9 @@
 	"Nivel.h"
 	"Vida.h"
 	"Aplicacion.h"
+	"IconoSalir.h"
 
-1701354002 source:f:\proyectos github\typeracer\main\src\gusavirus.cpp
+1701354931 source:f:\proyectos github\typeracer\main\src\gusavirus.cpp
 	"Gusavirus.h"
 	<iostream>
 
@@ -1316,10 +1315,10 @@
 1701282965 f:\proyectos github\typeracer\main\include\keyword.h
 	<SFML/Graphics.hpp>
 
-1701354176 source:f:\proyectos github\typeracer\main\src\leo.cpp
+1701354931 source:f:\proyectos github\typeracer\main\src\leo.cpp
 	"Leo.h"
 
-1701353348 f:\proyectos github\typeracer\main\include\leo.h
+1701354931 f:\proyectos github\typeracer\main\include\leo.h
 	<iostream>
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
@@ -1675,7 +1674,7 @@
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
 
-1701354828 source:f:\proyectos github\typeracer\main\clases\menu\transicion.cpp
+1701354931 source:f:\proyectos github\typeracer\main\clases\menu\transicion.cpp
 	"Transicion.h"
 
 1701308102 d:\uni 2023\laboratorio ii\tp integrador\main\include\transicion.h
@@ -2428,4 +2427,11 @@
 1701313938 source:d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\src\gameplay.cpp
 	"Gameplay.h"
 	<iostream>
+
+1701356410 source:f:\proyectos github\typeracer\main\src\iconosalir.cpp
+	"IconoSalir.h"
+
+1701356469 f:\proyectos github\typeracer\main\include\iconosalir.h
+	<iostream>
+	<SFML/Graphics.hpp>
 

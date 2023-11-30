@@ -106,6 +106,13 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
             {
                 _window->close();
             }
+            if (event.type == sf::Event::MouseButtonPressed)
+            {
+                if (event.mouseButton.button == sf::Mouse::Left && Sal.getPosicion()==true)
+                {
+                    return;
+                }
+            }
             if(event.type == sf::Event::MouseMoved)
             {
                 if(Sal.getSprite().getGlobalBounds().contains(event.mouseMove.x, event.mouseMove.y))

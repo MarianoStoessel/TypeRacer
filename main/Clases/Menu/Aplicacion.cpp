@@ -90,7 +90,6 @@ Aplicacion::Aplicacion(sf::Vector2u resolucion) // ctor
                                             if(gameplay.getGameOver() == true) //Pierde el nivel
                                             {
                                                 Transicion transicion(_nivel, &resolucion, &_window); //transicion juego ganaste
-                                                closeMenuNivel = true;
                                                 gameplay.setGameOver(false);
                                                 break;
                                             }

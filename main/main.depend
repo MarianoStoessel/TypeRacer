@@ -1442,11 +1442,11 @@
 1701357987 d:\uni 2023\laboratorio ii\tp integrador\main\include\anonymous.h
 	<SFML/Graphics.hpp>
 
-1701360089 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\gameplay.cpp
+1701378474 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\gameplay.cpp
 	"Gameplay.h"
 	<iostream>
 
-1701358785 d:\uni 2023\laboratorio ii\tp integrador\main\include\gameplay.h
+1701378474 d:\uni 2023\laboratorio ii\tp integrador\main\include\gameplay.h
 	<iostream>
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
@@ -1461,6 +1461,9 @@
 	"Vida.h"
 	"Aplicacion.h"
 	"IconoSalir.h"
+	"IconoPausar.h"
+	"IconoPlay.h"
+	"EasterEgg.h"
 
 1688071491 d:\uni 2023\laboratorio ii\tp integrador\main\sfml\include\sfml\audio.hpp
 	<SFML/System.hpp>
@@ -1657,7 +1660,7 @@
 1701377777 source:f:\proyectos github\typeracer\main\clases\menu\aplicacion.cpp
 	"Aplicacion.h"
 
-1701312370 source:d:\uni 2023\laboratorio ii\tp integrador\main\clases\menu\aplicacion.cpp
+1701378474 source:d:\uni 2023\laboratorio ii\tp integrador\main\clases\menu\aplicacion.cpp
 	"Aplicacion.h"
 
 1701308144 d:\uni 2023\laboratorio ii\tp integrador\main\include\aplicacion.h
@@ -1679,12 +1682,12 @@
 1701366045 source:f:\proyectos github\typeracer\main\clases\menu\transicion.cpp
 	"Transicion.h"
 
-1701308102 d:\uni 2023\laboratorio ii\tp integrador\main\include\transicion.h
+1701378474 d:\uni 2023\laboratorio ii\tp integrador\main\include\transicion.h
 	<iostream>
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
 
-1701357987 source:d:\uni 2023\laboratorio ii\tp integrador\main\clases\menu\transicion.cpp
+1701378474 source:d:\uni 2023\laboratorio ii\tp integrador\main\clases\menu\transicion.cpp
 	"Transicion.h"
 
 1701262813 f:\proyectos github\typeracer\main\include\score.h
@@ -2494,4 +2497,19 @@
 
 1701372681 source:d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\src\iconoplay.cpp
 	"IconoPlay.h"
+
+1701378474 d:\uni 2023\laboratorio ii\tp integrador\main\include\iconopausar.h
+	<iostream>
+	<SFML/Graphics.hpp>
+
+1701378474 d:\uni 2023\laboratorio ii\tp integrador\main\include\iconoplay.h
+	<iostream>
+	<SFML/Graphics.hpp>
+
+1701378474 d:\uni 2023\laboratorio ii\tp integrador\main\include\easteregg.h
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+
+1701378474 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\easteregg.cpp
+	"EasterEgg.h"
 

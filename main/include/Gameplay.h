@@ -38,6 +38,7 @@ private:
     sf::Text _textPan2;
     sf::Music _jugando;
     sf::Music _aplastar;
+    sf::Music _ouch;
 
     std::string _textoPantalla;
     char _nombre[30];

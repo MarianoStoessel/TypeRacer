@@ -1759,7 +1759,7 @@
 1701294592 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\archivoseditor.cpp
 	"ArchivosEditor.h"
 
-1701298683 source:d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\clases\menu\aplicacion.cpp
+1701303985 source:d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\clases\menu\aplicacion.cpp
 	"Aplicacion.h"
 
 1701298328 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\include\aplicacion.h
@@ -2295,7 +2295,7 @@
 	<SFML/Audio/Export.hpp>
 	<string>
 
-1701299729 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\include\gameplay.h
+1701305245 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\include\gameplay.h
 	<iostream>
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
@@ -2316,7 +2316,7 @@
 	<iostream>
 	<cstring>
 
-1701300191 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\include\leo.h
+1701305245 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\include\leo.h
 	<iostream>
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>

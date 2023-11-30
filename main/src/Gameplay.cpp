@@ -42,6 +42,12 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
     }
     _jugando.play();
 
+    if(!_ouch.openFromFile("Audio/ouch.wav"))
+    {
+
+        std::cout<<"No se cargo audio ouch";
+    }
+
 
     //TextoPantalla
     _textPan.setFont(_font);
@@ -184,6 +190,7 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
                 {
                     Vid.setVIda(i-1);
                     Pj.setGolpe(true);
+                    _ouch.play();
                     _clock.restart();
 
                     if(Vid.getVida() == 0)

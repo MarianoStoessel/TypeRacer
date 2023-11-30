@@ -18,10 +18,13 @@ Leo::Leo() //ctor
         std::cout<<"No se cargo audio teclado";
     }
 
+
+
 }
 //Sets
 void Leo::setGolpe(bool golpe)
 {
+
     _golpe = golpe;
 }
 void Leo::setMuriendo(bool muriendo)

@@ -17,6 +17,7 @@ private:
     sf::Music _teclado;
     sf::Clock _clock;
 
+
     float _frame;
     float _frameGolpe;
     float _frameMuerto;

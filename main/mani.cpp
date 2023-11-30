@@ -1,9 +1,5 @@
 #include "librariesMain.h"
 
-#include "ArchivosEditor.h"
-#include "Archivos.h"
-
-
 // MAIN PRINCIPAL
 int main()
 {

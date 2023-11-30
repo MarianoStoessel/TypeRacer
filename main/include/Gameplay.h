@@ -18,6 +18,7 @@
 #include "Nivel.h"
 #include "Vida.h"
 #include "Aplicacion.h"
+#include "IconoSalir.h"
 
 class Gameplay
 {

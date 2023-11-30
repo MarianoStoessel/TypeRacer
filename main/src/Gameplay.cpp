@@ -55,12 +55,13 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
 
     //llamo clases
     Nivel Niv(_nivel);
-    Leo Pj;
+    Leo Jug;
     Anonymous Eny;
     Gusavirus Gus;
     Keyword palabra;
     Score Sco;
     Vida Vid;
+    IconoSalir Sal;
 
     //Archivo de Keywords
     setnombre();
@@ -197,21 +198,21 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
                 if(Vid.getVida() == i)
                 {
                     Vid.setVIda(i-1);
-                    Pj.setGolpe(true);
+                    Jug.setGolpe(true);
                     _ouch.play();
                     _clock.restart();
 
                     if(Vid.getVida() == 0)
                     {
-                        Pj.setMuriendo(true);
+                        Jug.setMuriendo(true);
                     }
                 }
             }
         }
         //timer para que leo titile
-        if(_clock.getElapsedTime().asSeconds() > 2 && Pj.getGolpe() == true)
+        if(_clock.getElapsedTime().asSeconds() > 2 && Jug.getGolpe() == true)
         {
-            Pj.setGolpe(false);
+            Jug.setGolpe(false);
         }
         //timer para que Anonymous se enoje
         if(_clock2.getElapsedTime().asSeconds() > 1 && Eny.getGolpe() == true)
@@ -240,7 +241,7 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
             }
         }
         //si leo se queda sin vidas muere
-        if(Vid.getVida()==0 && Pj.getframemuerto()>5.5)
+        if(Vid.getVida()==0 && Jug.getframemuerto()>5.5)
         {
             setnivel(0);
             _gameover=true;
@@ -249,24 +250,27 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
         }
 
         //CMD
-        Pj.cmd();
+        Jug.cmd();
         Eny.cmd();
         Gus.cmd();
+        Sal.cmd();
 
         //Update - Actualiza los estados del juego
-        Pj.update();
+        Jug.update();
         Eny.update();
         Gus.update();
         Vid.update();
+        Sal.update();
 
         _window->clear();
 
         //Draw
         _window->draw(fondo);
+        _window->draw(Sal);
         _window->draw(Niv);
         _window->draw(Sco);
         _window->draw(Vid);
-        _window->draw(Pj);
+        _window->draw(Jug);
         _window->draw(Eny);
         _window->draw(Gus);
         _window->draw(rectangulo);

@@ -18,9 +18,9 @@ Nivel::Nivel(int nivel)
     //Nivel
     _nivNiv.setFont(_font);
     _nivNiv.setFillColor(sf::Color::Black);
-    _nivNiv.setString(strNivel);
+    _nivNiv.setString("Nivel " + strNivel);
     _nivNiv.setCharacterSize(30);
-    _nivNiv.setPosition(1187,771);
+    _nivNiv.setPosition(1060,770);
 }
 void Nivel::draw(sf::RenderTarget& target, sf::RenderStates states) const
 {

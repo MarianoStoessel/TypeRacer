@@ -1278,7 +1278,7 @@
 1701354931 f:\proyectos github\typeracer\main\include\anonymous.h
 	<SFML/Graphics.hpp>
 
-1701357896 source:f:\proyectos github\typeracer\main\src\gameplay.cpp
+1701357979 source:f:\proyectos github\typeracer\main\src\gameplay.cpp
 	"Gameplay.h"
 	<iostream>
 
@@ -1696,10 +1696,10 @@
 1701219231 f:\proyectos github\typeracer\main\include\vida.h
 	<SFML/Graphics.hpp>
 
-1701219231 source:f:\proyectos github\typeracer\main\src\nivel.cpp
+1701358514 source:f:\proyectos github\typeracer\main\src\nivel.cpp
 	"Nivel.h"
 
-1701262813 source:f:\proyectos github\typeracer\main\src\score.cpp
+1701358424 source:f:\proyectos github\typeracer\main\src\score.cpp
 	"Score.h"
 
 1701219231 source:f:\proyectos github\typeracer\main\src\vida.cpp

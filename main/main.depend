@@ -1276,11 +1276,11 @@
 1701354931 f:\proyectos github\typeracer\main\include\anonymous.h
 	<SFML/Graphics.hpp>
 
-1701365917 source:f:\proyectos github\typeracer\main\src\gameplay.cpp
+1701367024 source:f:\proyectos github\typeracer\main\src\gameplay.cpp
 	"Gameplay.h"
 	<iostream>
 
-1701356853 f:\proyectos github\typeracer\main\include\gameplay.h
+1701367024 f:\proyectos github\typeracer\main\include\gameplay.h
 	<iostream>
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
@@ -1295,6 +1295,8 @@
 	"Vida.h"
 	"Aplicacion.h"
 	"IconoSalir.h"
+	"IconoPausar.h"
+	"IconoPlay.h"
 
 1701359847 source:f:\proyectos github\typeracer\main\src\gusavirus.cpp
 	"Gusavirus.h"
@@ -1651,7 +1653,7 @@
 	"Transicion.h"
 	"scode.h"
 
-1701365572 source:f:\proyectos github\typeracer\main\clases\menu\aplicacion.cpp
+1701366045 source:f:\proyectos github\typeracer\main\clases\menu\aplicacion.cpp
 	"Aplicacion.h"
 
 1701312370 source:d:\uni 2023\laboratorio ii\tp integrador\main\clases\menu\aplicacion.cpp
@@ -1668,12 +1670,12 @@
 	"Transicion.h"
 	"scode.h"
 
-1701365723 f:\proyectos github\typeracer\main\include\transicion.h
+1701366045 f:\proyectos github\typeracer\main\include\transicion.h
 	<iostream>
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
 
-1701365954 source:f:\proyectos github\typeracer\main\clases\menu\transicion.cpp
+1701366045 source:f:\proyectos github\typeracer\main\clases\menu\transicion.cpp
 	"Transicion.h"
 
 1701308102 d:\uni 2023\laboratorio ii\tp integrador\main\include\transicion.h
@@ -2447,4 +2449,18 @@
 1701362922 f:\proyectos github\typeracer\main\include\easteregg.h
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
+
+1701366346 f:\proyectos github\typeracer\main\include\iconopausar.h
+	<iostream>
+	<SFML/Graphics.hpp>
+
+1701366579 source:f:\proyectos github\typeracer\main\src\iconopausar.cpp
+	"IconoPausar.h"
+
+1701366865 f:\proyectos github\typeracer\main\include\iconoplay.h
+	<iostream>
+	<SFML/Graphics.hpp>
+
+1701367056 source:f:\proyectos github\typeracer\main\src\iconoplay.cpp
+	"IconoPlay.h"
 

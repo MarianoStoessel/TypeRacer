@@ -19,6 +19,8 @@
 #include "Vida.h"
 #include "Aplicacion.h"
 #include "IconoSalir.h"
+#include "IconoPausar.h"
+#include "IconoPlay.h"
 
 class Gameplay
 {

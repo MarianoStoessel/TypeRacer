@@ -15,6 +15,15 @@ Transicion::Transicion(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* wi
     {
         cout <<"No existe la fuente";
     }
+
+    if (!_gameover.openFromFile ("Audio/gameover.wav")){
+        cout << "No se cargo audio Game over";
+    }
+
+    if (!_win.openFromFile ("Audio/win.wav")){
+        cout<<"No se cargo audio Win";
+    }
+
     //set fondo
     sf::RectangleShape fondo;
     fondo.setSize(sf::Vector2f(resolucion->x, resolucion->y));
@@ -30,6 +39,7 @@ Transicion::Transicion(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* wi
         _tranNiv.setString("Perdiste");
         _tranNiv.setCharacterSize(75);
         _tranNiv.setPosition(530,250);
+        _gameover.play();
     }
     else if(nivel <= 9)
     {
@@ -46,6 +56,7 @@ Transicion::Transicion(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* wi
         _tranNiv.setString("Ganaste");
         _tranNiv.setCharacterSize(150);
         _tranNiv.setPosition(350,300);
+        _win.play();
     }
 
     while(_window->isOpen())

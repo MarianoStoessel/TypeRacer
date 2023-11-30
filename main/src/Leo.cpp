@@ -11,6 +11,12 @@ Leo::Leo() //ctor
     _sprite.setTextureRect({10, 10, 144, 120});
     _sprite.setPosition(30, 330);
     LeoState _state = LeoState::Idle;
+
+    if(!_teclado.openFromFile("Audio/tecla.wav")){
+
+        std::cout<<"No se cargo audio teclado";
+    }
+
 }
 //Sets
 void Leo::setGolpe(bool golpe)
@@ -61,6 +67,7 @@ void Leo::update() //comprueba estado y ejecuta el movimiento si es asi
         break;
     case LeoState::Move:
         _frame += 0.18;
+        _teclado.play();
 
         if(_frame >= 4)
         {

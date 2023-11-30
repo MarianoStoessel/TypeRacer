@@ -8,6 +8,7 @@ Gameplay::Gameplay() {}
 //Constructor 2
 Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window)
 {
+
     _window = window;
     _resolucion = resolucion;
     _nivel = nivel;
@@ -30,6 +31,18 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
     {
         cout << "No existe la fuente";
     }
+
+    if (!_jugando.openFromFile("Audio/jugaaando.wav")){
+        cout << "No se cargó el audio jugando";
+    }
+    _jugando.setLoop(true);
+
+    if (!_aplastar.openFromFile("Audio/aplastar.aplastar.wav")){
+        cout << "No se cargó el audio aplastar";
+    }
+    _jugando.play();
+
+
     //TextoPantalla
     _textPan.setFont(_font);
     _textPan.setFillColor(sf::Color::Black);
@@ -75,6 +88,7 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
     //Game Loop
     while(_window->isOpen())
     {
+
         sf::Event event;
         while(_window->pollEvent(event))
         {
@@ -129,6 +143,7 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
                     }
                     if(verifica && auxTam == palabra.getTam()-1)
                     {
+                        _aplastar.play();
                         cout << endl;
                         cout << "VIRUS HECHO PELOTA" << endl;
 
@@ -150,6 +165,7 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
                 }
             }
             if(event.type == sf::Event::Closed)
+
                 _window->close();
         }
         text.setPosition(Gus.getposx(),Gus.getposy());

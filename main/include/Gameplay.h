@@ -36,6 +36,9 @@ private:
     sf::Font _font;
     sf::Text _textPan;
     sf::Text _textPan2;
+    sf::Music _jugando;
+    sf::Music _aplastar;
+
     std::string _textoPantalla;
     char _nombre[30];
     char _caracter;

@@ -14,6 +14,8 @@ private:
     sf::Font _font;
     sf::Text _tranNiv;
     sf::Clock _clock;
+    sf::Music _gameover;
+    sf::Music _win;
 public:
     Transicion();
     Transicion(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window);

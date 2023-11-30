@@ -2,7 +2,7 @@
 
 Leo::Leo() //ctor
 {
-    _frame = 0;
+    _frame = 1;
     _frameGolpe = 0;
     _frameMuerto = 0;
 
@@ -11,6 +11,13 @@ Leo::Leo() //ctor
     _sprite.setTextureRect({10, 10, 144, 120});
     _sprite.setPosition(30, 330);
     LeoState _state = LeoState::Idle;
+
+    if(!_teclado.openFromFile("Audio/tecla.wav"))
+    {
+
+        std::cout<<"No se cargo audio teclado";
+    }
+
 }
 //Sets
 void Leo::setGolpe(bool golpe)
@@ -60,13 +67,18 @@ void Leo::update() //comprueba estado y ejecuta el movimiento si es asi
         _sprite.setTextureRect({10, 10, 144, 120});
         break;
     case LeoState::Move:
-        _frame += 0.18;
-
-        if(_frame >= 4)
+        if(_clock.getElapsedTime().asMilliseconds() > 20)
         {
-            _frame = 0;
+            _frame += 2;
+            _teclado.play();
+
+            if(_frame >= 3)
+            {
+                _frame = 0;
+            }
+            _sprite.setTextureRect({164 + int(_frame) * 154, 10, 144, 120});
         }
-        _sprite.setTextureRect({10 + int(_frame) * 154, 10, 144, 120});
+        _clock.restart();
         break;
     case LeoState::kick:
         _frameGolpe += 0.18;

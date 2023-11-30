@@ -5,6 +5,7 @@
 #include <iostream>
 
 #include <SFML/Graphics.hpp>
+#include <SFML/Audio.hpp>
 
 enum class LeoState {Idle, Move, kick, death};
 
@@ -13,6 +14,8 @@ class Leo: public sf::Drawable
 private:
     sf::Sprite _sprite;
     sf::Texture _texture;
+    sf::Music _teclado;
+    sf::Clock _clock;
 
     float _frame;
     float _frameGolpe;

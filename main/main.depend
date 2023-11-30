@@ -1761,10 +1761,10 @@
 1701294592 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\archivoseditor.cpp
 	"ArchivosEditor.h"
 
-1701303985 source:d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\clases\menu\aplicacion.cpp
+1701313402 source:d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\clases\menu\aplicacion.cpp
 	"Aplicacion.h"
 
-1701298328 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\include\aplicacion.h
+1701313402 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\include\aplicacion.h
 	<iostream>
 	<ctime>
 	<SFML/Graphics.hpp>
@@ -2297,7 +2297,7 @@
 	<SFML/Audio/Export.hpp>
 	<string>
 
-1701305245 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\include\gameplay.h
+1701313402 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\include\gameplay.h
 	<iostream>
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
@@ -2310,6 +2310,7 @@
 	"Score.h"
 	"Nivel.h"
 	"Vida.h"
+	"Aplicacion.h"
 
 1701298328 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\include\archivoseditor.h
 	"Archivos.h"
@@ -2318,7 +2319,7 @@
 	<iostream>
 	<cstring>
 
-1701305245 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\include\leo.h
+1701313402 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\include\leo.h
 	<iostream>
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
@@ -2354,7 +2355,7 @@
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
 
-1701301144 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\include\transicion.h
+1701313402 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\include\transicion.h
 	<iostream>
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
@@ -2365,7 +2366,7 @@
 1701298328 source:d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\clases\menu\menunivel.cpp
 	"MenuNivel.h"
 
-1701301144 source:d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\clases\menu\transicion.cpp
+1701314133 source:d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\clases\menu\transicion.cpp
 	"Transicion.h"
 
 1701298328 source:d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\mani.cpp
@@ -2411,7 +2412,7 @@
 	<cstring>
 	<conio.h>
 
-1701300672 source:d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\src\leo.cpp
+1701313402 source:d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\src\leo.cpp
 	"Leo.h"
 
 1701220402 source:d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\src\nivel.cpp
@@ -2423,7 +2424,7 @@
 1701220402 source:d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\src\vida.cpp
 	"Vida.h"
 
-1701302231 source:d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\src\gameplay.cpp
+1701313938 source:d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\src\gameplay.cpp
 	"Gameplay.h"
 	<iostream>
 

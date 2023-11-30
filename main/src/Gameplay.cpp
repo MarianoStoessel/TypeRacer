@@ -91,7 +91,7 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
     cout << palabra.getP(); //Keyword del Gusavirus
     cout << endl;
 
-    if(_nivel<5){Gus.setvelocity(10);}
+    if(_nivel<5){Gus.setvelocity(2);}
 
     //Game Loop
     while(_window->isOpen())
@@ -223,10 +223,13 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
         }
 
         //Si se llega a 1000 puntos gana el nivel
-        if(Sco.getScore()==1000){setnivel(10); _gameover=true; break;}
+        if(Sco.getScore()==1000){setnivel(10); _gameover=true;
+        _jugando.pause(); break;
+        }
 
         //si leo se queda sin vidas muere
-        if(Vid.getVida()==0 && Pj.getframemuerto()>5.5){ setnivel(0); _gameover=true; break; }
+        if(Vid.getVida()==0 && Pj.getframemuerto()>5.5){ setnivel(0); _gameover=true; _jugando.pause(); break;
+        }
 
         //CMD
         Pj.cmd();

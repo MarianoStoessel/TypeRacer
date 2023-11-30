@@ -45,6 +45,7 @@ private:
     sf::Music _jugando;
     sf::Music _aplastar;
     sf::Music _ouch;
+    sf::Music _easteregg;
 
     std::string _textoPantalla;
     char _nombre[30];

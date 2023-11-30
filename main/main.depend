@@ -2299,7 +2299,7 @@
 	<SFML/Audio/Export.hpp>
 	<string>
 
-1701372681 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\include\gameplay.h
+1701377488 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\include\gameplay.h
 	<iostream>
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
@@ -2428,7 +2428,7 @@
 1701220402 source:d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\src\vida.cpp
 	"Vida.h"
 
-1701372681 source:d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\src\gameplay.cpp
+1701377488 source:d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\src\gameplay.cpp
 	"Gameplay.h"
 	<iostream>
 
@@ -2479,13 +2479,19 @@
 	<iostream>
 	<SFML/Graphics.hpp>
 
-1701372681 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\include\easteregg.h
+1701377488 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\include\easteregg.h
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
 
-1701372681 source:d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\src\easteregg.cpp
+1701375605 source:d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\src\easteregg.cpp
 	"EasterEgg.h"
 
 1701361573 source:d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\src\iconosalir.cpp
 	"IconoSalir.h"
+
+1701372681 source:d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\src\iconopausar.cpp
+	"IconoPausar.h"
+
+1701372681 source:d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\src\iconoplay.cpp
+	"IconoPlay.h"
 

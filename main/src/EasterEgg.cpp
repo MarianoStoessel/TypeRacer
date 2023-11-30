@@ -10,6 +10,8 @@ EasterEgg::EasterEgg() //ctor
     _sprite.setTextureRect({0, 0, 100, 100});//lo colocotrasparente
     _sprite.setPosition(1080, 275);
     StateEasterEgg _state = StateEasterEgg::Idle;
+
+
 }
 void EasterEgg::setPosicion(bool pos)
 {
@@ -19,6 +21,7 @@ void EasterEgg::setActivar(bool act)
 {
     _activar = act;
 }
+
 void EasterEgg::setDesactivar(bool des)
 {
     _desactivar = des;

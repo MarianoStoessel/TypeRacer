@@ -47,6 +47,10 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
         std::cout<<"No se cargo audio ouch";
     }
 
+    if (!_easteregg.openFromFile ("Audio/easteregg.wav")){
+            cout << "No se cargo audio easter";
+    }
+
     //TextoPantalla
     _textPan.setFont(_font);
     _textPan.setFillColor(sf::Color::Black);
@@ -116,6 +120,7 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
                 if (event.mouseButton.button == sf::Mouse::Left && Eas.getPosicion()==true)
                 {
                     Eas.setActivar(true);
+                    _easteregg.play();
                     _clock3.restart();
                 }
                 if (event.mouseButton.button == sf::Mouse::Left && Sal.getPosicion()==true)
@@ -125,11 +130,13 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
                 if (event.mouseButton.button == sf::Mouse::Left && Pau.getPosicion()==true)
                 {
                     EstadoPausa = true;
+                    _jugando.pause();
                     text.setFillColor(sf::Color::Transparent);
                 }
                 if (event.mouseButton.button == sf::Mouse::Left && Pla.getPosicion()==true)
                 {
                     EstadoPausa = false;
+                    _jugando.play();
                     text.setFillColor(sf::Color::White);
                 }
             }
@@ -169,11 +176,13 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
                 }
             }
             if(!EstadoPausa) //Pausa mecanicas dependiendo la bandera pausa
+
             {
                 if(event.type == sf::Event::TextEntered)
                 {
                     if(event.text.unicode == 8 || event.text.unicode == 13) //Backspace y Enter
                     {
+
                         //Se puede agregar restricciones o no
                     }
                     else if(event.text.unicode == 27) //Escape

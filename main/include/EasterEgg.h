@@ -11,6 +11,7 @@ class EasterEgg: public sf::Drawable
     sf::Sprite _sprite;
     sf::Texture _texture;
 
+
     float _frame;
     float _frameNoView;
 

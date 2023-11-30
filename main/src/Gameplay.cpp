@@ -227,7 +227,6 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
                             {
                                 Gus.setvelocity(4);
                             }
-
                         }
                         else
                         {
@@ -303,6 +302,9 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
             palabra.setP(vec[rand()%29].getKeyword());
             text.setPosition(Gus.getposx(),Gus.getposy());
             text.setString(palabra.getP());
+            _textPan.setString("");
+            _caracter = 0;
+            auxTam = 0;
         }
 
         //Si se llega a 1000 puntos gana el nivel

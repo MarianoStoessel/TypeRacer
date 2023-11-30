@@ -1763,7 +1763,7 @@
 1701294592 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\archivoseditor.cpp
 	"ArchivosEditor.h"
 
-1701313402 source:d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\clases\menu\aplicacion.cpp
+1701372681 source:d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\clases\menu\aplicacion.cpp
 	"Aplicacion.h"
 
 1701313402 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\include\aplicacion.h
@@ -2299,7 +2299,7 @@
 	<SFML/Audio/Export.hpp>
 	<string>
 
-1701313402 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\include\gameplay.h
+1701372681 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\include\gameplay.h
 	<iostream>
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
@@ -2313,6 +2313,10 @@
 	"Nivel.h"
 	"Vida.h"
 	"Aplicacion.h"
+	"IconoSalir.h"
+	"IconoPausar.h"
+	"IconoPlay.h"
+	"EasterEgg.h"
 
 1701298328 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\include\archivoseditor.h
 	"Archivos.h"
@@ -2321,7 +2325,7 @@
 	<iostream>
 	<cstring>
 
-1701313402 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\include\leo.h
+1701361573 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\include\leo.h
 	<iostream>
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
@@ -2333,7 +2337,7 @@
 1701298328 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\include\keyword.h
 	<SFML/Graphics.hpp>
 
-1701298328 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\include\anonymous.h
+1701361573 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\include\anonymous.h
 	<SFML/Graphics.hpp>
 
 1701298328 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\include\score.h
@@ -2357,7 +2361,7 @@
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
 
-1701313402 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\include\transicion.h
+1701372681 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\include\transicion.h
 	<iostream>
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
@@ -2368,13 +2372,11 @@
 1701298328 source:d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\clases\menu\menunivel.cpp
 	"MenuNivel.h"
 
-1701314133 source:d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\clases\menu\transicion.cpp
+1701372681 source:d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\clases\menu\transicion.cpp
 	"Transicion.h"
 
-1701298328 source:d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\mani.cpp
+1701361573 source:d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\mani.cpp
 	"librariesMain.h"
-	"ArchivosEditor.h"
-	"Archivos.h"
 
 1701220402 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\librariesmain.h
 	<SFML/Graphics.hpp>
@@ -2394,7 +2396,7 @@
 	"Anonymous.h"
 	"Score.h"
 
-1701220402 source:d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\src\anonymous.cpp
+1701361573 source:d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\src\anonymous.cpp
 	"Anonymous.h"
 
 1701298328 source:d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\src\archivos.cpp
@@ -2404,7 +2406,7 @@
 1701298328 source:d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\src\archivoseditor.cpp
 	"ArchivosEditor.h"
 
-1701298328 source:d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\src\gusavirus.cpp
+1701361573 source:d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\src\gusavirus.cpp
 	"Gusavirus.h"
 	<iostream>
 
@@ -2414,19 +2416,19 @@
 	<cstring>
 	<conio.h>
 
-1701313402 source:d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\src\leo.cpp
+1701361573 source:d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\src\leo.cpp
 	"Leo.h"
 
-1701220402 source:d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\src\nivel.cpp
+1701361573 source:d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\src\nivel.cpp
 	"Nivel.h"
 
-1701298328 source:d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\src\score.cpp
+1701361573 source:d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\src\score.cpp
 	"Score.h"
 
 1701220402 source:d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\src\vida.cpp
 	"Vida.h"
 
-1701313938 source:d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\src\gameplay.cpp
+1701372681 source:d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\src\gameplay.cpp
 	"Gameplay.h"
 	<iostream>
 
@@ -2464,4 +2466,26 @@
 
 1701367752 source:f:\proyectos github\typeracer\main\src\iconoplay.cpp
 	"IconoPlay.h"
+
+1701361573 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\include\iconosalir.h
+	<iostream>
+	<SFML/Graphics.hpp>
+
+1701372681 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\include\iconopausar.h
+	<iostream>
+	<SFML/Graphics.hpp>
+
+1701372681 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\include\iconoplay.h
+	<iostream>
+	<SFML/Graphics.hpp>
+
+1701372681 d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\include\easteregg.h
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+
+1701372681 source:d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\src\easteregg.cpp
+	"EasterEgg.h"
+
+1701361573 source:d:\documentos varios\desktop\typeracer\typeracer\typeracer\main\src\iconosalir.cpp
+	"IconoSalir.h"
 

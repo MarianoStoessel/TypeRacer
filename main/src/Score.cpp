@@ -14,9 +14,9 @@ Score::Score() //ctor
     //Score
     _scoreNiv.setFont(_font);
     _scoreNiv.setFillColor(sf::Color::Black);
-    _scoreNiv.setString(strScore);
-    _scoreNiv.setCharacterSize(35);
-    _scoreNiv.setPosition(1263,726);
+    _scoreNiv.setString("Score " + strScore);
+    _scoreNiv.setCharacterSize(50);
+    _scoreNiv.setPosition(1060,712);
 }
 int Score::getScore()
 {
@@ -29,9 +29,9 @@ void Score::sumarScore()
     //Score
     _scoreNiv.setFont(_font);
     _scoreNiv.setFillColor(sf::Color::Black);
-    _scoreNiv.setString(strScore);
-    _scoreNiv.setCharacterSize(35);
-    _scoreNiv.setPosition(1263,726);
+    _scoreNiv.setString("Score " + strScore);
+    _scoreNiv.setCharacterSize(50);
+    _scoreNiv.setPosition(1060,712);
 }
 void Score::draw(sf::RenderTarget& target, sf::RenderStates states) const
 {

@@ -4,7 +4,7 @@
 
 #include <SFML/Graphics.hpp>
 
-enum class AnonymousState {Idle = 0, Move};
+enum class AnonymousState {Idle, Move, kick, death};
 
 class Anonymous: public sf::Drawable // en progreso
 {
@@ -13,10 +13,24 @@ private:
     sf::Texture _texture;
 
     float _frame;
-    AnonymousState _state;
+    float _frameGolpe;
+    float _frameMuerto;
 
+    bool _golpe = false;
+    bool _muriendo = false;
+    bool _desaparece = false;
+
+    AnonymousState _state;
 public:
     Anonymous();
+
+    //Sets
+    void setGolpe(bool golpe);
+    void setMuriendo(bool muriendo);
+    //Gets
+    bool getGolpe();
+    bool getMuriendo();
+    float getframemuerto();
 
     void cmd();
     void update();

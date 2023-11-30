@@ -24,10 +24,9 @@ private:
 
     bool _golpe = false;
     bool _muriendo = false;
-    bool _desaparece=false;
+    bool _desaparece = false;
 
     LeoState _state;
-
 public:
     Leo();
 

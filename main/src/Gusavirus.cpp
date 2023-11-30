@@ -6,6 +6,7 @@ using namespace std;
 //Construcctor
 Gusavirus::Gusavirus()
 {
+    _velocity=2;
     _state = GusavirusState::Vivo;
     _frame=0;
     y=615;
@@ -16,7 +17,6 @@ Gusavirus::Gusavirus()
     _sprite.setTexture(_texture);
     _sprite.setTextureRect({430,_color,108,65});
     _sprite.setPosition(x,y);
-
 }
 
 //Sets
@@ -167,6 +167,7 @@ void Gusavirus::SeeligeColor()
 //Respawn
 void Gusavirus::respawn()
 {
+    _velocity=2;
     cout << "llego" << endl;
     SeeligeColor();
     y=615;

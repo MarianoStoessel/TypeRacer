@@ -56,6 +56,7 @@
 		<Unit filename="include/ArchivosEditor.h" />
 		<Unit filename="include/Gameplay.h" />
 		<Unit filename="include/Gusavirus.h" />
+		<Unit filename="include/IconoSalir.h" />
 		<Unit filename="include/Keyword.h" />
 		<Unit filename="include/Leo.h" />
 		<Unit filename="include/Menu.h" />
@@ -70,6 +71,7 @@
 		<Unit filename="src/ArchivosEditor.cpp" />
 		<Unit filename="src/Gameplay.cpp" />
 		<Unit filename="src/Gusavirus.cpp" />
+		<Unit filename="src/IconoSalir.cpp" />
 		<Unit filename="src/Keyword.cpp" />
 		<Unit filename="src/Leo.cpp" />
 		<Unit filename="src/Nivel.cpp" />

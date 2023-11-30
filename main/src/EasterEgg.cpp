@@ -58,6 +58,7 @@ void EasterEgg::update()
     {
     case StateEasterEgg::Idle:
         _sprite.setTextureRect({0, 0, 100, 100});
+
         break;
     case StateEasterEgg::View:
         _frame += 0.2;
@@ -67,15 +68,14 @@ void EasterEgg::update()
         }
         break;
     case StateEasterEgg::NoView:
-        _frameNoView -= 0.2;
-        if(_frameNoView > -8)
+        _frameNoView += 0.2;
+        if(_frameNoView < 8)
         {
-            _sprite.setTextureRect({700 + int(_frameNoView) * 100, 0, 100, 100});
+            _sprite.setTextureRect({int(_frameNoView) * 100, 100, 100, 100});
         }
         else
         {
-            setDesactivar(false);
-            //_state=StateEasterEgg::Idle;
+            _desactivar = false;
         }
         break;
     }

@@ -346,11 +346,11 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
             Eny.update();
             Gus.update();
             Vid.update();
+            Eas.update();
         }
         Sal.update();
         Pau.update();
         Pla.update();
-        Eas.update();
 
         _window->clear();
 

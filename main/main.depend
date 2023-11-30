@@ -1276,7 +1276,7 @@
 1701354931 f:\proyectos github\typeracer\main\include\anonymous.h
 	<SFML/Graphics.hpp>
 
-1701372456 source:f:\proyectos github\typeracer\main\src\gameplay.cpp
+1701373495 source:f:\proyectos github\typeracer\main\src\gameplay.cpp
 	"Gameplay.h"
 	<iostream>
 
@@ -2444,7 +2444,7 @@
 1701359447 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\iconosalir.cpp
 	"IconoSalir.h"
 
-1701371212 source:f:\proyectos github\typeracer\main\src\easteregg.cpp
+1701373306 source:f:\proyectos github\typeracer\main\src\easteregg.cpp
 	"EasterEgg.h"
 
 1701371660 f:\proyectos github\typeracer\main\include\easteregg.h

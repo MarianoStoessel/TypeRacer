@@ -262,7 +262,7 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
         text.setPosition(Gus.getposx(),Gus.getposy());
 
         //si el gusano llega a leo el gusano respawnea y leo pierde vida
-        if(Gus.getposy() == 360 )
+        if(Gus.getposy() < 360 )
         {
             Gus.setposy(1500);
             cout<<"ee"<<endl;

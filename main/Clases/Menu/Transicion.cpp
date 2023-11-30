@@ -69,7 +69,15 @@ Transicion::Transicion(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* wi
     }
     while(_window->isOpen())
     {
-        if(_clock.getElapsedTime().asSeconds() > _tiempo)
+        sf::Event event;
+        while(_window->pollEvent(event))
+        {
+            if(event.type == sf::Event::Closed)
+            {
+                _window->close();
+            }
+        }
+        if(_clock.getElapsedTime().asSeconds()>_tiempo)
         {
             break;
         }

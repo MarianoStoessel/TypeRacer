@@ -16,7 +16,6 @@ Gusavirus::Gusavirus()
     _sprite.setTexture(_texture);
     _sprite.setTextureRect({430,_color,108,65});
     _sprite.setPosition(x,y);
-
 }
 
 //Sets

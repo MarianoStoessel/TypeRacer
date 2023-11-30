@@ -17,6 +17,7 @@
 #include "Score.h"
 #include "Nivel.h"
 #include "Vida.h"
+#include "Aplicacion.h"
 
 class Gameplay
 {
@@ -56,6 +57,7 @@ public:
     void procesar_eventos();
     void gameLoop();
 
+    void setnivel(int n){_nivel=n;}
     void setGameOver(bool go)
     {
         _gameover=go;
@@ -66,6 +68,7 @@ public:
     {
         return _nivel;
     }
+    int getnivel(){return _nivel; }
     bool getGameOver()
     {
         return _gameover;

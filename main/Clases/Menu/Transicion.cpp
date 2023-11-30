@@ -8,9 +8,10 @@ Transicion::Transicion() //ctor
 }
 Transicion::Transicion(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window)
 {
+    _nivel = nivel;
     _tiempo = 0;
     _window = window;
-    string strNivel = std::to_string(nivel);
+    string strNivel = std::to_string(_nivel);
 
     if(!_font.loadFromFile("Fuentes/Retro Gaming.ttf"))
     {

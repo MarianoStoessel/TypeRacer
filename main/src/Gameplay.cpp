@@ -91,6 +91,8 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
     cout << palabra.getP(); //Keyword del Gusavirus
     cout << endl;
 
+    if(_nivel<5){Gus.setvelocity(10);}
+
     //Game Loop
     while(_window->isOpen())
     {
@@ -98,12 +100,17 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
         sf::Event event;
         while(_window->pollEvent(event))
         {
+            if(event.type == sf::Event::Closed)
+            {
+                _window->close();
+            }
             if (event.type == sf::Event::TextEntered)
             {
                 if (event.text.unicode == 8 || event.text.unicode == 13 || event.text.unicode == 27) // Backspace, Enter y Escape
                 {
                     //Se puede agregar restricciones o no
                 }
+
                 else if (event.text.unicode < 128)
                 {
 
@@ -176,6 +183,7 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
         }
         text.setPosition(Gus.getposx(),Gus.getposy());
 
+        //si el gusano llega a leo el gusano respawnea y leo pierde vida
         if(Gus.getposy() == 360 )
         {
             Gus.setposy(1500);
@@ -200,10 +208,12 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
                 }
             }
         }
+        //timer para que leo titile
         if(_clock.getElapsedTime().asSeconds() > 2 && Pj.getGolpe() == true)
         {
             Pj.setGolpe(false);
         }
+        //si el gusano muere se le asigna otra palabra
         if(Gus.getmurio()==true)
         {
             Gus.respawn();
@@ -211,6 +221,13 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
             text.setPosition(Gus.getposx(),Gus.getposy());
             text.setString(palabra.getP());
         }
+
+        //Si se llega a 1000 puntos gana el nivel
+        if(Sco.getScore()==1000){setnivel(10); _gameover=true; break;}
+
+        //si leo se queda sin vidas muere
+        if(Vid.getVida()==0 && Pj.getframemuerto()>5.5){ setnivel(0); _gameover=true; break; }
+
         //CMD
         Pj.cmd();
         Eny.cmd();

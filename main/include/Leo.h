@@ -24,6 +24,7 @@ private:
 
     bool _golpe = false;
     bool _muriendo = false;
+    bool _desaparece=false;
 
     LeoState _state;
 
@@ -36,6 +37,7 @@ public:
     //Gets
     bool getGolpe();
     bool getMuriendo();
+    float getframemuerto();
 
     void cmd();
     void update();

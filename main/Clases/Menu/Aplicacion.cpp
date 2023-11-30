@@ -60,6 +60,7 @@ Aplicacion::Aplicacion(sf::Vector2u resolucion) // ctor
                             sf::Event event2;
                             while(_window.pollEvent(event2))
                             {
+
                                 if(event2.type == sf::Event::Closed)
                                 {
                                     _window.close();
@@ -79,16 +80,18 @@ Aplicacion::Aplicacion(sf::Vector2u resolucion) // ctor
                                         }
                                         else
                                         {
-                                            int nivel = y;
+                                            _nivel = y;
                                             _musicmenu.pause();
-                                            Transicion transicion(nivel, &resolucion, &_window); //Pantalla de transicion
-                                            Gameplay gameplay(nivel, &resolucion, &_window); //Entrar al nivel seleccionado
-
+                                            Transicion transicion(_nivel, &resolucion, &_window); //Pantalla de transicion
+                                            Gameplay gameplay(_nivel, &resolucion, &_window); //Entrar al nivel seleccionado
+                                            _nivel=gameplay.getnivel();
+                                            cout<<_nivel<<endl;
                                             //operador de gameplay
                                             if(gameplay.getGameOver() == true) //Pierde el nivel
                                             {
-                                                Transicion transicion(nivel, &resolucion, &_window); //transicion juego ganaste
+                                                Transicion transicion(_nivel, &resolucion, &_window); //transicion juego ganaste
                                                 closeMenuNivel = true;
+                                                gameplay.setGameOver(false);
                                                 break;
                                             }
                                         }
@@ -205,6 +208,7 @@ Aplicacion::Aplicacion(sf::Vector2u resolucion) // ctor
         _window.display();
     }
 }
+Aplicacion::Aplicacion(){}
 Aplicacion::~Aplicacion() //dtor
 {
 

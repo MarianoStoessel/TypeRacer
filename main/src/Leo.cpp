@@ -40,6 +40,10 @@ bool Leo::getMuriendo()
 {
     return _muriendo;
 }
+float Leo::getframemuerto()
+{
+    return _frameMuerto;
+}
 //Cmd
 void Leo::cmd()
 {

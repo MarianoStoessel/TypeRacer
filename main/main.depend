@@ -1441,11 +1441,11 @@
 1701294592 d:\uni 2023\laboratorio ii\tp integrador\main\include\anonymous.h
 	<SFML/Graphics.hpp>
 
-1701303837 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\gameplay.cpp
+1701312370 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\gameplay.cpp
 	"Gameplay.h"
 	<iostream>
 
-1701303837 d:\uni 2023\laboratorio ii\tp integrador\main\include\gameplay.h
+1701310797 d:\uni 2023\laboratorio ii\tp integrador\main\include\gameplay.h
 	<iostream>
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
@@ -1458,6 +1458,7 @@
 	"Score.h"
 	"Nivel.h"
 	"Vida.h"
+	"Aplicacion.h"
 
 1688071491 d:\uni 2023\laboratorio ii\tp integrador\main\sfml\include\sfml\audio.hpp
 	<SFML/System.hpp>
@@ -1580,10 +1581,10 @@
 1701294592 d:\uni 2023\laboratorio ii\tp integrador\main\include\keyword.h
 	<SFML/Graphics.hpp>
 
-1701303837 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\leo.cpp
+1701311759 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\leo.cpp
 	"Leo.h"
 
-1701303837 d:\uni 2023\laboratorio ii\tp integrador\main\include\leo.h
+1701311759 d:\uni 2023\laboratorio ii\tp integrador\main\include\leo.h
 	<iostream>
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
@@ -1654,10 +1655,10 @@
 1701303893 source:f:\proyectos github\typeracer\main\clases\menu\aplicacion.cpp
 	"Aplicacion.h"
 
-1701304012 source:d:\uni 2023\laboratorio ii\tp integrador\main\clases\menu\aplicacion.cpp
+1701312370 source:d:\uni 2023\laboratorio ii\tp integrador\main\clases\menu\aplicacion.cpp
 	"Aplicacion.h"
 
-1701294592 d:\uni 2023\laboratorio ii\tp integrador\main\include\aplicacion.h
+1701308144 d:\uni 2023\laboratorio ii\tp integrador\main\include\aplicacion.h
 	<iostream>
 	<ctime>
 	<SFML/Graphics.hpp>
@@ -1676,12 +1677,12 @@
 1701304916 source:f:\proyectos github\typeracer\main\clases\menu\transicion.cpp
 	"Transicion.h"
 
-1701303837 d:\uni 2023\laboratorio ii\tp integrador\main\include\transicion.h
+1701308102 d:\uni 2023\laboratorio ii\tp integrador\main\include\transicion.h
 	<iostream>
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
 
-1701303837 source:d:\uni 2023\laboratorio ii\tp integrador\main\clases\menu\transicion.cpp
+1701307957 source:d:\uni 2023\laboratorio ii\tp integrador\main\clases\menu\transicion.cpp
 	"Transicion.h"
 
 1701262813 f:\proyectos github\typeracer\main\include\score.h

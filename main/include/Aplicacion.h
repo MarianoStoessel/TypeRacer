@@ -19,12 +19,15 @@ private:
     sf::RenderStates _state;
     sf::Event _event;
 
+    int _nivel;
+
     sf::Music _musicmenu;
     sf::SoundBuffer _buffer1;
     sf::Sound _sound1;
 public:
+    Aplicacion();
     Aplicacion(sf::Vector2u resolucion);
-
+    void setnivel(int n){_nivel=n;}
     void transicionNivel(int nivel);
 
     ~Aplicacion();

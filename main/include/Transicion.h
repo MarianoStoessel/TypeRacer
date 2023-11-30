@@ -17,6 +17,7 @@ private:
     sf::Music _gameover;
     sf::Music _win;
     int _tiempo;
+    int _nivel;
 public:
     Transicion();
     Transicion(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window);

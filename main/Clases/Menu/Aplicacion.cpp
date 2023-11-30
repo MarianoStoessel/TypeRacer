@@ -50,11 +50,11 @@ Aplicacion::Aplicacion(sf::Vector2u resolucion) // ctor
                     case 0:  //Jugar
                     {
                         //set fondo - REVISAR SI ES NECESARIO!
-                        sf::RectangleShape fondo;
+                        /*sf::RectangleShape fondo;
                         fondo.setSize(sf::Vector2f(resolucion.x,resolucion.y));
                         sf::Texture menuTexture;
                         menuTexture.loadFromFile("Imagenes/FondoMain.jpg");
-                        fondo.setTexture(&menuTexture);
+                        fondo.setTexture(&menuTexture);*/
 
                         //inicializar menu Niveles
                         MenuNivel _menuNivel(_window.getSize().x, _window.getSize().y);
@@ -126,11 +126,76 @@ Aplicacion::Aplicacion(sf::Vector2u resolucion) // ctor
                     }
                     break;
                     case 1: //Como Jugar
+                    {
+                        sf::RectangleShape fondo;
+                        fondo.setSize(sf::Vector2f(resolucion.x,resolucion.y));
+                        sf::Texture menuTexture;
+                        menuTexture.loadFromFile("Imagenes/ComoJugar.jpg");
+                        fondo.setTexture(&menuTexture);
 
-                        break;
+                        bool closeComoJugar = false;
+
+                        while(_window.isOpen())
+                        {
+                            sf::Event event3;
+                            while(_window.pollEvent(event3))
+                            {
+                                if(event3.type == sf::Event::Closed)
+                                {
+                                    _window.close();
+                                }
+                                if (event3.type == sf::Event::KeyReleased)
+                                {
+                                    _sound1.play();
+                                    closeComoJugar = true;
+                                }
+                            }
+                            if(closeComoJugar)
+                            {
+                                break;
+                            }
+                            _window.clear();
+                            _window.draw(fondo);
+                            _window.display();
+                        }
+                    }
+                    break;
                     case 2: //Nosotros
+                    {
+                        sf::RectangleShape fondo;
+                        fondo.setSize(sf::Vector2f(resolucion.x,resolucion.y));
+                        sf::Texture menuTexture;
+                        menuTexture.loadFromFile("Imagenes/Nosotros.jpg");
+                        fondo.setTexture(&menuTexture);
 
-                        break;
+                        bool closeNosotros = false;
+
+                        while(_window.isOpen())
+                        {
+                            sf::Event event4;
+                            while(_window.pollEvent(event4))
+                            {
+                                if(event4.type == sf::Event::Closed)
+                                {
+                                    _window.close();
+                                }
+                                if (event4.type == sf::Event::KeyReleased)
+                                {
+                                    _sound1.play();
+                                    closeNosotros = true;
+                                }
+                            }
+                            if(closeNosotros)
+                            {
+                                break;
+                            }
+                            _window.clear();
+                            _window.draw(fondo);
+                            _window.display();
+                        }
+                    }
+
+                    break;
                     case 3: //Salir
                         _window.close();
                         break;

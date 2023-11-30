@@ -1649,7 +1649,7 @@
 	"Transicion.h"
 	"scode.h"
 
-1701298450 source:f:\proyectos github\typeracer\main\clases\menu\aplicacion.cpp
+1701302569 source:f:\proyectos github\typeracer\main\clases\menu\aplicacion.cpp
 	"Aplicacion.h"
 
 1701294592 source:d:\uni 2023\laboratorio ii\tp integrador\main\clases\menu\aplicacion.cpp
@@ -1666,12 +1666,12 @@
 	"Transicion.h"
 	"scode.h"
 
-1701298311 f:\proyectos github\typeracer\main\include\transicion.h
+1701298667 f:\proyectos github\typeracer\main\include\transicion.h
 	<iostream>
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
 
-1701298516 source:f:\proyectos github\typeracer\main\clases\menu\transicion.cpp
+1701298667 source:f:\proyectos github\typeracer\main\clases\menu\transicion.cpp
 	"Transicion.h"
 
 1701294592 d:\uni 2023\laboratorio ii\tp integrador\main\include\transicion.h

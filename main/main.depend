@@ -1276,11 +1276,11 @@
 1701354931 f:\proyectos github\typeracer\main\include\anonymous.h
 	<SFML/Graphics.hpp>
 
-1701367024 source:f:\proyectos github\typeracer\main\src\gameplay.cpp
+1701371769 source:f:\proyectos github\typeracer\main\src\gameplay.cpp
 	"Gameplay.h"
 	<iostream>
 
-1701367024 f:\proyectos github\typeracer\main\include\gameplay.h
+1701371097 f:\proyectos github\typeracer\main\include\gameplay.h
 	<iostream>
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
@@ -1297,6 +1297,7 @@
 	"IconoSalir.h"
 	"IconoPausar.h"
 	"IconoPlay.h"
+	"EasterEgg.h"
 
 1701359847 source:f:\proyectos github\typeracer\main\src\gusavirus.cpp
 	"Gusavirus.h"
@@ -2443,24 +2444,24 @@
 1701359447 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\iconosalir.cpp
 	"IconoSalir.h"
 
-1701362922 source:f:\proyectos github\typeracer\main\src\easteregg.cpp
+1701371212 source:f:\proyectos github\typeracer\main\src\easteregg.cpp
 	"EasterEgg.h"
 
-1701362922 f:\proyectos github\typeracer\main\include\easteregg.h
+1701371660 f:\proyectos github\typeracer\main\include\easteregg.h
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
 
-1701366346 f:\proyectos github\typeracer\main\include\iconopausar.h
+1701367752 f:\proyectos github\typeracer\main\include\iconopausar.h
 	<iostream>
 	<SFML/Graphics.hpp>
 
-1701366579 source:f:\proyectos github\typeracer\main\src\iconopausar.cpp
+1701367752 source:f:\proyectos github\typeracer\main\src\iconopausar.cpp
 	"IconoPausar.h"
 
-1701366865 f:\proyectos github\typeracer\main\include\iconoplay.h
+1701367752 f:\proyectos github\typeracer\main\include\iconoplay.h
 	<iostream>
 	<SFML/Graphics.hpp>
 
-1701367056 source:f:\proyectos github\typeracer\main\src\iconoplay.cpp
+1701367752 source:f:\proyectos github\typeracer\main\src\iconoplay.cpp
 	"IconoPlay.h"
 

@@ -3,7 +3,7 @@
 using namespace std;
 
 //Constructor
-Gameplay::Gameplay() {}
+Gameplay::Gameplay(){}
 
 //Constructor 2
 Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window)
@@ -64,6 +64,7 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
     IconoSalir Sal;
     IconoPausar Pau;
     IconoPlay Pla;
+    EasterEgg Eas;
 
     //Archivo de Keywords
     setnombre();
@@ -110,8 +111,13 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
             {
                 _window->close();
             }
-            if (event.type == sf::Event::MouseButtonPressed)
+            if (event.type == sf::Event::MouseButtonPressed) //si se presiona un click
             {
+                if (event.mouseButton.button == sf::Mouse::Left && Eas.getPosicion()==true)
+                {
+                    Eas.setActivar(true);
+                    _clock3.restart();
+                }
                 if (event.mouseButton.button == sf::Mouse::Left && Sal.getPosicion()==true)
                 {
                     return;
@@ -127,8 +133,16 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
                     text.setFillColor(sf::Color::White);
                 }
             }
-            if(event.type == sf::Event::MouseMoved)
+            if(event.type == sf::Event::MouseMoved) //localizacion de cursor
             {
+                if(Eas.getSprite().getGlobalBounds().contains(event.mouseMove.x, event.mouseMove.y))
+                {
+                    Eas.setPosicion(true);
+                }
+                else
+                {
+                    Eas.setPosicion(false);
+                }
                 if(Sal.getSprite().getGlobalBounds().contains(event.mouseMove.x, event.mouseMove.y))
                 {
                     Sal.setPosicion(true);
@@ -154,7 +168,7 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
                     Pla.setPosicion(false);
                 }
             }
-            if(!EstadoPausa)
+            if(!EstadoPausa) //Pausa mecanicas dependiendo la bandera pausa
             {
                 if(event.type == sf::Event::TextEntered)
                 {
@@ -276,6 +290,12 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
         {
             Eny.setGolpe(false);
         }
+        //timer para EasterEgg
+        if(_clock3.getElapsedTime().asSeconds() > 2 && Eas.getActivar() == true)
+        {
+            Eas.setActivar(false);
+            Eas.setDesactivar(true);
+        }
         //si el gusano muere se le asigna otra palabra
         if(Gus.getmurio()==true)
         {
@@ -317,6 +337,7 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
         Sal.cmd();
         Pau.cmd();
         Pla.cmd();
+        Eas.cmd();
 
         //Update - Actualiza los estados del juego
         if(!EstadoPausa)
@@ -329,6 +350,7 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
         Sal.update();
         Pau.update();
         Pla.update();
+        Eas.update();
 
         _window->clear();
 
@@ -347,6 +369,7 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
         _window->draw(text);
         _window->draw(_textPan);
         _window->draw(_textPan2);
+        _window->draw(Eas);
 
         //Display - Flip
         _window->display();

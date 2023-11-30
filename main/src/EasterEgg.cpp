@@ -3,19 +3,37 @@
 
 EasterEgg::EasterEgg() //ctor
 {
-    _texture.loadFromFile("Imagenes/SpriteIconos.png");
+    _frame = 0;
+    _frameNoView = 0;
+    _texture.loadFromFile("Imagenes/Easteregg.png");
     _sprite.setTexture(_texture);
-    _sprite.setTextureRect({254, 4, 62, 75});//lo colocotrasparente
-    _sprite.setPosition(1427, 810);
+    _sprite.setTextureRect({0, 0, 100, 100});//lo colocotrasparente
+    _sprite.setPosition(1080, 275);
     StateEasterEgg _state = StateEasterEgg::Idle;
 }
 void EasterEgg::setPosicion(bool pos)
 {
     _pos = pos;
 }
+void EasterEgg::setActivar(bool act)
+{
+    _activar = act;
+}
+void EasterEgg::setDesactivar(bool des)
+{
+    _desactivar = des;
+}
 bool EasterEgg::getPosicion()
 {
     return _pos;
+}
+bool EasterEgg::getActivar()
+{
+    return _activar;
+}
+bool EasterEgg::getDesactivar()
+{
+    return _desactivar;
 }
 sf::Sprite EasterEgg::getSprite()
 {
@@ -25,9 +43,13 @@ void EasterEgg::cmd()
 {
     _state = StateEasterEgg::Idle;
 
-    if(_pos == true)
+    if(_activar == true)
     {
         _state = StateEasterEgg::View;
+    }
+    if(_desactivar == true)
+    {
+        _state = StateEasterEgg::NoView;
     }
 }
 void EasterEgg::update()
@@ -35,18 +57,26 @@ void EasterEgg::update()
     switch(_state)
     {
     case StateEasterEgg::Idle:
-        _sprite.setTextureRect({254, 83, 62, 75});//lo hago visible cambiando el sprite
+        _sprite.setTextureRect({0, 0, 100, 100});
         break;
-
     case StateEasterEgg::View:
-        _frame+=0.5;
-        _sprite.setPosition(1000,500);
-        _sprite.setTextureRect({254, 83, 62, 75});//lo hago visible cambiando el sprite
-        if(_frame>6){
-            _state=StateEasterEgg::Idle;
-            //se mutea el audio
+        _frame += 0.2;
+        if(_frame < 8)
+        {
+            _sprite.setTextureRect({int(_frame) * 100, 0, 100, 100});
         }
-        //va audio
+        break;
+    case StateEasterEgg::NoView:
+        _frameNoView -= 0.2;
+        if(_frameNoView > -8)
+        {
+            _sprite.setTextureRect({700 + int(_frameNoView) * 100, 0, 100, 100});
+        }
+        else
+        {
+            setDesactivar(false);
+            //_state=StateEasterEgg::Idle;
+        }
         break;
     }
 }

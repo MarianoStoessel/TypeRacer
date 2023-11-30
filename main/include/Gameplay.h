@@ -21,6 +21,7 @@
 #include "IconoSalir.h"
 #include "IconoPausar.h"
 #include "IconoPlay.h"
+#include "EasterEgg.h"
 
 class Gameplay
 {
@@ -30,6 +31,7 @@ private:
     sf::Vector2u* _resolucion;
     sf::Clock _clock;
     sf::Clock _clock2;
+    sf::Clock _clock3;
     int _cantE;
     int _enemigosActivos;
     int _score;

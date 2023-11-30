@@ -270,7 +270,7 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
             }
         }
         //si leo se queda sin vidas muere
-        if(Vid.getVida()<0 && Jug.getframemuerto()>5.5)
+        if(Vid.getVida()<1 && Jug.getframemuerto()>5.5)
         {
             setnivel(0);
             _gameover=true;

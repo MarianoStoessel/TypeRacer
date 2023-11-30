@@ -54,6 +54,7 @@
 		<Unit filename="include/Aplicacion.h" />
 		<Unit filename="include/Archivos.h" />
 		<Unit filename="include/ArchivosEditor.h" />
+		<Unit filename="include/EasterEgg.h" />
 		<Unit filename="include/Gameplay.h" />
 		<Unit filename="include/Gusavirus.h" />
 		<Unit filename="include/IconoSalir.h" />
@@ -69,6 +70,7 @@
 		<Unit filename="src/Anonymous.cpp" />
 		<Unit filename="src/Archivos.cpp" />
 		<Unit filename="src/ArchivosEditor.cpp" />
+		<Unit filename="src/EasterEgg.cpp" />
 		<Unit filename="src/Gameplay.cpp" />
 		<Unit filename="src/Gusavirus.cpp" />
 		<Unit filename="src/IconoSalir.cpp" />

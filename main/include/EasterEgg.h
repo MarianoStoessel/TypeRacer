@@ -1,19 +1,22 @@
 #ifndef EASTEREGG_H
 #define EASTEREGG_H
+#include <SFML/Graphics.hpp>
+#include <SFML/Audio.hpp>
 
-/*enum class StateEasterEgg {Idle, View};
+enum class StateEasterEgg {Idle, View};
 
-class EasterEgg
+class EasterEgg: public sf::Drawable
 {
    private:
     sf::Sprite _sprite;
     sf::Texture _texture;
 
-    bool _pos = false;
+    float _frame=0;
 
+    bool _pos = false;
     StateEasterEgg _state;
 public:
-    IconoSalir();
+    EasterEgg();
 
     void setPosicion(bool pos);
 
@@ -24,5 +27,5 @@ public:
     void update();
     void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
 };
-*/
+
 #endif // EASTEREGG_H

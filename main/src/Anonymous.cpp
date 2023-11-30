@@ -3,7 +3,6 @@
 Anonymous::Anonymous() //ctor
 {
     _frame = 0;
-    _frameGolpe = 0;
     _frameMuerto = 0;
 
     _texture.loadFromFile("Imagenes/SpriteAnonymous.png");
@@ -57,13 +56,20 @@ void Anonymous::update()
     case AnonymousState::Move:
         _frame += 0.10;
 
-        if(_frame >= 8)
+        if(_frame > 9)
         {
             _frame = 0;
         }
         _sprite.setTextureRect({300 + int(_frame) * 300, 0, 300, 390});
         break;
     case AnonymousState::kick:
+        _frame += 0.3;
+
+        if(_frame > 9)
+        {
+            _frame = 0;
+        }
+        _sprite.setTextureRect({300 + int(_frame) * 300, 390, 300, 390});
         break;
     case AnonymousState::death:
     {

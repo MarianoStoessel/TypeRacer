@@ -8,7 +8,6 @@ Gameplay::Gameplay() {}
 //Constructor 2
 Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window)
 {
-
     _window = window;
     _resolucion = resolucion;
     _nivel = nivel;
@@ -27,27 +26,26 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
     rectangulo.setFillColor(sf::Color::Black);
     rectangulo.setPosition(125, 575);
 
+    //musica y sonidos
     if(!_font.loadFromFile("Fuentes/Retro Gaming.ttf"))
     {
         cout << "No existe la fuente";
     }
-
-    if (!_jugando.openFromFile("Audio/jugaaando.wav")){
+    if (!_jugando.openFromFile("Audio/jugaaando.wav"))
+    {
         cout << "No se cargó el audio jugando";
     }
     _jugando.setLoop(true);
-
-    if (!_aplastar.openFromFile("Audio/aplastar.aplastar.wav")){
-        cout << "No se cargó el audio aplastar";
-    }
     _jugando.play();
 
+    if (!_aplastar.openFromFile("Audio/aplastar.aplastar.wav"))
+    {
+        cout << "No se cargó el audio aplastar";
+    }
     if(!_ouch.openFromFile("Audio/ouch.wav"))
     {
-
         std::cout<<"No se cargo audio ouch";
     }
-
 
     //TextoPantalla
     _textPan.setFont(_font);
@@ -63,6 +61,7 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
     Keyword palabra;
     Score Sco;
     Vida Vid;
+
     //Archivo de Keywords
     setnombre();
     ArchivosEditor archEditor(_nombre);
@@ -74,7 +73,6 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
         for(int i=0; i<30; i++)
         {
             vec[i] = archEditor.leerRegistro(i);
-            cout << vec[i].getKeyword() << endl;
         }
     }
 
@@ -88,15 +86,18 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
     text.setCharacterSize(20);
     text.setPosition(Gus.getposx(),Gus.getposy());
 
+    cout << "Keyword: ";
     cout << palabra.getP(); //Keyword del Gusavirus
     cout << endl;
 
-    if(_nivel<5){Gus.setvelocity(2);}
+    if(_nivel<5)
+    {
+        Gus.setvelocity(2);
+    }
 
     //Game Loop
     while(_window->isOpen())
     {
-
         sf::Event event;
         while(_window->pollEvent(event))
         {
@@ -104,14 +105,17 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
             {
                 _window->close();
             }
-            if (event.type == sf::Event::TextEntered)
+            if(event.type == sf::Event::TextEntered)
             {
-                if (event.text.unicode == 8 || event.text.unicode == 13 || event.text.unicode == 27) // Backspace, Enter y Escape
+                if(event.text.unicode == 8 || event.text.unicode == 13) //Backspace y Enter
                 {
                     //Se puede agregar restricciones o no
                 }
-
-                else if (event.text.unicode < 128)
+                else if(event.text.unicode == 27) //Escape
+                {
+                    return; //Salir de la partida
+                }
+                else if(event.text.unicode < 128)
                 {
 
                     //Agregar caracter
@@ -162,24 +166,21 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
 
                         _textPan2.setFont(_font);
                         _textPan2.setFillColor(sf::Color::Black);
-                        if(_clock2.getElapsedTime().asSeconds() > 2)
-                        {
-                            _textPan2.setString("Datos correctamente ingresados...");
-                        }
+                        _textPan2.setString("Datos correctamente ingresados...");
                         _textPan2.setCharacterSize(36);
                         _textPan2.setPosition(32,827);
+
+                        Gus.setmuriendo();
+                        Sco.sumarScore();
+                        Eny.setGolpe(true);
+                        _clock2.restart();
 
                         _textPan.setString("");
                         _caracter = 0;
                         auxTam = 0;
-                        Gus.setmuriendo();
-                        Sco.sumarScore();
                     }
                 }
             }
-            if(event.type == sf::Event::Closed)
-
-                _window->close();
         }
         text.setPosition(Gus.getposx(),Gus.getposy());
 
@@ -190,7 +191,6 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
             cout<<"ee"<<endl;
             Gus.setmuriendo();
             text.setString("");
-
 
             for(int i=0; i<=3; i++)
             {
@@ -213,6 +213,11 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
         {
             Pj.setGolpe(false);
         }
+        //timer para que Anonymous se enoje
+        if(_clock2.getElapsedTime().asSeconds() > 1 && Eny.getGolpe() == true)
+        {
+            Eny.setGolpe(false);
+        }
         //si el gusano muere se le asigna otra palabra
         if(Gus.getmurio()==true)
         {
@@ -223,12 +228,24 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
         }
 
         //Si se llega a 1000 puntos gana el nivel
-        if(Sco.getScore()==1000){setnivel(10); _gameover=true;
-        _jugando.pause(); break;
+        if(Sco.getScore()==1000)
+        {
+            Eny.setMuriendo(true);
+            if(Eny.getframemuerto()>11.5)
+            {
+                setnivel(10);
+                _gameover=true;
+                _jugando.pause();
+                break;
+            }
         }
-
         //si leo se queda sin vidas muere
-        if(Vid.getVida()==0 && Pj.getframemuerto()>5.5){ setnivel(0); _gameover=true; _jugando.pause(); break;
+        if(Vid.getVida()==0 && Pj.getframemuerto()>5.5)
+        {
+            setnivel(0);
+            _gameover=true;
+            _jugando.pause();
+            break;
         }
 
         //CMD

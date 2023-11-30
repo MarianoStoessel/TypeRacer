@@ -85,7 +85,7 @@ void Leo::update() //comprueba estado y ejecuta el movimiento si es asi
     case LeoState::kick:
         _frameGolpe += 0.18;
 
-        if(_frameGolpe > 1)
+        if(_frameGolpe > 2)
         {
             _frameGolpe = 0;
         }

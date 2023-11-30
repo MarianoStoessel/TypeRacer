@@ -420,10 +420,8 @@
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Window/GlResource.hpp>
 
-1701294592 source:d:\uni 2023\laboratorio ii\tp integrador\main\mani.cpp
+1701357987 source:d:\uni 2023\laboratorio ii\tp integrador\main\mani.cpp
 	"librariesMain.h"
-	"ArchivosEditor.h"
-	"Archivos.h"
 
 1688071491 d:\uni 2023\laboratorio ii\tp integrador\main\sfml\include\sfml\graphics.hpp
 	<SFML/Window.hpp>
@@ -1435,17 +1433,17 @@
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
 
-1701101206 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\anonymous.cpp
+1701359097 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\anonymous.cpp
 	"Anonymous.h"
 
-1701294592 d:\uni 2023\laboratorio ii\tp integrador\main\include\anonymous.h
+1701357987 d:\uni 2023\laboratorio ii\tp integrador\main\include\anonymous.h
 	<SFML/Graphics.hpp>
 
-1701312370 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\gameplay.cpp
+1701358998 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\gameplay.cpp
 	"Gameplay.h"
 	<iostream>
 
-1701310797 d:\uni 2023\laboratorio ii\tp integrador\main\include\gameplay.h
+1701358785 d:\uni 2023\laboratorio ii\tp integrador\main\include\gameplay.h
 	<iostream>
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
@@ -1459,6 +1457,7 @@
 	"Nivel.h"
 	"Vida.h"
 	"Aplicacion.h"
+	"IconoSalir.h"
 
 1688071491 d:\uni 2023\laboratorio ii\tp integrador\main\sfml\include\sfml\audio.hpp
 	<SFML/System.hpp>
@@ -1564,7 +1563,7 @@
 	<SFML/Audio/Export.hpp>
 	<string>
 
-1701294592 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\gusavirus.cpp
+1701359097 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\gusavirus.cpp
 	"Gusavirus.h"
 	<iostream>
 
@@ -1581,10 +1580,10 @@
 1701294592 d:\uni 2023\laboratorio ii\tp integrador\main\include\keyword.h
 	<SFML/Graphics.hpp>
 
-1701311759 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\leo.cpp
+1701357987 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\leo.cpp
 	"Leo.h"
 
-1701311759 d:\uni 2023\laboratorio ii\tp integrador\main\include\leo.h
+1701357987 d:\uni 2023\laboratorio ii\tp integrador\main\include\leo.h
 	<iostream>
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
@@ -1682,7 +1681,7 @@
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
 
-1701307957 source:d:\uni 2023\laboratorio ii\tp integrador\main\clases\menu\transicion.cpp
+1701357987 source:d:\uni 2023\laboratorio ii\tp integrador\main\clases\menu\transicion.cpp
 	"Transicion.h"
 
 1701262813 f:\proyectos github\typeracer\main\include\score.h
@@ -1724,10 +1723,10 @@
 1701213531 d:\uni 2023\laboratorio ii\tp integrador\main\include\vida.h
 	<SFML/Graphics.hpp>
 
-1701294592 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\nivel.cpp
+1701358792 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\nivel.cpp
 	"Nivel.h"
 
-1701294592 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\score.cpp
+1701358792 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\score.cpp
 	"Score.h"
 
 1701213532 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\vida.cpp
@@ -2434,4 +2433,11 @@
 1701357607 f:\proyectos github\typeracer\main\include\iconosalir.h
 	<iostream>
 	<SFML/Graphics.hpp>
+
+1701358351 d:\uni 2023\laboratorio ii\tp integrador\main\include\iconosalir.h
+	<iostream>
+	<SFML/Graphics.hpp>
+
+1701358351 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\iconosalir.cpp
+	"IconoSalir.h"
 

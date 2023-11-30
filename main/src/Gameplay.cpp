@@ -165,6 +165,10 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
                         _textPan2.setString("Error al ingresar datos...");
                         _textPan2.setCharacterSize(36);
                         _textPan2.setPosition(32,827);
+                        //si erra leo gusavirus aumenta la vel
+                        if(nivel<5){
+                        Gus.setvelocity(6);}else{Gus.setvelocity(4);}
+
                     }
                     else
                     {
@@ -240,7 +244,7 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
         }
 
         //Si se llega a 1000 puntos gana el nivel
-        if(Sco.getScore()==1000)
+        if(Sco.getScore()==300)
         {
             Eny.setMuriendo(true);
             if(Eny.getframemuerto()>11.5)

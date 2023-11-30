@@ -20,7 +20,6 @@ public:
     IconoSalir();
 
     void setPosicion(bool pos);
-    void setSprite(sf::Sprite sprite);
 
     bool getPosicion();
     sf::Sprite getSprite();

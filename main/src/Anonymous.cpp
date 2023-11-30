@@ -37,10 +37,7 @@ void Anonymous::cmd()
 {
     _state = AnonymousState::Move;
 
-    if(_golpe == false && _muriendo == false)
-    {
-        _state = AnonymousState::Idle;
-    }
+
     if(_golpe == true && _muriendo == false)
     {
         _state = AnonymousState::kick;

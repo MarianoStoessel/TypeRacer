@@ -12,10 +12,6 @@ void IconoSalir::setPosicion(bool pos)
 {
     _pos = pos;
 }
-void IconoSalir::setSprite(sf::Sprite sprite)
-{
-    _sprite = sprite;
-}
 bool IconoSalir::getPosicion()
 {
     return _pos;

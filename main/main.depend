@@ -1271,7 +1271,7 @@
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
 
-1701262813 source:f:\proyectos github\typeracer\main\clases\menu\menu.cpp
+1701303242 source:f:\proyectos github\typeracer\main\clases\menu\menu.cpp
 	"Menu.h"
 
 1701262813 source:f:\proyectos github\typeracer\main\src\anonymous.cpp
@@ -1280,11 +1280,11 @@
 1701262813 f:\proyectos github\typeracer\main\include\anonymous.h
 	<SFML/Graphics.hpp>
 
-1701298348 source:f:\proyectos github\typeracer\main\src\gameplay.cpp
+1701302951 source:f:\proyectos github\typeracer\main\src\gameplay.cpp
 	"Gameplay.h"
 	<iostream>
 
-1701298348 f:\proyectos github\typeracer\main\include\gameplay.h
+1701302951 f:\proyectos github\typeracer\main\include\gameplay.h
 	<iostream>
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
@@ -1315,12 +1315,13 @@
 1701282965 f:\proyectos github\typeracer\main\include\keyword.h
 	<SFML/Graphics.hpp>
 
-1701262813 source:f:\proyectos github\typeracer\main\src\leo.cpp
+1701303715 source:f:\proyectos github\typeracer\main\src\leo.cpp
 	"Leo.h"
 
-1701262813 f:\proyectos github\typeracer\main\include\leo.h
+1701303131 f:\proyectos github\typeracer\main\include\leo.h
 	<iostream>
 	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
 
 1697663564 f:\proyectos github\typeracer\main\sfml\include\sfml\audio.hpp
 	<SFML/System.hpp>
@@ -1649,7 +1650,7 @@
 	"Transicion.h"
 	"scode.h"
 
-1701298450 source:f:\proyectos github\typeracer\main\clases\menu\aplicacion.cpp
+1701302941 source:f:\proyectos github\typeracer\main\clases\menu\aplicacion.cpp
 	"Aplicacion.h"
 
 1701294592 source:d:\uni 2023\laboratorio ii\tp integrador\main\clases\menu\aplicacion.cpp
@@ -1666,12 +1667,12 @@
 	"Transicion.h"
 	"scode.h"
 
-1701298311 f:\proyectos github\typeracer\main\include\transicion.h
+1701302951 f:\proyectos github\typeracer\main\include\transicion.h
 	<iostream>
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
 
-1701298516 source:f:\proyectos github\typeracer\main\clases\menu\transicion.cpp
+1701302951 source:f:\proyectos github\typeracer\main\clases\menu\transicion.cpp
 	"Transicion.h"
 
 1701294592 d:\uni 2023\laboratorio ii\tp integrador\main\include\transicion.h

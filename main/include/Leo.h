@@ -15,7 +15,7 @@ private:
     sf::Sprite _sprite;
     sf::Texture _texture;
     sf::Music _teclado;
-
+    sf::Clock _clock;
 
     float _frame;
     float _frameGolpe;

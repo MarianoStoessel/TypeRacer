@@ -89,9 +89,15 @@ Aplicacion::Aplicacion(sf::Vector2u resolucion) // ctor
                                             //operador de gameplay
                                             if(gameplay.getGameOver() == true) //Pierde el nivel
                                             {
-                                                Transicion transicion(_nivel, &resolucion, &_window); //transicion juego ganaste
-                                                gameplay.setGameOver(false);
-                                                break;
+                                                Transicion transicion(10, &resolucion, &_window);
+                                                Transicion transicionlvl(_nivel, &resolucion, &_window); //transicion juego ganaste
+                                                if(_nivel==9 || _nivel==0)
+                                                    {
+                                                    //cout<<"llego";
+                                                    //gameplay.setGameOver(false);
+                                                    //break;
+                                                    }
+
                                             }
                                         }
                                     }

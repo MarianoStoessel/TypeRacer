@@ -258,12 +258,12 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
         }
 
         //Si se llega a 1000 puntos gana el nivel
-        if(Sco.getScore()>1000)
+        if(Sco.getScore()>=100)
         {
             Eny.setMuriendo(true);
             if(Eny.getframemuerto()>11.5)
             {
-                setnivel(10);
+                setnivel(_nivel+1);
                 _gameover=true;
                 _jugando.pause();
                 break;

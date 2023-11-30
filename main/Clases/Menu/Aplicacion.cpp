@@ -49,13 +49,6 @@ Aplicacion::Aplicacion(sf::Vector2u resolucion) // ctor
                     {
                     case 0:  //Jugar
                     {
-                        //set fondo - REVISAR SI ES NECESARIO!
-                        /*sf::RectangleShape fondo;
-                        fondo.setSize(sf::Vector2f(resolucion.x,resolucion.y));
-                        sf::Texture menuTexture;
-                        menuTexture.loadFromFile("Imagenes/FondoMain.jpg");
-                        fondo.setTexture(&menuTexture);*/
-
                         //inicializar menu Niveles
                         MenuNivel _menuNivel(_window.getSize().x, _window.getSize().y);
 
@@ -91,17 +84,10 @@ Aplicacion::Aplicacion(sf::Vector2u resolucion) // ctor
                                             Transicion transicion(nivel, &resolucion, &_window); //Pantalla de transicion
                                             Gameplay gameplay(nivel, &resolucion, &_window); //Entrar al nivel seleccionado
 
-                                            ///operador de gameplay
-                                            //if(gameplay.getGameOver() == true) //Pierde el nivel
+                                            //operador de gameplay
+                                            if(gameplay.getGameOver() == true) //Pierde el nivel
                                             {
-                                                if(nivel > 9) //Juego completado
-                                                {
-                                                    Transicion transicion(nivel, &resolucion, &_window); //transicion juego ganaste
-                                                }
-                                                else
-                                                {
-                                                    Transicion transicion(nivel, &resolucion, &_window); //crear transicion perdite
-                                                }
+                                                Transicion transicion(nivel, &resolucion, &_window); //transicion juego ganaste
                                                 closeMenuNivel = true;
                                                 break;
                                             }

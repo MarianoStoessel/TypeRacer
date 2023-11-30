@@ -94,6 +94,7 @@ Aplicacion::Aplicacion(sf::Vector2u resolucion) // ctor
                                                 gameplay.setGameOver(false);
                                                 break;
                                             }
+                                            _musicmenu.play();
                                         }
                                     }
                                 }

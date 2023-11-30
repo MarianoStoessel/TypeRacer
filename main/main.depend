@@ -1439,7 +1439,7 @@
 1701357987 d:\uni 2023\laboratorio ii\tp integrador\main\include\anonymous.h
 	<SFML/Graphics.hpp>
 
-1701358998 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\gameplay.cpp
+1701360089 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\gameplay.cpp
 	"Gameplay.h"
 	<iostream>
 
@@ -2434,10 +2434,10 @@
 	<iostream>
 	<SFML/Graphics.hpp>
 
-1701358351 d:\uni 2023\laboratorio ii\tp integrador\main\include\iconosalir.h
+1701359446 d:\uni 2023\laboratorio ii\tp integrador\main\include\iconosalir.h
 	<iostream>
 	<SFML/Graphics.hpp>
 
-1701358351 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\iconosalir.cpp
+1701359447 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\iconosalir.cpp
 	"IconoSalir.h"
 

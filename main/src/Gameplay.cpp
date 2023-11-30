@@ -62,6 +62,8 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
     Score Sco;
     Vida Vid;
     IconoSalir Sal;
+    IconoPausar Pau;
+    IconoPlay Pla;
 
     //Archivo de Keywords
     setnombre();
@@ -95,6 +97,8 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
     {
         Gus.setvelocity(2);
     }
+    //Bandera para pausar juego
+    bool EstadoPausa = false;
 
     //Game Loop
     while(_window->isOpen())
@@ -112,105 +116,134 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
                 {
                     return;
                 }
+                if (event.mouseButton.button == sf::Mouse::Left && Pau.getPosicion()==true)
+                {
+                    EstadoPausa = true;
+                    text.setFillColor(sf::Color::Transparent);
+                }
+                if (event.mouseButton.button == sf::Mouse::Left && Pla.getPosicion()==true)
+                {
+                    EstadoPausa = false;
+                    text.setFillColor(sf::Color::White);
+                }
             }
             if(event.type == sf::Event::MouseMoved)
             {
                 if(Sal.getSprite().getGlobalBounds().contains(event.mouseMove.x, event.mouseMove.y))
                 {
                     Sal.setPosicion(true);
-
                 }
                 else
                 {
                     Sal.setPosicion(false);
                 }
+                if(Pau.getSprite().getGlobalBounds().contains(event.mouseMove.x, event.mouseMove.y))
+                {
+                    Pau.setPosicion(true);
+                }
+                else
+                {
+                    Pau.setPosicion(false);
+                }
+                if(Pla.getSprite().getGlobalBounds().contains(event.mouseMove.x, event.mouseMove.y))
+                {
+                    Pla.setPosicion(true);
+                }
+                else
+                {
+                    Pla.setPosicion(false);
+                }
             }
-            if(event.type == sf::Event::TextEntered)
+            if(!EstadoPausa)
             {
-                if(event.text.unicode == 8 || event.text.unicode == 13) //Backspace y Enter
+                if(event.type == sf::Event::TextEntered)
                 {
-                    //Se puede agregar restricciones o no
-                }
-                else if(event.text.unicode == 27) //Escape
-                {
-                    return; //Salir de la partida
-                }
-                else if(event.text.unicode < 128)
-                {
-
-                    //Agregar caracter
-                    _textoPantalla = _textPan.getString();
-                    _textoPantalla += static_cast<char>(event.text.unicode);
-                    _textPan.setString(_textoPantalla);
-
-                    //Comparacion - Mecanica principal del juego
-                    if(verifica && auxTam < palabra.getTam()-1)
+                    if(event.text.unicode == 8 || event.text.unicode == 13) //Backspace y Enter
                     {
-                        _caracter = static_cast<char>(event.text.unicode);
-                        cout << _caracter;
+                        //Se puede agregar restricciones o no
+                    }
+                    else if(event.text.unicode == 27) //Escape
+                    {
+                        return; //Salir de la partida
+                    }
+                    else if(event.text.unicode < 128)
+                    {
 
-                        int comparacion = palabra.getP()[auxTam] - _caracter;
-                        if(comparacion != 0)
+                        //Agregar caracter
+                        _textoPantalla = _textPan.getString();
+                        _textoPantalla += static_cast<char>(event.text.unicode);
+                        _textPan.setString(_textoPantalla);
+
+                        //Comparacion - Mecanica principal del juego
+                        if(verifica && auxTam < palabra.getTam()-1)
                         {
-                            verifica = false;
+                            _caracter = static_cast<char>(event.text.unicode);
+                            cout << _caracter;
+
+                            int comparacion = palabra.getP()[auxTam] - _caracter;
+                            if(comparacion != 0)
+                            {
+                                verifica = false;
+                                _textPan.setString("");
+                                _caracter = 0;
+                                auxTam = 0;
+                            }
+                            else
+                            {
+                                auxTam++;
+                            }
+                        }
+                        if(!verifica)
+                        {
+                            cout << endl;
+                            cout << "VUELVE A INTENTARLO... \n"; //Agregar en pantalla de juego
+                            verifica = true;
+
+                            _textPan2.setFont(_font);
+                            _textPan2.setFillColor(sf::Color::Black);
+                            _textPan2.setString("Error al ingresar datos...");
+                            _textPan2.setCharacterSize(36);
+                            _textPan2.setPosition(32,827);
+                            //si erra leo gusavirus aumenta la vel
+                            if(nivel<5)
+                            {
+                                Gus.setvelocity(6);
+                            }
+                            else
+                            {
+                                Gus.setvelocity(4);
+                            }
+
+                        }
+                        else
+                        {
+                            verifica = true;
+                        }
+                        if(verifica && auxTam == palabra.getTam()-1)
+                        {
+                            _aplastar.play();
+                            cout << endl;
+                            cout << "VIRUS HECHO PELOTA" << endl;
+
+                            _textPan2.setFont(_font);
+                            _textPan2.setFillColor(sf::Color::Black);
+                            _textPan2.setString("Datos correctamente ingresados...");
+                            _textPan2.setCharacterSize(36);
+                            _textPan2.setPosition(32,827);
+
+                            Gus.setmuriendo();
+                            Sco.sumarScore();
+                            Eny.setGolpe(true);
+                            _clock2.restart();
+
                             _textPan.setString("");
                             _caracter = 0;
                             auxTam = 0;
                         }
-                        else
-                        {
-                            auxTam++;
-                        }
-                    }
-                    if(!verifica)
-                    {
-                        cout << endl;
-                        cout << "VUELVE A INTENTARLO... \n"; //Agregar en pantalla de juego
-                        verifica = true;
-
-                        _textPan2.setFont(_font);
-                        _textPan2.setFillColor(sf::Color::Black);
-                        _textPan2.setString("Error al ingresar datos...");
-                        _textPan2.setCharacterSize(36);
-                        _textPan2.setPosition(32,827);
-                        //si erra leo gusavirus aumenta la vel
-                        if(nivel<5)
-                        {
-                            Gus.setvelocity(6);
-                        }
-                        else
-                        {
-                            Gus.setvelocity(4);
-                        }
-
-                    }
-                    else
-                    {
-                        verifica = true;
-                    }
-                    if(verifica && auxTam == palabra.getTam()-1)
-                    {
-                        _aplastar.play();
-                        cout << endl;
-                        cout << "VIRUS HECHO PELOTA" << endl;
-
-                        _textPan2.setFont(_font);
-                        _textPan2.setFillColor(sf::Color::Black);
-                        _textPan2.setString("Datos correctamente ingresados...");
-                        _textPan2.setCharacterSize(36);
-                        _textPan2.setPosition(32,827);
-
-                        Gus.setmuriendo();
-                        Sco.sumarScore();
-                        Eny.setGolpe(true);
-                        _clock2.restart();
-
-                        _textPan.setString("");
-                        _caracter = 0;
-                        auxTam = 0;
                     }
                 }
             }
+
         }
         text.setPosition(Gus.getposx(),Gus.getposy());
 
@@ -282,19 +315,28 @@ Gameplay::Gameplay(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window
         Eny.cmd();
         Gus.cmd();
         Sal.cmd();
+        Pau.cmd();
+        Pla.cmd();
 
         //Update - Actualiza los estados del juego
-        Jug.update();
-        Eny.update();
-        Gus.update();
-        Vid.update();
+        if(!EstadoPausa)
+        {
+            Jug.update();
+            Eny.update();
+            Gus.update();
+            Vid.update();
+        }
         Sal.update();
+        Pau.update();
+        Pla.update();
 
         _window->clear();
 
         //Draw
         _window->draw(fondo);
         _window->draw(Sal);
+        _window->draw(Pau);
+        _window->draw(Pla);
         _window->draw(Niv);
         _window->draw(Sco);
         _window->draw(Vid);

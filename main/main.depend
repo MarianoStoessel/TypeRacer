@@ -1441,11 +1441,11 @@
 1701294592 d:\uni 2023\laboratorio ii\tp integrador\main\include\anonymous.h
 	<SFML/Graphics.hpp>
 
-1701297953 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\gameplay.cpp
+1701303837 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\gameplay.cpp
 	"Gameplay.h"
 	<iostream>
 
-1701297110 d:\uni 2023\laboratorio ii\tp integrador\main\include\gameplay.h
+1701303837 d:\uni 2023\laboratorio ii\tp integrador\main\include\gameplay.h
 	<iostream>
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
@@ -1580,12 +1580,13 @@
 1701294592 d:\uni 2023\laboratorio ii\tp integrador\main\include\keyword.h
 	<SFML/Graphics.hpp>
 
-1701219235 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\leo.cpp
+1701303837 source:d:\uni 2023\laboratorio ii\tp integrador\main\src\leo.cpp
 	"Leo.h"
 
-1701294592 d:\uni 2023\laboratorio ii\tp integrador\main\include\leo.h
+1701303837 d:\uni 2023\laboratorio ii\tp integrador\main\include\leo.h
 	<iostream>
 	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
 
 1701274725 f:\proyectos github\typeracer\main\librariesmain.h
 	<SFML/Graphics.hpp>
@@ -1653,7 +1654,7 @@
 1701302941 source:f:\proyectos github\typeracer\main\clases\menu\aplicacion.cpp
 	"Aplicacion.h"
 
-1701294592 source:d:\uni 2023\laboratorio ii\tp integrador\main\clases\menu\aplicacion.cpp
+1701304012 source:d:\uni 2023\laboratorio ii\tp integrador\main\clases\menu\aplicacion.cpp
 	"Aplicacion.h"
 
 1701294592 d:\uni 2023\laboratorio ii\tp integrador\main\include\aplicacion.h
@@ -1675,12 +1676,12 @@
 1701302951 source:f:\proyectos github\typeracer\main\clases\menu\transicion.cpp
 	"Transicion.h"
 
-1701294592 d:\uni 2023\laboratorio ii\tp integrador\main\include\transicion.h
+1701303837 d:\uni 2023\laboratorio ii\tp integrador\main\include\transicion.h
 	<iostream>
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
 
-1701137976 source:d:\uni 2023\laboratorio ii\tp integrador\main\clases\menu\transicion.cpp
+1701303837 source:d:\uni 2023\laboratorio ii\tp integrador\main\clases\menu\transicion.cpp
 	"Transicion.h"
 
 1701262813 f:\proyectos github\typeracer\main\include\score.h

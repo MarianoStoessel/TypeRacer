@@ -14,12 +14,8 @@ Leo::Leo() //ctor
 
     if(!_teclado.openFromFile("Audio/tecla.wav"))
     {
-
         std::cout<<"No se cargo audio teclado";
     }
-
-
-
 }
 //Sets
 void Leo::setGolpe(bool golpe)
@@ -49,7 +45,7 @@ void Leo::cmd()
 {
     _state = LeoState::Idle;
 
-    for (int i = 0; i < sf::Keyboard::KeyCount; i++)
+    for (int i = 0; i < sf::Keyboard::KeyCount; i++) //Tocando cualquier tecla cambia de estado
     {
         if (sf::Keyboard::isKeyPressed(static_cast<sf::Keyboard::Key>(i)))
         {

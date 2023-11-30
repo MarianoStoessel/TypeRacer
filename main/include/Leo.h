@@ -27,7 +27,6 @@ private:
     bool _desaparece=false;
 
     LeoState _state;
-
 public:
     Leo();
 

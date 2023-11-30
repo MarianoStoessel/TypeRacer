@@ -8,6 +8,7 @@ Transicion::Transicion() //ctor
 }
 Transicion::Transicion(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* window)
 {
+    _tiempo = 0;
     _window = window;
     string strNivel = std::to_string(nivel);
 
@@ -39,6 +40,8 @@ Transicion::Transicion(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* wi
         _tranNiv.setString("Perdiste");
         _tranNiv.setCharacterSize(75);
         _tranNiv.setPosition(530,250);
+        _tiempo = 5;
+
         _gameover.play();
     }
     else if(nivel <= 9)
@@ -48,6 +51,7 @@ Transicion::Transicion(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* wi
         _tranNiv.setString("Nivel " + strNivel);
         _tranNiv.setCharacterSize(75);
         _tranNiv.setPosition(580,250);
+        _tiempo = 2;
     }
     else
     {
@@ -56,12 +60,14 @@ Transicion::Transicion(int nivel, sf::Vector2u* resolucion, sf::RenderWindow* wi
         _tranNiv.setString("Ganaste");
         _tranNiv.setCharacterSize(150);
         _tranNiv.setPosition(350,300);
+        _tiempo = 5;
+
         _win.play();
     }
 
     while(_window->isOpen())
     {
-        if(_clock.getElapsedTime().asSeconds() > 2)
+        if(_clock.getElapsedTime().asSeconds() > _tiempo)
         {
             break;
         }
